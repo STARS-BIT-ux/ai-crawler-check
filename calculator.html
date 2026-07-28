@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free LLM Cost Calculator — Compare 5 Models Live</title>
+<meta name="description" content="Free online LLM API cost calculator. Enter your monthly token volume, compare GPT-4o, Claude, Gemini and DeepSeek costs side by side. No signup.">
+<style>
+  :root {
+    --ink: #1a1d23; --muted: #5c6470; --accent: #0d7a5f;
+    --line: #d8dce3; --bg: #ffffff; --panel: #f5f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e8eaed; --muted: #9aa3ad; --accent: #2fbf94;
+            --line: #3a3f47; --bg: #16181d; --panel: #21242b; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg);
+    color: var(--ink); line-height: 1.55; max-width: 780px;
+    margin: 0 auto; padding: 40px 20px; }
+  .kicker { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  h1 { font-size: 30px; line-height: 1.2; margin-bottom: 10px; }
+  .sub { color: var(--muted); margin-bottom: 28px; }
+  .panel { background: var(--panel); border: 1px solid var(--line);
+    border-radius: 10px; padding: 20px; margin-bottom: 24px; }
+  .inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px; }
+  label { font-family: Arial, sans-serif; font-size: 12px; color: var(--muted);
+    display: block; margin-bottom: 4px; }
+  input { font-family: Arial, sans-serif; font-size: 16px; width: 100%;
+    padding: 9px 10px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg); color: var(--ink); }
+  input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;
+    font-size: 14px; }
+  th, td { text-align: right; padding: 10px 12px; border-bottom: 1px solid var(--line);
+    white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--muted); }
+  .best td { color: var(--accent); font-weight: bold; }
+  .total { font-size: 15px; }
+  .note { font-size: 12.5px; color: var(--muted); margin-top: 14px;
+    font-family: Arial, sans-serif; }
+  .cta { margin-top: 32px; padding: 20px; border: 1.6px solid var(--accent);
+    border-radius: 10px; }
+  .cta b { font-family: Arial, sans-serif; }
+  .cta a { color: var(--accent); }
+  footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-family: Arial, sans-serif; font-size: 11px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="kicker">Free Tool · No Signup</div>
+<h1>LLM Cost Calculator</h1>
+<p class="sub">Enter your monthly volume. Costs recalculate live across five models — see what you'd actually pay.</p>
+
+<div class="panel">
+  <div class="inputs">
+    <div>
+      <label for="calls">API calls / month</label>
+      <input id="calls" type="number" min="0" value="100000">
+    </div>
+    <div>
+      <label for="tin">Avg input tokens / call</label>
+      <input id="tin" type="number" min="0" value="1500">
+    </div>
+    <div>
+      <label for="tout">Avg output tokens / call</label>
+      <input id="tout" type="number" min="0" value="400">
+    </div>
+  </div>
+</div>
+
+<div class="panel table-wrap">
+  <table id="results">
+    <thead>
+      <tr><th>Model</th><th>Input $/M</th><th>Output $/M</th>
+          <th>Input cost</th><th>Output cost</th><th class="total">Monthly total</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <p class="note">Pricing snapshot (2026) — verify against current provider
+  pages before budgeting real money. Rates change without notice; the cheapest
+  row is highlighted.</p>
+</div>
+
+<div class="cta">
+  <b>Want the full version?</b> The downloadable
+  <a href="https://rentry.co/nexus-catalog">LLM Cost Calculator spreadsheet</a> adds:
+  8 models side by side, <b>caching impact</b> (enter your cache-hit rate,
+  see the exact dollar savings), <b>routing scenarios</b> (blend a cheap +
+  expensive model at any ratio), and an editable pricing tab so it never
+  goes stale. Every formula independently verified. $15, no subscription.
+</div>
+
+<footer>
+  Free tool by Mira Voss · <a href="https://rentry.co/nexus-catalog" style="color:var(--accent)">
+  AI engineering checklists &amp; tools</a> · No tracking, no signup — the
+  math runs entirely in your browser.
+</footer>
+
+<script>
+// Pricing snapshot (2026), $ per 1M tokens — mirrors the spreadsheet's
+// Pricing Reference tab. Keep the two in sync when providers change rates.
+const MODELS = [
+  { name: "GPT-4o",        pin: 2.50, pout: 10.00 },
+  { name: "GPT-4o-mini",   pin: 0.15, pout: 0.60 },
+  { name: "Claude Sonnet", pin: 3.00, pout: 15.00 },
+  { name: "Gemini Flash",  pin: 0.10, pout: 0.40 },
+  { name: "DeepSeek V3-class", pin: 0.27, pout: 1.10 },
+];
+
+const $ = id => document.getElementById(id);
+const fmt = n => n >= 100 ? "$" + n.toLocaleString("en-US", {maximumFractionDigits: 0})
+                          : "$" + n.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+function recalc() {
+  const calls = +$("calls").value || 0;
+  const tin   = +$("tin").value   || 0;
+  const tout  = +$("tout").value  || 0;
+  const inM  = calls * tin  / 1e6;   // total input tokens, millions
+  const outM = calls * tout / 1e6;
+
+  const rows = MODELS.map(m => ({
+    ...m,
+    cin: inM * m.pin,
+    cout: outM * m.pout,
+    total: inM * m.pin + outM * m.pout,
+  }));
+  const best = Math.min(...rows.map(r => r.total));
+
+  const tbody = $("results").querySelector("tbody");
+  tbody.innerHTML = rows.map(r => `
+    <tr class="${r.total === best && r.total > 0 ? "best" : ""}">
+      <td>${r.name}</td>
+      <td>$${r.pin.toFixed(2)}</td><td>$${r.pout.toFixed(2)}</td>
+      <td>${fmt(r.cin)}</td><td>${fmt(r.cout)}</td>
+      <td class="total">${fmt(r.total)}</td>
+    </tr>`).join("");
+}
+
+["calls", "tin", "tout"].forEach(id => $(id).addEventListener("input", recalc));
+recalc();
+</script>
+
+</body>
+</html>

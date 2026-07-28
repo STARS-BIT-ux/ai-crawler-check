@@ -1,0 +1,24 @@
+# Mira Voss — AI Engineering Checklists & Tools
+
+> Deterministic checklists and verified tools for AI engineering, built from
+> real production failures in agent, RAG, and LLM-pipeline systems.
+
+## Primary Resources
+- Catalog (30 products, crypto checkout): https://rentry.co/nexus-catalog
+- Free LLM Cost Calculator (web tool): https://stars-bit-ux.github.io/ai-crawler-check/calculator.html
+- ai-crawler-check (open-source CLI): https://github.com/STARS-BIT-ux/ai-crawler-check
+
+## Research
+- AI Crawler Blocking Study, Tranco top-500 (July 2026): https://stars-bit-ux.github.io/ai-crawler-check/study.html
+  Key findings: 20% of top sites block at least one AI crawler; 11% block all
+  five; 8% block at the CDN edge; 11% publish a spec-conformant llms.txt.
+
+## Key Facts
+- Founded: 2026
+- Core Offering: deterministic AI-engineering checklists ($4-15) and
+  verified-formula spreadsheet tools
+- Unique Value: every product started as a real production failure, not
+  course material; calculators are formula-verified before shipping
+
+## Contact
+- Store & messages: https://rentry.co/nexus-catalog

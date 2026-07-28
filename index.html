@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mira Voss — AI Engineering Checklists & Tools</title>
+<meta name="description" content="Deterministic checklists and verified tools for AI engineering — agent reliability, RAG debugging, LLM cost control, AI search visibility. Built from real production failures.">
+<style>
+  :root { --ink:#1a1d23; --muted:#5c6470; --accent:#0d7a5f; --line:#d8dce3; --bg:#fff; --panel:#f5f7f9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8eaed; --muted:#9aa3ad;
+    --accent:#2fbf94; --line:#3a3f47; --bg:#16181d; --panel:#21242b; } }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--ink);
+    line-height:1.6; font-size:17px; max-width:720px; margin:0 auto; padding:48px 20px; }
+  .kicker { font-family:Arial,sans-serif; font-size:11px; letter-spacing:3px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:14px; }
+  h1 { font-size:32px; line-height:1.2; margin-bottom:14px; }
+  .lede { font-size:18px; color:var(--muted); margin-bottom:34px; }
+  h2 { font-family:Arial,sans-serif; font-size:14px; text-transform:uppercase;
+    letter-spacing:2px; color:var(--muted); margin:36px 0 14px; }
+  .card { display:block; background:var(--panel); border:1px solid var(--line);
+    border-radius:10px; padding:16px 18px; margin-bottom:12px; text-decoration:none;
+    color:var(--ink); }
+  .card:hover { border-color:var(--accent); }
+  .card b { font-family:Arial,sans-serif; font-size:15.5px; }
+  .card .d { font-size:14.5px; color:var(--muted); margin-top:4px; }
+  .card .tag { font-family:Arial,sans-serif; font-size:11px; color:var(--accent);
+    text-transform:uppercase; letter-spacing:1px; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; padding-top:14px; border-top:1px solid var(--line);
+    font-family:Arial,sans-serif; font-size:12.5px; color:var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mira Voss",
+  "description": "Builds AI agent, RAG, and LLM-pipeline systems; turns production failure modes into deterministic checklists and verified tools.",
+  "knowsAbout": ["AI engineering", "LLM cost optimization", "RAG systems", "AI search optimization", "AI agent reliability"]
+}
+</script>
+</head>
+<body>
+
+<div class="kicker">AI Engineering · Checklists & Tools</div>
+<h1>Everything here broke in production first.</h1>
+<p class="lede">I build and ship AI agent, RAG, and LLM-pipeline systems — then
+turn the failure modes I actually hit into deterministic checklists and small
+verified tools. No courses, no theory, no upsell. If it's in the catalog, I
+used it myself first.</p>
+
+<h2>Free Tools</h2>
+<a class="card" href="calculator.html">
+  <span class="tag">Web Tool</span><br>
+  <b>LLM Cost Calculator</b>
+  <div class="d">Enter your monthly token volume, compare five models live. No signup, runs in your browser.</div>
+</a>
+<a class="card" href="https://github.com/STARS-BIT-ux/ai-crawler-check">
+  <span class="tag">Open Source CLI</span><br>
+  <b>ai-crawler-check</b>
+  <div class="d">One command: is your site visible to GPTBot, ClaudeBot, PerplexityBot — including the edge-blocking check robots.txt audits miss?</div>
+</a>
+
+<h2>Research</h2>
+<a class="card" href="study.html">
+  <span class="tag">Original Data · July 2026</span><br>
+  <b>I checked the top 500 websites for AI crawler blocking</b>
+  <div class="d">20% block at least one AI crawler, 11% block all five, and llms.txt adoption has quietly reached 11%. Full methodology, reproducible.</div>
+</a>
+
+<h2>The Catalog</h2>
+<a class="card" href="https://rentry.co/nexus-catalog">
+  <span class="tag">Crypto checkout</span><br>
+  <b>30 checklists, decision guides & verified spreadsheet tools</b>
+  <div class="d">Agent reliability · prompt injection · RAG debugging · LLM cost control ·
+  AI search visibility · evaluation · memory · multi-agent patterns — $4–15 each,
+  bundles available. USDC/USDT, instant delivery.</div>
+</a>
+
+<footer>
+  Mira Voss · <a href="https://rentry.co/nexus-catalog">catalog</a> ·
+  <a href="llms.txt">llms.txt</a> — yes, this site practices what the checklists
+  preach: JSON-LD, llms.txt, and all five AI crawlers welcome in
+  <a href="robots.txt">robots.txt</a>.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Checked the Top 500 Websites' robots.txt for AI Crawler Blocking — Here's the Data</title>
+<meta name="description" content="Original research: 20% of the Tranco top-500 sites block at least one AI crawler, 11% block all five, 8% block at the edge, and llms.txt adoption has reached 11%. Full methodology and raw data.">
+<style>
+  :root { --ink:#1a1d23; --muted:#5c6470; --accent:#0d7a5f; --line:#d8dce3; --bg:#fff; --panel:#f5f7f9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8eaed; --muted:#9aa3ad;
+    --accent:#2fbf94; --line:#3a3f47; --bg:#16181d; --panel:#21242b; } }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--ink);
+    line-height:1.6; font-size:17px; max-width:720px; margin:0 auto; padding:40px 20px; }
+  .kicker { font-family:Arial,sans-serif; font-size:11px; letter-spacing:3px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+  h1 { font-size:30px; line-height:1.2; margin-bottom:10px; }
+  .meta { color:var(--muted); font-size:14px; font-family:Arial,sans-serif; margin-bottom:28px; }
+  h2 { font-family:Arial,sans-serif; font-size:19px; margin:34px 0 10px; }
+  p { margin-bottom:14px; }
+  .stat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:12px; margin:22px 0; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:10px;
+    padding:16px 14px; text-align:center; }
+  .stat .n { font-family:Arial,sans-serif; font-size:30px; font-weight:bold; color:var(--accent); }
+  .stat .l { font-size:12.5px; color:var(--muted); font-family:Arial,sans-serif; margin-top:4px; }
+  table { width:100%; border-collapse:collapse; font-family:Arial,sans-serif;
+    font-size:14px; margin:16px 0; }
+  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); }
+  td.r,th.r { text-align:right; }
+  code { font-family:Consolas,monospace; font-size:14px; background:var(--panel);
+    padding:1px 6px; border-radius:4px; }
+  .note { font-size:14px; color:var(--muted); border-left:3px solid var(--line);
+    padding-left:14px; margin:16px 0; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; padding-top:14px; border-top:1px solid var(--line);
+    font-family:Arial,sans-serif; font-size:12px; color:var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "I Checked the Top 500 Websites' robots.txt for AI Crawler Blocking",
+  "author": {"@type": "Person", "name": "Mira Voss"},
+  "datePublished": "2026-07-13",
+  "about": "AI crawler blocking and llms.txt adoption among the Tranco top-500 websites"
+}
+</script>
+</head>
+<body>
+
+<div class="kicker">Original Research · July 2026</div>
+<h1>I Checked the Top 500 Websites for AI Crawler Blocking. Here's What the Data Says.</h1>
+<p class="meta">Tranco top-500 · 327 reachable sites · every result reproducible with a
+<a href="#methodology">free open tool</a> · July 13, 2026</p>
+
+<div class="stat-grid">
+  <div class="stat"><div class="n">20%</div><div class="l">block ≥1 AI crawler in robots.txt</div></div>
+  <div class="stat"><div class="n">11%</div><div class="l">block ALL five AI crawlers</div></div>
+  <div class="stat"><div class="n">8%</div><div class="l">block at the edge (invisible to robots.txt audits)</div></div>
+  <div class="stat"><div class="n">11%</div><div class="l">already publish a spec-conformant llms.txt</div></div>
+</div>
+
+<p>AI search assistants — ChatGPT, Claude, Perplexity, Google's AI Overviews — can
+only cite what their crawlers can read. So I checked what the web's biggest
+sites actually allow. One afternoon, three tiny HTTP requests per domain,
+every result reproducible.</p>
+
+<h2>Finding 1: One in five top sites blocks at least one AI crawler</h2>
+<p>Of 327 reachable sites in the Tranco top-500, 65 (20%) block at least one of
+the five major AI crawlers via robots.txt, and 35 (11%) block all five:
+Facebook, TikTok, Amazon, Reddit, the New York Times, the BBC, Reuters,
+Bloomberg, the WSJ — a wall of social networks, e-commerce giants, and news
+publishers. If you're wondering why AI assistants answer questions about
+products and news mostly from secondary sources — this is why.</p>
+
+<h2>Finding 2: Sites fear training more than search</h2>
+<table>
+  <tr><th>Crawler</th><th>Operator / purpose</th><th class="r">Blocked by</th></tr>
+  <tr><td>CCBot</td><td>Common Crawl — feeds most open training datasets</td><td class="r">18%</td></tr>
+  <tr><td>GPTBot</td><td>OpenAI</td><td class="r">16%</td></tr>
+  <tr><td>ClaudeBot</td><td>Anthropic</td><td class="r">16%</td></tr>
+  <tr><td>Google-Extended</td><td>Google AI (Gemini)</td><td class="r">15%</td></tr>
+  <tr><td>PerplexityBot</td><td>Perplexity — search-only, no training</td><td class="r">14%</td></tr>
+</table>
+<p>The gradient is small but consistent: the crawler most associated with
+<em>training data</em> (CCBot) is blocked most; the one most associated with
+<em>search citations</em> (PerplexityBot) is blocked least. Sites are drawing a
+line between "cite me" and "train on me" — with robots.txt as the only pen
+available.</p>
+
+<h2>Finding 3: 8% block at the edge — where robots.txt audits can't see</h2>
+<p>26 sites (8%) serve their homepage normally to a browser user-agent but
+return 403 to a GPTBot user-agent. That's edge-level blocking — a Cloudflare
+"Block AI Bots" toggle or a WAF rule — happening <em>before</em> robots.txt is
+ever consulted. A site can have a perfectly permissive robots.txt and still be
+completely invisible to AI crawlers. If you've only audited your robots.txt,
+you haven't audited your AI visibility.</p>
+
+<h2>Finding 4: llms.txt is quietly becoming real</h2>
+<p>11% of the top 500 (37 sites) publish a spec-conformant llms.txt — including
+Adobe, Microsoft (azure.com), Cloudflare, GitHub, NVIDIA, Samsung, Stripe,
+Shopify, and Slack. For a convention that didn't exist not long ago, one in
+nine of the web's biggest properties is a real adoption number — and it's
+dominated by exactly the companies whose developer-facing content benefits
+most from being AI-legible.</p>
+<p class="note">Data-quality note worth stealing for your own audits: a naive
+"does /llms.txt return 200" check found 79 "adopters" — but 29 of those were
+SPA soft-404s returning an HTML shell for any URL, and 13 more served
+plain-text error pages. Only content validation (is it actually markdown with
+an H1?) gets you the honest 37. Most quick-check tools will overcount.</p>
+
+<h2 id="methodology">Methodology</h2>
+<p>Domain list: <a href="https://tranco-list.eu">Tranco top-500</a> (the
+academic-standard ranking; snapshot July 13, 2026). Unreachable domains — DNS
+infrastructure, CDN endpoints, and sites that didn't answer — are excluded
+from the denominator (327 remained). Per domain: robots.txt parsed with
+Python's standard <code>RobotFileParser</code> for each of the five crawlers;
+homepage fetched twice (browser UA vs GPTBot UA) to detect edge blocking;
+llms.txt fetched and content-validated. Read-only, ~3 small requests per
+domain, politely rate-limited.</p>
+<p>Every single-domain result is reproducible with the same code this study
+ran: <code>ai-crawler-check</code>, a free, dependency-free Python CLI —
+<a href="https://github.com/STARS-BIT-ux/ai-crawler-check">source on GitHub</a>. Raw per-domain data
+available on request.</p>
+
+<h2>Check your own site</h2>
+<p>The one-command version: <a href="https://github.com/STARS-BIT-ux/ai-crawler-check">ai-crawler-check</a>
+(free, open source). The fix-it version — ready-to-paste robots.txt snippets
+for WordPress/Shopify/Webflow/Cloudflare plus a fill-in llms.txt template — is
+the <a href="https://rentry.co/nexus-catalog">llms.txt + AI Crawler Setup Kit</a>, and the
+full 30-point audit is the
+<a href="https://rentry.co/nexus-catalog">AI-Ready SEO Checklist 2026</a> — both in the full catalog (crypto checkout, instant delivery).</p>
+
+<footer>
+  Mira Voss · <a href="index.html">home</a> · <a href="calculator.html">free LLM
+  cost calculator</a> · research conducted July 13, 2026; the web changes —
+  numbers describe that day's snapshot.
+</footer>
+
+</body>
+</html>
