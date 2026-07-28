@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Complete Guide to Getting Cited by AI Search in 2026</title>
+<meta name="description" content="Crawler access, structured data, and the content signals that actually move the needle for ChatGPT, Perplexity and Google AI Overviews citations.">
+<style>
+  :root { --ink:#1a1d23; --muted:#5c6470; --accent:#0d7a5f; --line:#d8dce3; --bg:#fff; --panel:#f5f7f9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8eaed; --muted:#9aa3ad;
+    --accent:#2fbf94; --line:#3a3f47; --bg:#16181d; --panel:#21242b; } }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--ink);
+    line-height:1.6; font-size:17px; max-width:720px; margin:0 auto; padding:40px 20px; }
+  .kicker { font-family:Arial,sans-serif; font-size:11px; letter-spacing:3px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+  h1 { font-size:28px; line-height:1.25; margin-bottom:20px; }
+  h2 { font-family:Arial,sans-serif; font-size:19px; margin:30px 0 10px; }
+  p { margin-bottom:14px; }
+  ul { margin:0 0 14px 22px; }
+  li { margin-bottom:4px; }
+  code { font-family:Consolas,monospace; font-size:14px; background:var(--panel);
+    padding:1px 6px; border-radius:4px; }
+  pre { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    padding:14px; overflow-x:auto; margin-bottom:14px; }
+  pre code { background:none; padding:0; }
+  .tblrow { font-family:Consolas,monospace; font-size:13px; padding:2px 0; }
+  a { color:var(--accent); }
+  .cta { margin-top:32px; padding:20px; border:1.6px solid var(--accent); border-radius:10px; }
+  footer { margin-top:44px; padding-top:14px; border-top:1px solid var(--line);
+    font-family:Arial,sans-serif; font-size:12.5px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="kicker">AI Engineering</div>
+<h1>The Complete Guide to Getting Cited by AI Search in 2026</h1>
+<p>While most sites are still optimizing for classic Google rankings, a parallel search layer has quietly become a real traffic source: ChatGPT, Perplexity, and Google AI Overviews are answering questions directly, and citing (or not citing) sources as they go. Different rules apply here than classic SEO, and most sites are invisible to this layer without knowing it — often because of one blocked line in a config file nobody's touched since 2019.</p>
+<p>This is the complete, no-fluff pass: crawler access, structured data, and the content signals that actually move the needle. Runnable in an afternoon.</p>
+<h2>1. Check crawler access first — this is a gate, not an optimization</h2>
+<p>Everything else in this guide is wasted if the AI crawlers can't reach your site at all. This is the single highest-leverage two-minute check you can do right now.</p>
+<p>Open your <code>robots.txt</code> and check for these five bots:</p>
+<pre><code>
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: CCBot
+</code></pre>
+<p>If any of these have <code>Disallow: /</code> next to them, you're invisible to that specific engine — full stop, no amount of great content fixes this.</p>
+<p>This is more common than it sounds like it should be. A few platform gotchas worth knowing:</p>
+<ul>
+<li><b>WordPress</b>: some SEO plugins add a "block all bots except known search engines" rule by default, which silently catches AI crawlers too</li>
+<li><b>Shopify / Webflow</b>: theme-level bot blocking exists on some templates and isn't always obvious from the dashboard</li>
+<li><b>Cloudflare</b>: there's an edge-level "Block AI Bots" toggle that's easy to enable during a routine security pass and forget about — this blocks at the network edge, so it won't even show up if you only check your site's own <code>robots.txt</code> file</li>
+</ul>
+<p>Fix is simple once you know: explicitly allow those five user-agents, or remove whatever blanket rule is catching them.</p>
+<h2>2. Structured data — give LLMs the parsed version, not the raw HTML</h2>
+<p>LLMs prioritize structured, unambiguous data over inferring meaning from raw HTML. JSON-LD is the practical format. Six schema types cover almost everything that matters for AI citability:</p>
+<table style="width:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;margin:16px 0;">
+<tr><th style="text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);">Schema</th><th style="text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);">Why it matters</th></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid var(--line);"><code>Organization</code></td><td style="padding:8px 10px;border-bottom:1px solid var(--line);">Establishes who you are on your homepage</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid var(--line);"><code>Article</code> / <code>BlogPosting</code></td><td style="padding:8px 10px;border-bottom:1px solid var(--line);">Attribution + dates for content pieces</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid var(--line);"><code>Product</code></td><td style="padding:8px 10px;border-bottom:1px solid var(--line);">Critical if you want ChatGPT Shopping / Google Shopping visibility</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid var(--line);"><code>FAQPage</code></td><td style="padding:8px 10px;border-bottom:1px solid var(--line);">Direct Q&amp;A structure — the single most-quoted schema type</td></tr>
+<tr><td style="padding:8px 10px;border-bottom:1px solid var(--line);"><code>LocalBusiness</code></td><td style="padding:8px 10px;border-bottom:1px solid var(--line);">NAP + hours, if local citability matters to you</td></tr>
+<tr><td style="padding:8px 10px;"><code>BreadcrumbList</code></td><td style="padding:8px 10px;">Site hierarchy clarity</td></tr>
+</table>
+<p><code>FAQPage</code> deserves special attention. It's the schema type people skip most and the one LLMs quote most directly — because it's already shaped exactly like the answer an AI response wants to lift: a clear question, a clear answer, no interpretation needed.</p>
+<p>Minimal example:</p>
+<pre><code>
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;FAQPage&quot;,
+  &quot;mainEntity&quot;: [{
+    &quot;@type&quot;: &quot;Question&quot;,
+    &quot;name&quot;: &quot;Does GPTBot need to be explicitly allowed in robots.txt?&quot;,
+    &quot;acceptedAnswer&quot;: {
+      &quot;@type&quot;: &quot;Answer&quot;,
+      &quot;text&quot;: &quot;Yes — if your robots.txt has a blanket Disallow rule, GPTBot is blocked by default unless explicitly allowed.&quot;
+    }
+  }]
+}
+</code></pre>
+<p><b>One warning that matters more than people expect</b>: malformed JSON-LD is worse than no JSON-LD at all. A broken schema block can cause parsers to discard <em>all</em> structured data on that page, not just the invalid part. Always validate before shipping — Google's Rich Results Test or any JSON-LD linter takes 30 seconds and catches this before it costs you anything.</p>
+<h2>3. llms.txt — adopted faster than it's being read</h2>
+<p>Most guides will tell you to add <code>llms.txt</code> and imply citations follow. The data doesn't support that, so here is the honest version.</p>
+<p><code>llms.txt</code> is a sitemap written for AI models instead of search crawlers — a plain-text map of what your site is and where the important pages live, at your domain root (<code>yoursite.com/llms.txt</code>).</p>
+<p>What it does <b>not</b> do is get you cited. Ahrefs looked at 137,000 domains in May 2026 and found <b>97% of llms.txt files received zero requests</b>. Of the requests that did arrive, the largest single share was SEO audit tools (21.7%); GPTBot accounted for 4.51% and ClaudeBot for 0.80%. No major AI platform — OpenAI, Anthropic, Google — commits to parsing it in production, and OpenAI's crawler documentation doesn't mention it at all. Each of them points you back to <code>robots.txt</code>.</p>
+<p>That is the same <code>robots.txt</code> from section 1, which is why the order in this guide is the order it is: the gate is real, this is not.</p>
+<p>So why write one at all? Two honest reasons, neither of which is citations:</p>
+<ul>
+<li><b>Coding agents do read it.</b> Cursor, Copilot and similar tools use it to find your real docs instead of hallucinating an endpoint. If you ship an API or a library, this is a developer-experience feature, not an SEO one.</li>
+<li><b>It costs ten minutes and cannot hurt.</b> A correct file is cheap optionality if the convention does get adopted.</li>
+</ul>
+<p>Write it for that. If someone sells you <code>llms.txt</code> as an AI-visibility strategy, ask them for the request logs.</p>
+<h2>4. GEO content signals — what makes an LLM confidently quote you</h2>
+<p>Beyond access and markup, there are content-level signals that correlate with getting quoted instead of paraphrased-and-uncredited:</p>
+<ul>
+<li><b>Direct answers early</b> — the actual answer in the first 1-2 sentences of a section, not buried after three paragraphs of throat-clearing</li>
+<li><b>Hard numbers</b> — LLMs disproportionately quote statistics and specific figures over descriptive prose</li>
+<li><b>Information density</b> — cut the warm-up paragraph; AI search rewards density, not word count</li>
+<li><b>Entity clarity</b> — unambiguous naming of people, products, and concepts (don't make the model guess what "it" refers to three sentences back)</li>
+<li><b>Genuine uniqueness vs. the current top-10</b> — if your page says the same thing as the top 5 Google results in the same order, there's no reason for an LLM to prefer citing you specifically</li>
+</ul>
+<h2>5. Don't just write more — audit what you already have</h2>
+<p>Writing new content is expensive. Most established sites already have pages that are one edit away from being citable — a moved answer, an added stat, a tightened intro. Before writing anything new, it's worth scoring your existing top 10 pages against the checks above. Usually a few of them turn out to be 90% of the way there already.</p>
+<h2>6. Verify it's actually live, not just saved in a draft</h2>
+<p>The most common failure mode after doing all of the above correctly: none of it is actually deployed. Confirm <code>robots.txt</code> changes are live at <code>yoursite.com/robots.txt</code> (not just saved in your CMS), JSON-LD validates with zero errors in an actual validator, and <code>llms.txt</code> returns a 200, not a 404, at your domain root.</p>
+<p>That's the complete pass — crawler access is the gate, structured data is the fast win, content signals are the compounding work, and <code>llms.txt</code> is ten cheap minutes you should not expect citations from.</p>
+<p>One number to leave you with, from my own scan of the Tranco top 500: of the 327 sites that answered, <b>65 (20%) block at least one major AI crawler in robots.txt, and 35 block all five</b> — Facebook, Amazon, Reddit, TikTok, the NYT, the BBC, Reuters. Another 26 block at the CDN edge, where a robots.txt audit won't see it at all. The tool I used is <a href="https://github.com/STARS-BIT-ux/ai-crawler-check">open source</a> and the raw results are published, so you can re-run it against your own domain in about a second.</p>
+<div class="cta"><b>Want the structured, run-through-it version?</b> The full 30-point checklist plus a ready-to-fill llms.txt template is in the
+<a href="https://rentry.co/nexus-catalog">catalog</a> (crypto checkout, instant delivery).</div>
+<footer>
+  Mira Voss · <a href="index.html">home</a> · <a href="https://rentry.co/nexus-catalog">catalog</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Complete Guide to RAG Debugging</title>
+<meta name="description" content="A systematic five-stage pass through chunking, embeddings, retrieval, reranking, and generation to find where retrieval actually breaks.">
+<style>
+  :root { --ink:#1a1d23; --muted:#5c6470; --accent:#0d7a5f; --line:#d8dce3; --bg:#fff; --panel:#f5f7f9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8eaed; --muted:#9aa3ad;
+    --accent:#2fbf94; --line:#3a3f47; --bg:#16181d; --panel:#21242b; } }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--ink);
+    line-height:1.6; font-size:17px; max-width:720px; margin:0 auto; padding:40px 20px; }
+  .kicker { font-family:Arial,sans-serif; font-size:11px; letter-spacing:3px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+  h1 { font-size:28px; line-height:1.25; margin-bottom:20px; }
+  h2 { font-family:Arial,sans-serif; font-size:19px; margin:30px 0 10px; }
+  p { margin-bottom:14px; }
+  ul { margin:0 0 14px 22px; }
+  li { margin-bottom:4px; }
+  code { font-family:Consolas,monospace; font-size:14px; background:var(--panel);
+    padding:1px 6px; border-radius:4px; }
+  a { color:var(--accent); }
+  .cta { margin-top:32px; padding:20px; border:1.6px solid var(--accent); border-radius:10px; }
+  footer { margin-top:44px; padding-top:14px; border-top:1px solid var(--line);
+    font-family:Arial,sans-serif; font-size:12.5px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="kicker">AI Engineering</div>
+<h1>The Complete Guide to RAG Debugging: Find Where Retrieval Actually Breaks</h1>
+<p>"The answer is wrong" is not a diagnosis. It's a symptom that could come from five completely different places in a RAG pipeline — chunking, embeddings, retrieval, reranking, or generation — and the most common debugging mistake is jumping straight to the prompt when the actual break is two or three stages upstream.</p>
+<p>Here's a systematic pass through all five, in the order to actually check them.</p>
+<h2>Stage 1: Chunking</h2>
+<p>Before touching anything downstream, check the chunks themselves.</p>
+<ul>
+<li><b>Size vs. content structure</b> — is your chunk size a fixed number chosen arbitrarily, or does it respect actual content boundaries (paragraphs, sections, code blocks)? A fixed 500-token chunk that cuts a table in half produces a chunk that's structurally useless no matter how good your embedding model is.</li>
+<li><b>Overlap</b> — too little overlap loses context at boundaries; too much wastes embedding cost on duplicated tokens.</li>
+<li><b>Semantic boundaries</b> — does chunking respect where one idea ends and another begins, or does it just count characters?</li>
+<li><b>Structured data handling</b> — tables, code blocks, and lists often need different chunking logic than prose. A table chunked mid-row is a chunk with no usable meaning.</li>
+</ul>
+<p><b>Fast diagnostic</b>: pull up 10 random chunks from your index and read them cold, with no other context. If a chunk doesn't make sense on its own, it won't make sense to the retriever or the model either.</p>
+<h2>Stage 2: Embeddings</h2>
+<ul>
+<li><b>Domain match</b> — a general-purpose embedding model on highly domain-specific text (legal, medical, internal jargon-heavy docs) is a common silent quality ceiling.</li>
+<li><b>Version consistency</b> — if you've changed embedding models or versions, are ALL your vectors re-embedded, or is your index silently mixing two incompatible embedding spaces?</li>
+<li><b>Cache invalidation</b> — if chunks change but their embeddings don't get regenerated, you're retrieving against stale content.</li>
+</ul>
+<h2>Stage 3: Retrieval</h2>
+<p>This is where most people start debugging — reasonably, since it's the most visible stage — but it's stage 3, not stage 1, for a reason.</p>
+<ul>
+<li><b>Hybrid search</b> — pure vector similarity misses exact-match cases (product codes, specific names, acronyms) that keyword/BM25 search catches trivially.</li>
+<li><b>k tuning</b> — too low and you miss relevant chunks; too high and you dilute the context with noise.</li>
+<li><b>Metadata filtering</b> — is filtering applied before or after the similarity search? Applying it after can filter your top-k results down to fewer than k usable chunks.</li>
+<li><b>Adversarial query testing</b> — deliberately try queries phrased differently than your test set (typos, different terminology, indirect phrasing).</li>
+</ul>
+<p><b>Fast diagnostic</b>: for a failing query, print the raw retrieved chunks before they reach the model. Half the time, the generation is actually fine given what it received — the real bug is that retrieval handed it the wrong context in the first place.</p>
+<h2>Stage 4: Reranking</h2>
+<ul>
+<li><b>Is one even in the pipeline?</b> A lot of "RAG doesn't work well" reports trace back to no reranker at all.</li>
+<li><b>Evaluated separately</b> — has anyone actually measured whether it's helping vs. the base retriever's ordering?</li>
+<li><b>Diversity vs. score-stacking</b> — a reranker that just reinforces the top result's neighbors can reduce diversity in edge cases.</li>
+</ul>
+<h2>Stage 5: Generation</h2>
+<p>Only now — after chunking, embeddings, retrieval, and reranking are confirmed reasonable — does the generation stage become the likely suspect.</p>
+<ul>
+<li><b>Context-only instructions</b> — is the system prompt explicit that the model should answer ONLY from the provided context?</li>
+<li><b>Citation enforcement</b> — requiring the model to cite which chunk supports each claim makes hallucination structurally harder.</li>
+<li><b>"I don't know" as a valid output</b> — if your prompt doesn't explicitly permit this, the model will often produce a plausible-sounding answer from thin context.</li>
+<li><b>Context ordering</b> — some models weight earlier or later context differently ("lost in the middle" effects).</li>
+</ul>
+<h2>Putting it together</h2>
+<p>Next time "the answer is wrong" comes in, resist the urge to reach for the prompt first. Print the retrieved chunks. If they're wrong or irrelevant, the bug is upstream (chunking/embeddings/retrieval), and no amount of prompt engineering fixes it. If they're right and the answer is still wrong, now you're actually in generation-stage debugging — with three other stages already ruled out instead of guessed past.</p>
+<div class="cta"><b>Want the structured, run-through-it version?</b> A 24-point checklist walking all five stages (framework-agnostic) is in the
+<a href="https://rentry.co/nexus-catalog">catalog</a> (crypto checkout, instant delivery).</div>
+<footer>
+  Mira Voss · <a href="index.html">home</a> · <a href="https://rentry.co/nexus-catalog">catalog</a>
+</footer>
+</body>
+</html>
