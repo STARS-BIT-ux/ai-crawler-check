@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stablecoin Lending Yields Right Now — Aave &amp; Compound, Live Snapshot</title>
+<meta name="description" content="Live snapshot of USDC/USDT/DAI lending rates on Aave v3 and Compound v3 across chains, with real TVL and the math on how much capital $100 in profit actually needs.">
+<style>
+  :root { --ink:#1a1d23; --muted:#5c6470; --accent:#0d7a5f; --line:#d8dce3; --bg:#fff; --panel:#f5f7f9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8eaed; --muted:#9aa3ad;
+    --accent:#2fbf94; --line:#3a3f47; --bg:#16181d; --panel:#21242b; } }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--ink);
+    line-height:1.6; font-size:17px; max-width:720px; margin:0 auto; padding:40px 20px; }
+  .kicker { font-family:Arial,sans-serif; font-size:11px; letter-spacing:3px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+  h1 { font-size:28px; line-height:1.25; margin-bottom:10px; }
+  .meta { color:var(--muted); font-size:14px; font-family:Arial,sans-serif; margin-bottom:28px; }
+  h2 { font-family:Arial,sans-serif; font-size:19px; margin:30px 0 10px; }
+  p { margin-bottom:14px; }
+  table { width:100%; border-collapse:collapse; font-family:Arial,sans-serif;
+    font-size:14px; margin:16px 0; }
+  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); }
+  td.r,th.r { text-align:right; }
+  code { font-family:Consolas,monospace; font-size:14px; background:var(--panel);
+    padding:1px 6px; border-radius:4px; }
+  .note { font-size:14px; color:var(--muted); border-left:3px solid var(--line);
+    padding-left:14px; margin:16px 0; }
+  a { color:var(--accent); }
+  .cta { margin-top:32px; padding:20px; border:1.6px solid var(--accent); border-radius:10px; }
+  footer { margin-top:44px; padding-top:14px; border-top:1px solid var(--line);
+    font-family:Arial,sans-serif; font-size:12.5px; color:var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Stablecoin Lending Yields Right Now — Aave & Compound, Live Snapshot",
+  "author": {"@type": "Person", "name": "Mira Voss"},
+  "datePublished": "2026-07-28",
+  "about": "Live USDC/USDT/DAI lending rates on Aave v3 and Compound v3"
+}
+</script>
+</head>
+<body>
+
+<div class="kicker">Live Snapshot · July 28, 2026</div>
+<h1>Stablecoin Lending Yields Right Now — and What It Actually Takes to Earn $100 From Them</h1>
+<p class="meta">Source: DefiLlama yields API · pools with &gt;$5M TVL only · read-only, reproducible</p>
+
+<p>"Just lend your stablecoins, it's free money" undersells how much capital that
+actually takes. Here's the real snapshot, and the arithmetic nobody does out loud.</p>
+
+<h2>Live rates (&gt;$5M TVL pools only)</h2>
+<table>
+<tr><th>Protocol</th><th>Chain</th><th>Asset</th><th class="r">APY</th><th class="r">TVL</th></tr>
+<tr><td>Aave v3</td><td>Ethereum</td><td>USDC</td><td class="r">4.65%</td><td class="r">$65M</td></tr>
+<tr><td>Aave v3</td><td>Ethereum</td><td>USDT</td><td class="r">3.99%</td><td class="r">$77M</td></tr>
+<tr><td>Aave v3</td><td>Base</td><td>USDC</td><td class="r">3.45%</td><td class="r">$21.5M</td></tr>
+<tr><td>Aave v3</td><td>Ethereum</td><td>DAI</td><td class="r">3.30%</td><td class="r">$11.2M</td></tr>
+<tr><td>Compound v3</td><td>Ethereum</td><td>USDC</td><td class="r">3.23%</td><td class="r">$44.5M</td></tr>
+<tr><td>Compound v3</td><td>Ethereum</td><td>USDT</td><td class="r">3.22%</td><td class="r">$23.5M</td></tr>
+<tr><td>Aave v3</td><td>Ethereum</td><td>USDC (largest pool)</td><td class="r">3.15%</td><td class="r">$221M</td></tr>
+<tr><td>Aave v3</td><td>Ethereum</td><td>USDT (largest pool)</td><td class="r">2.67%</td><td class="r">$524M</td></tr>
+</table>
+<p class="note">Small-TVL pools (under ~$10M) sometimes show inflated APY from temporary
+liquidity-mining incentives that expire without notice. The $65M–$524M pools above are the
+ones actually worth reading as "the real rate."</p>
+
+<h2>The arithmetic nobody does out loud</h2>
+<p>At a representative 4.65% APY (Aave v3, Ethereum, $65M pool — a large, established pool,
+not a thin incentivized one):</p>
+<table>
+<tr><th>Target profit</th><th>Time horizon</th><th class="r">Principal required</th></tr>
+<tr><td>$100</td><td>90 days</td><td class="r">~$8,700</td></tr>
+<tr><td>$100</td><td>180 days</td><td class="r">~$4,360</td></tr>
+<tr><td>$100</td><td>1 year</td><td class="r">~$2,150</td></tr>
+</table>
+<p>Lending yield is not a fast way to make money — it's a fine way to not lose money to
+inflation on capital that would otherwise sit idle. The two are frequently conflated in
+"passive income" content, and the conflation is where people get disappointed.</p>
+
+<h2>What actually carries risk here</h2>
+<ul style="margin:0 0 14px 22px;">
+<li style="margin-bottom:4px;">Smart-contract risk — Aave and Compound are both heavily audited
+and have run for years without a loss-causing exploit at the core protocol level, but "heavily
+audited" is not "zero risk."</li>
+<li style="margin-bottom:4px;">Stablecoin depeg risk — you're exposed to whichever stablecoin
+you lend, not just the protocol.</li>
+<li style="margin-bottom:4px;">Rate volatility — APY floats with utilization; the number today
+is not a forward guarantee.</li>
+</ul>
+
+<h2>Methodology</h2>
+<p>Pulled live from the <a href="https://defillama.com/yields">DefiLlama yields API</a>
+(<code>yields.llama.fi/pools</code>), filtered to Aave v3 / Compound v3 USDC, USDT, and DAI
+pools with over $5M TVL, July 28, 2026. Fully reproducible with a single GET request — no API
+key required.</p>
+
+<div class="cta"><b>Want the full comparison spreadsheet?</b> The
+<a href="https://rentry.co/nexus-catalog">catalog</a> has a companion LLM Cost Calculator and
+other verified-formula tools — same "show the actual math" approach applied elsewhere.</div>
+
+<footer>
+  Mira Voss · <a href="index.html">home</a> · <a href="https://rentry.co/nexus-catalog">catalog</a>
+  · snapshot taken July 28, 2026; DeFi rates change constantly — re-pull before acting on this.
+</footer>
+
+</body>
+</html>
