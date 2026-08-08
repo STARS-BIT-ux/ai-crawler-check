@@ -71,9 +71,11 @@ AI search).
 
 Ready-to-paste robots.txt snippets for WordPress, Shopify, Webflow,
 custom/Nginx sites, and the Cloudflare fix are in the
-[llms.txt + AI Crawler Setup Kit](https://rentry.co/nexus-catalog) — along with a
-fill-in llms.txt template. The full 30-point AI visibility checklist is
-[here](https://rentry.co/nexus-catalog) (full catalog, crypto checkout, instant delivery).
+[llms.txt + AI Crawler Setup Kit](https://miravoss.gumroad.com/l/llms-txt-ai-crawler-setup-kit) ($5) — along with
+a fill-in llms.txt template. The wider AI Search Visibility Bundle is
+[here](https://miravoss.gumroad.com/l/gsscsv) ($19), and the [full catalog](https://miravoss.gumroad.com) has everything else.
+
+Not sure where you stand? The [10-Minute AI Visibility Check](https://miravoss.gumroad.com/l/free-ai-visibility-check) is free.
 
 ## License
 
