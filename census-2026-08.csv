@@ -1,0 +1,2001 @@
+rank,host,in_denominator,robots_status,gptbot_blocked,claudebot_blocked,perplexitybot_blocked,google_extended_blocked,ccbot_blocked,blocks_any,blocks_all,edge_block_suspected,has_llms_txt
+1,google.com,1,found,0,0,0,0,0,0,0,0,0
+2,gtld-servers.net,0,unreachable,0,0,0,0,0,,,,
+3,cloudflare.com,1,found,0,0,0,0,0,0,0,0,1
+4,gstatic.com,1,found,0,0,0,0,0,0,0,0,0
+5,facebook.com,1,found,0,0,0,0,1,1,0,0,0
+6,microsoft.com,1,found,0,0,0,0,0,0,0,0,0
+7,googleapis.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+8,amazonaws.com,1,found,0,0,0,0,0,0,0,0,0
+9,youtube.com,1,found,0,0,0,0,0,0,0,0,0
+10,apple.com,1,found,0,0,0,0,0,0,0,0,0
+11,instagram.com,1,found,1,1,1,1,1,1,1,0,0
+12,ezviz7.com,0,unreachable,0,0,0,0,0,,,,
+13,mail.ru,1,found,1,1,1,1,1,1,1,0,0
+14,akamai.net,0,unreachable,0,0,0,0,0,,,,
+15,fbcdn.net,1,found,1,1,1,1,1,1,1,0,0
+16,twitter.com,1,found,1,1,1,0,1,1,0,0,0
+17,dzen.ru,1,found,0,0,0,0,0,0,0,0,1
+18,linkedin.com,1,found,0,0,0,0,0,0,0,0,0
+19,googletagmanager.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+20,googlevideo.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+21,office.com,1,found,0,0,0,0,0,0,0,0,1
+22,live.com,1,absent (HTTP 417),0,0,0,0,0,0,0,0,0
+23,hicloudcam.com,0,unreachable,0,0,0,0,0,,,,
+24,akamaiedge.net,0,unreachable,0,0,0,0,0,,,,
+25,amazon.com,1,found,1,1,1,1,1,1,1,0,0
+26,akadns.net,0,unreachable,0,0,0,0,0,,,,
+27,azure.com,1,found,0,0,0,0,0,0,0,0,1
+28,domaincontrol.com,0,unreachable,0,0,0,0,0,,,,
+29,wikipedia.org,1,found,0,0,0,0,0,0,0,0,0
+30,github.com,1,found,0,0,0,0,0,0,0,0,1
+31,bing.com,1,found,0,0,0,0,0,0,0,0,0
+32,whatsapp.net,1,found,1,1,1,1,0,1,0,0,0
+33,fastly.net,1,found,0,0,0,0,0,0,0,0,1
+34,doubleclick.net,1,found,0,0,0,0,0,0,0,0,0
+35,apple-dns.net,0,unreachable,0,0,0,0,0,,,,
+36,googleusercontent.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+37,appsflyersdk.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+38,trafficmanager.net,0,unreachable,0,0,0,0,0,,,,
+39,microsoftonline.com,0,unreachable,0,0,0,0,0,,,,
+40,aaplimg.com,0,unreachable,0,0,0,0,0,,,,
+41,netflix.com,1,found,0,0,0,0,1,1,0,0,0
+42,office.net,0,unreachable,0,0,0,0,0,,,,
+43,wordpress.org,1,found,0,0,0,0,0,0,0,0,1
+44,sharepoint.com,0,unreachable,0,0,0,0,0,,,,
+45,digicert.com,1,found,0,0,0,0,0,0,0,0,1
+46,youtu.be,1,found,0,0,0,0,0,0,0,0,0
+47,skype.com,1,found,0,0,0,0,0,0,0,0,0
+48,ripn.net,0,unreachable,0,0,0,0,0,,,,
+49,gandi.net,1,found,0,0,0,0,0,0,0,0,0
+50,cloudfront.net,0,unreachable,0,0,0,0,0,,,,
+51,pinterest.com,1,found,1,1,1,1,1,1,1,1,0
+52,goo.gl,1,absent (HTTP 400),0,0,0,0,0,0,0,0,0
+53,x.com,1,found,1,1,1,0,1,1,0,0,0
+54,roblox.com,1,found,0,0,0,0,0,0,0,0,0
+55,cloud.microsoft,1,found,0,0,0,0,0,0,0,0,0
+56,whatsapp.com,1,found,1,1,1,1,0,1,0,0,0
+57,windowsupdate.com,0,unreachable,0,0,0,0,0,,,,
+58,icloud.com,1,found,0,0,0,0,0,0,0,0,0
+59,yahoo.com,1,found,1,1,1,1,1,1,1,0,0
+60,msn.com,1,found,1,1,1,1,1,1,1,0,0
+61,tiktok.com,1,found,1,1,1,1,1,1,1,0,0
+62,googlesyndication.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+63,googledomains.com,1,found,0,0,0,0,0,0,0,0,0
+64,cloudflare.net,1,found,0,0,0,0,0,0,0,1,0
+65,spotify.com,1,found,0,0,0,0,0,0,0,0,0
+66,adobe.com,1,found,0,0,0,0,0,0,0,0,1
+67,windows.net,1,found,0,0,0,0,0,0,0,0,0
+68,chatgpt.com,1,found,0,0,1,1,1,1,0,1,0
+69,ntp.org,1,found,0,0,0,0,0,0,0,0,0
+70,wa.me,1,found,0,0,0,0,0,0,0,0,0
+71,gvt1.com,0,unreachable,0,0,0,0,0,,,,
+72,vimeo.com,1,found,1,1,0,1,1,1,0,0,0
+73,myfritz.net,1,found,1,1,1,1,1,1,1,0,0
+74,tiktokcdn.com,0,unreachable,0,0,0,0,0,,,,
+75,akam.net,0,unreachable,0,0,0,0,0,,,,
+76,gvt2.com,0,unreachable,0,0,0,0,0,,,,
+77,zoom.us,1,found,0,0,0,0,0,0,0,0,0
+78,gwfb.net,0,unreachable,0,0,0,0,0,,,,
+79,cdninstagram.com,0,unreachable,0,0,0,0,0,,,,
+80,edgekey.net,0,unreachable,0,0,0,0,0,,,,
+81,nginx.org,1,found,0,0,0,0,0,0,0,0,0
+82,baidu.com,1,found,1,1,1,1,1,1,1,0,0
+83,qq.com,1,found,0,0,0,0,0,0,0,0,0
+84,pv-cdn.net,0,unreachable,0,0,0,0,0,,,,
+85,windows.com,1,found,0,0,0,0,0,0,0,0,0
+86,ytimg.com,0,unreachable,0,0,0,0,0,,,,
+87,tiktokv.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+88,yandex.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+89,workers.dev,1,found,0,0,0,0,0,0,0,0,0
+90,cloudflare-dns.com,1,found,0,0,0,0,0,0,0,0,0
+91,mozilla.org,1,found,0,0,0,0,0,0,0,0,0
+92,opera.com,1,found,0,0,0,0,0,0,0,0,1
+93,nic.ru,1,found,0,0,0,0,0,0,0,0,0
+94,samsung.com,1,found,0,0,0,0,0,0,0,0,1
+95,nginx.com,1,found,0,0,0,0,0,0,0,0,0
+96,reddit.com,1,found,1,1,1,1,1,1,1,1,0
+97,yandex.ru,1,found,0,0,0,0,0,0,0,0,0
+98,edgesuite.net,0,unreachable,0,0,0,0,0,,,,
+99,wordpress.com,1,found,0,0,0,0,0,0,0,0,1
+100,sentry.io,1,found,0,0,0,0,0,0,0,0,1
+101,ui.com,1,found,0,0,0,0,0,0,0,0,0
+102,root-servers.net,0,unreachable,0,0,0,0,0,,,,
+103,bit.ly,1,found,0,0,0,0,0,0,0,0,0
+104,t.me,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+105,google-analytics.com,1,found,0,0,0,0,0,0,0,0,0
+106,discord.gg,1,found,0,0,0,0,0,0,0,0,0
+107,office365.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+108,okcdn.ru,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+109,blogspot.com,1,found,0,0,0,0,0,0,0,0,0
+110,a2z.com,0,unreachable,0,0,0,0,0,,,,
+111,europa.eu,1,found,0,0,0,0,0,0,0,0,0
+112,b-cdn.net,1,found,0,0,0,0,0,0,0,0,0
+113,criteo.com,1,found,0,0,0,0,0,0,0,0,0
+114,vk.com,1,found,0,0,0,0,0,0,0,0,0
+115,trbcdn.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+116,github.io,1,found,0,0,0,0,0,0,0,0,0
+117,apache.org,1,found,0,0,0,0,0,0,0,0,0
+118,app-measurement.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+119,snapchat.com,1,found,1,1,0,1,1,1,0,0,0
+120,unity3d.com,1,found,0,0,0,0,0,0,0,1,0
+121,googleadservices.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+122,amazon-adsystem.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+123,registrar-servers.com,0,unreachable,0,0,0,0,0,,,,
+124,vedcdnlb.com,0,unreachable,0,0,0,0,0,,,,
+125,nih.gov,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+126,amazonvideo.com,1,found,0,0,1,0,1,1,0,0,0
+127,cdn77.org,0,unreachable,0,0,0,0,0,,,,
+128,app-analytics-services.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+129,outlook.com,1,absent (HTTP 417),0,0,0,0,0,0,0,0,0
+130,f5.com,1,found,0,0,0,0,0,0,0,0,0
+131,prodregistryv2.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+132,dns.google,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+133,amazon.dev,0,unreachable,0,0,0,0,0,,,,
+134,forms.gle,1,absent (HTTP 400),0,0,0,0,0,0,0,0,0
+135,godaddy.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+136,msftncsi.com,0,unreachable,0,0,0,0,0,,,,
+137,gravatar.com,1,found,1,0,0,1,1,1,0,0,1
+138,dropbox.com,1,found,0,0,0,0,0,0,0,0,1
+139,intuit.com,1,found,0,0,0,0,0,0,0,0,0
+140,kaspersky.com,1,found,0,0,0,0,0,0,0,0,1
+141,dnsowl.com,0,unreachable,0,0,0,0,0,,,,
+142,iiko.it,0,unreachable,0,0,0,0,0,,,,
+143,static.microsoft,0,unreachable,0,0,0,0,0,,,,
+144,miit.gov.cn,0,unreachable,0,0,0,0,0,,,,
+145,yccdn.ru,0,unreachable,0,0,0,0,0,,,,
+146,archive.org,1,found,0,0,0,0,0,0,0,0,0
+147,reg.ru,1,found,0,0,0,0,0,0,0,0,1
+148,xiaomi.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+149,steamserver.net,0,unreachable,0,0,0,0,0,,,,
+150,vkuserphoto.ru,1,absent (HTTP 418),0,0,0,0,0,0,0,0,0
+151,tumblr.com,1,found,0,1,0,1,1,1,0,0,0
+152,nytimes.com,1,found,0,0,0,0,0,0,0,1,0
+153,epicgames.com,1,found,0,0,0,0,0,0,0,0,0
+154,azurefd.net,0,unreachable,0,0,0,0,0,,,,
+155,discord.com,1,found,0,0,0,0,0,0,0,0,0
+156,one.one,1,found,0,0,0,0,0,0,0,0,1
+157,paypal.com,1,found,0,0,0,0,0,0,0,0,1
+158,dns-parking.com,0,unreachable,0,0,0,0,0,,,,
+159,spo-msedge.net,0,unreachable,0,0,0,0,0,,,,
+160,ax-msedge.net,0,unreachable,0,0,0,0,0,,,,
+161,adtrafficquality.google,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+162,applovin.com,1,found,0,0,0,0,0,0,0,0,0
+163,msftconnecttest.com,0,unreachable,0,0,0,0,0,,,,
+164,3gppnetwork.org,0,unreachable,0,0,0,0,0,,,,
+165,nflxso.net,0,unreachable,0,0,0,0,0,,,,
+166,aliyuncs.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+167,adobe.io,1,found,0,0,0,0,0,0,0,0,0
+168,shopify.com,1,found,0,0,0,0,0,0,0,0,1
+169,ggpht.com,0,unreachable,0,0,0,0,0,,,,
+170,aws.dev,0,unreachable,0,0,0,0,0,,,,
+171,macromedia.com,0,unreachable,0,0,0,0,0,,,,
+172,mts.ru,1,found,0,0,0,0,0,0,0,0,0
+173,flickr.com,1,found,1,1,0,1,1,1,0,0,0
+174,mailinabox.email,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+175,azurewebsites.net,0,unreachable,0,0,0,0,0,,,,
+176,tm-azurefd.net,0,unreachable,0,0,0,0,0,,,,
+177,jomodns.com,0,unreachable,0,0,0,0,0,,,,
+178,hichina.com,0,unreachable,0,0,0,0,0,,,,
+179,soundcloud.com,1,found,0,0,0,0,0,0,0,0,0
+180,cdn-apple.com,0,unreachable,0,0,0,0,0,,,,
+181,webex.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,1
+182,w3.org,1,found,0,0,0,0,0,0,0,0,0
+183,userapi.com,1,found,0,0,0,0,0,0,0,0,0
+184,medium.com,1,found,1,1,0,0,0,1,0,1,0
+185,example.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+186,t-online.de,1,found,1,1,1,1,1,1,1,0,0
+187,bytefcdn-oversea.com,0,unreachable,0,0,0,0,0,,,,
+188,wac-msedge.net,0,unreachable,0,0,0,0,0,,,,
+189,theguardian.com,1,found,0,1,1,0,1,1,0,0,0
+190,sfx.ms,0,unreachable,0,0,0,0,0,,,,
+191,cnn.com,1,found,1,1,1,1,1,1,1,0,0
+192,vungle.com,1,found,0,0,0,0,0,0,0,0,0
+193,ebay.com,1,found,1,1,1,0,1,1,0,0,0
+194,taboola.com,1,found,0,0,0,0,0,0,0,0,1
+195,rubiconproject.com,1,found,0,0,0,0,0,0,0,0,1
+196,oracle.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+197,forbes.com,1,found,0,0,0,0,0,0,0,0,1
+198,shifen.com,0,unreachable,0,0,0,0,0,,,,
+199,creativecommons.org,1,found,0,0,0,0,0,0,0,0,0
+200,nic.direct,1,found,0,0,0,0,0,0,0,0,0
+201,msedge.net,0,unreachable,0,0,0,0,0,,,,
+202,doi.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+203,telekom.de,1,found,0,0,0,0,0,0,0,0,0
+204,ttdns2.com,0,unreachable,0,0,0,0,0,,,,
+205,ozon.ru,1,absent (HTTP 307),0,0,0,0,0,0,0,0,0
+206,edgcdn.net,0,unreachable,0,0,0,0,0,,,,
+207,bbc.com,1,found,1,1,1,1,1,1,1,0,0
+208,openai.com,1,found,0,0,0,0,0,0,0,0,0
+209,pki.goog,1,found,0,0,0,0,0,0,0,0,0
+210,cpanel.net,1,found,0,0,0,0,0,0,0,0,0
+211,weather.com,1,found,1,1,1,1,1,1,1,0,1
+212,comcast.net,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+213,twitch.tv,1,found,0,0,0,0,0,0,0,0,0
+214,sciencedirect.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+215,youtube-nocookie.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+216,gmail.com,1,found,0,0,0,0,0,0,0,0,0
+217,nominetdns.uk,0,unreachable,0,0,0,0,0,,,,
+218,playstation.net,0,unreachable,0,0,0,0,0,,,,
+219,researchgate.net,1,found,0,0,0,0,0,0,0,0,0
+220,avast.com,1,found,0,0,0,0,0,0,0,0,1
+221,adsafeprotected.com,1,found,0,0,0,0,0,0,0,0,1
+222,nist.gov,1,found,0,0,0,0,0,0,0,0,0
+223,miui.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+224,t.co,1,found,1,1,1,1,1,1,1,0,0
+225,mit.edu,1,found,0,0,0,0,0,0,0,0,0
+226,bbc.co.uk,1,found,1,1,1,1,1,1,1,0,0
+227,sourceforge.net,1,found,0,0,0,0,0,0,0,1,1
+228,azureedge.net,0,unreachable,0,0,0,0,0,,,,
+229,akamaized.net,0,unreachable,0,0,0,0,0,,,,
+230,fastly-edge.com,0,unreachable,0,0,0,0,0,,,,
+231,pubmatic.com,1,found,0,0,0,0,0,0,0,0,1
+232,canva.com,1,found,1,1,0,0,1,1,0,1,0
+233,telekom.net,1,found,0,0,0,0,0,0,0,0,0
+234,ubuntu.com,1,found,0,0,0,0,0,0,0,0,0
+235,lsrelayaccess.com,0,unreachable,0,0,0,0,0,,,,
+236,ipv4only.arpa,0,unreachable,0,0,0,0,0,,,,
+237,android.com,1,found,0,0,0,0,0,0,0,0,0
+238,shopifysvc.com,0,unreachable,0,0,0,0,0,,,,
+239,spov-msedge.net,0,unreachable,0,0,0,0,0,,,,
+240,stripe.com,1,found,0,0,0,0,0,0,0,0,1
+241,adsrvr.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+242,oxylabs.io,1,found,0,0,0,0,0,0,0,0,1
+243,cisco.com,1,found,0,0,0,0,0,0,0,1,1
+244,imdb.com,1,found,1,1,1,1,1,1,1,0,0
+245,telegram.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+246,roku.com,1,found,0,0,0,0,0,0,0,0,0
+247,scorecardresearch.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+248,wikimedia.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+249,cdngslb.com,0,unreachable,0,0,0,0,0,,,,
+250,who.int,1,found,0,0,0,0,1,1,0,0,0
+251,doubleverify.com,1,found,0,0,0,0,0,0,0,0,0
+252,wsdvs.com,0,unreachable,0,0,0,0,0,,,,
+253,health.mil,1,found,0,0,0,0,0,0,0,0,0
+254,adnxs.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+255,hubspot.com,1,found,0,0,0,0,0,0,0,0,1
+256,wildberries.ru,1,absent (HTTP 498),0,0,0,0,0,0,0,0,0
+257,pages.dev,1,found,0,0,0,0,0,0,0,0,0
+258,virginm.net,0,unreachable,0,0,0,0,0,,,,
+259,linktr.ee,1,found,0,0,0,0,0,0,0,0,1
+260,ksyuncdn.com,0,unreachable,0,0,0,0,0,,,,
+261,meraki.com,1,found,1,1,1,1,0,1,0,0,0
+262,wixsite.com,0,unreachable,0,0,0,0,0,,,,
+263,myshopify.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+264,afternic.com,1,found,0,0,0,0,0,0,0,0,0
+265,facebook.net,0,unreachable,0,0,0,0,0,,,,
+266,booking.com,1,found,0,0,0,0,0,0,0,0,0
+267,vecdnlb.com,0,unreachable,0,0,0,0,0,,,,
+268,forter.com,1,found,0,0,0,0,1,1,0,0,1
+269,deere.com,1,found,0,0,0,0,0,0,0,0,0
+270,launchpad.net,1,found,0,0,0,0,0,0,0,1,0
+271,alibabadns.com,0,unreachable,0,0,0,0,0,,,,
+272,libp2p.direct,0,unreachable,0,0,0,0,0,,,,
+273,omtrdc.net,0,unreachable,0,0,0,0,0,,,,
+274,hcaptcha.com,1,found,0,0,0,0,0,0,0,0,1
+275,ibm.com,1,found,0,0,0,0,0,0,0,1,0
+276,arubanetworks.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+277,springer.com,1,found,0,0,0,0,0,0,0,0,0
+278,hp.com,1,found,0,0,0,0,0,0,0,0,0
+279,alidns.com,1,found,0,0,0,0,0,0,0,0,1
+280,lencr.org,1,found,0,0,0,0,0,0,0,0,0
+281,dropcatch.com,1,found,0,0,0,0,0,0,0,0,0
+282,ampproject.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+283,tinyurl.com,1,found,0,0,0,0,0,0,0,0,0
+284,reuters.com,1,found,1,1,1,1,1,1,1,0,0
+285,ttvnw.net,0,unreachable,0,0,0,0,0,,,,
+286,capcutapi.com,0,unreachable,0,0,0,0,0,,,,
+287,tiktokcdn-us.com,0,unreachable,0,0,0,0,0,,,,
+288,salesforce.com,1,found,0,0,0,0,0,0,0,1,1
+289,mozilla.com,1,found,0,0,0,0,0,0,0,0,0
+290,www.gov.uk,1,found,0,0,0,0,0,0,0,0,0
+291,inmobi.com,1,found,0,0,0,0,0,0,0,0,0
+292,mangosip.ru,0,unreachable,0,0,0,0,0,,,,
+293,nature.com,1,found,1,1,1,1,1,1,1,0,0
+294,alibaba.com,1,found,1,0,0,1,0,1,0,0,0
+295,jsdelivr.net,0,unreachable,0,0,0,0,0,,,,
+296,media-amazon.com,0,unreachable,0,0,0,0,0,,,,
+297,samsungcloud.com,1,found,0,0,0,0,0,0,0,0,0
+298,mzstatic.com,1,found,0,0,0,0,0,0,0,0,0
+299,googleblog.com,1,found,0,0,0,0,0,0,0,0,0
+300,telecid.ru,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+301,harvard.edu,1,found,0,0,0,0,0,0,0,0,0
+302,steampowered.com,1,found,0,0,0,0,0,0,0,0,0
+303,casalemedia.com,1,found,0,0,0,0,0,0,0,0,0
+304,weibo.com,1,found,1,1,1,1,1,1,1,0,0
+305,byteoversea.net,0,unreachable,0,0,0,0,0,,,,
+306,appsflyer.com,1,found,0,0,0,0,0,0,0,0,0
+307,shalltry.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+308,php.net,1,found,0,0,0,0,0,0,0,0,0
+309,dnsmadeeasy.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+310,samsungqbe.com,0,unreachable,0,0,0,0,0,,,,
+311,etsy.com,1,found,0,0,0,0,0,0,0,0,0
+312,mtgglobals.com,0,unreachable,0,0,0,0,0,,,,
+313,ok.ru,1,found,0,0,0,0,0,0,0,0,0
+314,amazon.co.uk,1,found,1,1,1,1,1,1,1,0,0
+315,duckdns.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+316,wiley.com,1,found,0,0,0,0,0,0,0,1,0
+317,zendesk.com,1,found,0,0,0,0,0,0,0,0,1
+318,clarity.ms,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+319,heytapmobile.com,0,unreachable,0,0,0,0,0,,,,
+320,media.net,1,found,0,0,0,0,0,0,0,0,0
+321,weebly.com,1,found,0,0,0,0,0,0,0,0,0
+322,nr-data.net,0,unreachable,0,0,0,0,0,,,,
+323,autodesk.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+324,launchdarkly.com,1,found,0,0,0,0,0,0,0,0,0
+325,vk.ru,1,found,0,0,0,0,0,0,0,0,0
+326,drom.ru,1,found,0,0,0,0,0,0,0,0,0
+327,gnu.org,0,unreachable,0,0,0,0,0,,,,
+328,dell.com,1,found,0,0,0,0,0,0,0,0,1
+329,smartadserver.com,1,found,0,0,0,0,0,0,0,0,0
+330,name-services.com,0,unreachable,0,0,0,0,0,,,,
+331,aliyun.com,1,found,0,0,0,0,0,0,0,0,0
+332,namebrightdns.com,0,unreachable,0,0,0,0,0,,,,
+333,datadoghq.com,1,found,0,0,0,0,0,0,0,0,1
+334,crashlytics.com,1,found,0,0,0,0,0,0,0,0,0
+335,akamaihd.net,0,unreachable,0,0,0,0,0,,,,
+336,douyincdn.com,0,unreachable,0,0,0,0,0,,,,
+337,debian.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+338,rbxcdn.com,0,unreachable,0,0,0,0,0,,,,
+339,checkpoint.com,1,found,0,0,0,0,0,0,0,0,0
+340,issuu.com,1,found,0,0,0,0,0,0,0,0,0
+341,opendns.com,1,found,0,0,0,0,0,0,0,0,0
+342,ea.com,1,found,0,0,0,0,0,0,0,0,0
+343,bilibili.com,1,found,0,0,0,0,0,0,0,0,1
+344,un.org,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+345,cdc.gov,1,found,0,0,0,0,0,0,0,1,0
+346,inner-active.mobi,0,unreachable,0,0,0,0,0,,,,
+347,quickconnect.to,1,found,0,0,0,0,0,0,0,0,0
+348,nasa.gov,1,found,0,0,0,0,0,0,0,0,0
+349,cdnbuild.net,0,unreachable,0,0,0,0,0,,,,
+350,wsj.com,1,found,1,1,1,1,1,1,1,0,0
+351,enacdn.net,0,unreachable,0,0,0,0,0,,,,
+352,slack.com,1,found,0,0,0,0,0,0,0,0,1
+353,naver.com,1,found,1,1,1,1,1,1,1,0,0
+354,trustpilot.com,1,found,0,0,0,0,1,1,0,0,0
+355,allawnos.com,0,unreachable,0,0,0,0,0,,,,
+356,trueconf.net,1,found,0,0,0,0,0,0,0,0,0
+357,washingtonpost.com,1,found,0,1,1,0,1,1,0,0,0
+358,ezvizlife.com,0,unreachable,0,0,0,0,0,,,,
+359,selectel.ru,1,found,0,0,0,0,0,0,0,0,1
+360,bloomberg.com,1,found,1,1,1,1,1,1,1,0,0
+361,xboxlive.com,1,found,0,0,0,0,0,0,0,0,0
+362,rocket-cdn.com,0,unreachable,0,0,0,0,0,,,,
+363,tbcache.com,0,unreachable,0,0,0,0,0,,,,
+364,google.cn,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+365,stanford.edu,1,found,0,0,0,0,0,0,0,0,0
+366,live-video.net,0,unreachable,0,0,0,0,0,,,,
+367,tradingview.com,1,found,0,0,0,0,0,0,0,0,0
+368,nvidia.com,1,found,0,0,0,0,0,0,0,0,1
+369,dotaplabs.net,0,unreachable,0,0,0,0,0,,,,
+370,samsungcloudsolution.com,0,unreachable,0,0,0,0,0,,,,
+371,dailymotion.com,1,found,0,0,0,0,0,0,0,0,1
+372,demdex.net,0,unreachable,0,0,0,0,0,,,,
+373,plesk.com,1,found,0,0,0,0,0,0,0,0,1
+374,imcmdb.net,0,unreachable,0,0,0,0,0,,,,
+375,calendly.com,1,found,0,0,0,0,1,1,0,0,1
+376,kaspersky-labs.com,0,unreachable,0,0,0,0,0,,,,
+377,vkuser.net,0,unreachable,0,0,0,0,0,,,,
+378,aliyuncsslbintl.com,0,unreachable,0,0,0,0,0,,,,
+379,kwai-pro.com,0,unreachable,0,0,0,0,0,,,,
+380,awswaf.com,0,unreachable,0,0,0,0,0,,,,
+381,unsplash.com,1,found,0,0,0,0,0,0,0,0,0
+382,ngenix.net,1,absent (HTTP 503),0,0,0,0,0,0,0,0,0
+383,tp-link.com,1,found,0,0,0,0,0,0,0,0,0
+384,amazon.de,1,found,1,1,1,1,1,1,1,0,0
+385,gitlab.com,1,found,0,0,0,0,0,0,0,0,0
+386,crpt.ru,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+387,temu.com,1,found,0,0,0,0,0,0,0,0,0
+388,adobe.net,1,found,0,0,0,0,0,0,0,0,1
+389,cookiedatabase.org,1,found,0,0,0,0,0,0,0,1,0
+390,netangels.ru,1,found,0,0,0,0,0,0,0,0,0
+391,yandex.com,1,found,0,0,0,0,0,0,0,0,0
+392,ip-api.com,1,found,0,0,0,0,0,0,0,0,0
+393,wbx2.com,0,unreachable,0,0,0,0,0,,,,
+394,dnspod.net,0,unreachable,0,0,0,0,0,,,,
+395,globo.com,1,found,1,0,0,1,1,1,0,0,0
+396,ibyteimg.com,0,unreachable,0,0,0,0,0,,,,
+397,ivi.ru,1,found,0,0,0,0,0,0,0,0,0
+398,indeed.com,1,found,0,0,0,0,0,0,0,0,0
+399,onelink.me,1,found,0,0,0,0,0,0,0,0,0
+400,heytapdl.com,0,unreachable,0,0,0,0,0,,,,
+401,vivoglobal.com,1,found,0,0,0,0,0,0,0,0,0
+402,tiktokv.us,0,unreachable,0,0,0,0,0,,,,
+403,line.me,1,found,0,0,0,0,0,0,0,0,0
+404,163.com,1,found,0,0,0,0,0,0,0,1,0
+405,amazontrust.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+406,tiktokcdn-eu.com,0,unreachable,0,0,0,0,0,,,,
+407,telegram.me,1,found,0,0,0,0,0,0,0,0,0
+408,aiv-delivery.net,0,unreachable,0,0,0,0,0,,,,
+409,taobao.com,1,found,0,0,0,0,0,0,0,0,0
+410,akamaitech.net,0,unreachable,0,0,0,0,0,,,,
+411,xcal.tv,0,unreachable,0,0,0,0,0,,,,
+412,sina.com.cn,1,found,0,0,0,0,0,0,0,0,0
+413,huawei.com,0,unreachable,0,0,0,0,0,,,,
+414,businessinsider.com,1,found,0,1,0,0,1,1,0,0,0
+415,tiktokv.eu,0,unreachable,0,0,0,0,0,,,,
+416,amazonalexa.com,1,found,0,0,0,0,0,0,0,0,0
+417,pixabay.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+418,volcfcdndvs.com,0,unreachable,0,0,0,0,0,,,,
+419,bsky.app,1,found,0,0,0,0,0,0,0,0,0
+420,avcdn.net,0,unreachable,0,0,0,0,0,,,,
+421,avsxappcaptiveportal.com,0,unreachable,0,0,0,0,0,,,,
+422,pangle.io,0,unreachable,0,0,0,0,0,,,,
+423,ioref.io,0,unreachable,0,0,0,0,0,,,,
+424,aliexpress.com,1,found,0,0,0,0,0,0,0,0,0
+425,supercell.com,1,found,0,0,0,0,0,0,0,0,0
+426,espn.com,1,found,1,0,0,1,1,1,0,0,0
+427,online-metrix.net,0,unreachable,0,0,0,0,0,,,,
+428,yahoo.co.jp,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+429,steamcommunity.com,1,found,0,0,0,0,0,0,0,0,0
+430,beian.gov.cn,0,unreachable,0,0,0,0,0,,,,
+431,kwaipros.com,0,unreachable,0,0,0,0,0,,,,
+432,edgecdn.ru,0,unreachable,0,0,0,0,0,,,,
+433,walmart.com,1,found,0,0,0,0,0,0,0,0,0
+434,wp.com,1,found,0,0,0,0,0,0,0,0,1
+435,intel.com,1,found,0,0,0,0,0,0,0,1,0
+436,t-mobile.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+437,brave.com,1,found,0,0,0,0,0,0,0,0,0
+438,vkontakte.ru,1,found,1,1,1,1,1,1,1,0,0
+439,expireddomains.com,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+440,dual-s-msedge.net,0,unreachable,0,0,0,0,0,,,,
+441,statista.com,1,found,1,1,1,1,1,1,1,1,0
+442,adriver.ru,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+443,myhuaweicloud.com,0,unreachable,0,0,0,0,0,,,,
+444,mi.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+445,nflxvideo.net,0,unreachable,0,0,0,0,0,,,,
+446,go.com,1,found,1,0,0,1,0,1,0,0,0
+447,cloudns.net,1,found,0,0,0,0,0,0,0,0,0
+448,cnbc.com,1,found,1,1,1,1,1,1,1,1,0
+449,duckduckgo.com,1,found,0,0,0,0,0,0,0,0,0
+450,g.page,1,found,0,0,0,0,0,0,0,0,0
+451,list-manage.com,0,unreachable,0,0,0,0,0,,,,
+452,awsglobalaccelerator.com,0,unreachable,0,0,0,0,0,,,,
+453,worldnic.com,0,unreachable,0,0,0,0,0,,,,
+454,mynetname.net,0,unreachable,0,0,0,0,0,,,,
+455,name.com,1,found,0,0,0,0,0,0,0,0,1
+456,sc-gw.com,0,unreachable,0,0,0,0,0,,,,
+457,gcdn.co,0,unreachable,0,0,0,0,0,,,,
+458,netease.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+459,substack.com,1,found,0,0,0,0,0,0,0,0,0
+460,ietf.org,1,found,0,0,0,0,0,0,0,1,0
+461,mikrotik.com,1,found,0,0,0,0,0,0,0,0,0
+462,skyhigh.cloud,1,found,0,0,0,0,0,0,0,0,0
+463,rzone.de,0,unreachable,0,0,0,0,0,,,,
+464,nflximg.com,0,unreachable,0,0,0,0,0,,,,
+465,featureassets.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+466,gamepass.com,1,found,0,0,0,0,0,0,0,0,0
+467,goodreads.com,1,found,1,0,0,0,1,1,0,0,0
+468,eventbrite.com,1,found,0,0,0,0,0,0,0,0,0
+469,geobasket.ru,0,unreachable,0,0,0,0,0,,,,
+470,eye4.cn,1,absent (HTTP 500),0,0,0,0,0,0,0,0,0
+471,quora.com,1,found,1,1,1,0,1,1,0,0,0
+472,npr.org,0,unreachable,0,0,0,0,0,,,,
+473,addtoany.com,1,found,0,0,0,0,0,0,0,0,0
+474,mysql.com,1,found,0,0,0,0,0,0,0,0,0
+475,firetvcaptiveportal.com,0,unreachable,0,0,0,0,0,,,,
+476,amplitude.com,1,found,0,0,0,0,0,0,0,0,1
+477,kwai.net,0,unreachable,0,0,0,0,0,,,,
+478,cookielaw.org,1,found,1,1,0,1,1,1,0,1,0
+479,cdn20.com,0,unreachable,0,0,0,0,0,,,,
+480,hostgator.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+481,supertms.com,0,unreachable,0,0,0,0,0,,,,
+482,sohu.com,1,found,1,1,1,1,1,1,1,0,0
+483,myqcloud.com,0,unreachable,0,0,0,0,0,,,,
+484,exp-tas.com,0,unreachable,0,0,0,0,0,,,,
+485,indiatimes.com,1,found,0,0,0,0,0,0,0,0,0
+486,gosuslugi.ru,1,found,1,1,1,1,1,1,1,0,0
+487,gandi-ns.fr,0,unreachable,0,0,0,0,0,,,,
+488,mcafee.com,0,unreachable,0,0,0,0,0,,,,
+489,duolingo.com,1,found,0,0,0,0,0,0,0,0,0
+490,blogger.com,1,found,0,0,0,0,0,0,0,0,0
+491,arxiv.org,1,found,0,0,0,0,0,0,0,0,0
+492,2mdn.net,0,unreachable,0,0,0,0,0,,,,
+493,scribd.com,1,found,0,1,0,0,1,1,0,0,0
+494,sberbank.ru,1,found,0,0,0,0,0,0,0,0,0
+495,docker.com,1,found,0,0,0,0,0,0,0,0,0
+496,shein.com,1,found,0,0,0,0,0,0,0,0,1
+497,discord.media,1,absent (HTTP 520),0,0,0,0,0,0,0,0,0
+498,stackoverflow.com,1,absent (HTTP 418),0,0,0,0,0,0,0,0,0
+499,behance.net,1,found,1,1,0,1,1,1,0,0,0
+500,beyondwickedmapping.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+501,paloaltonetworks.com,1,found,0,0,0,0,0,0,0,0,1
+502,foxnews.com,1,found,0,0,0,0,0,0,0,0,1
+503,google.de,1,found,0,0,0,0,0,0,0,0,0
+504,2gis.com,1,found,0,0,0,0,0,0,0,0,0
+505,elasticbeanstalk.com,0,unreachable,0,0,0,0,0,,,,
+506,amzn.to,1,found,0,0,0,0,0,0,0,0,0
+507,claude.ai,1,found,1,0,0,1,0,1,0,0,0
+508,mediatek.com,1,found,0,0,0,0,0,0,0,0,0
+509,ft.com,1,found,0,1,1,1,1,1,0,0,0
+510,nease.net,0,unreachable,0,0,0,0,0,,,,
+511,tencent-cloud.net,0,unreachable,0,0,0,0,0,,,,
+512,atlassian.net,1,found,0,0,0,0,0,0,0,0,0
+513,nstld.com,0,unreachable,0,0,0,0,0,,,,
+514,slideshare.net,1,found,0,1,0,0,1,1,0,0,0
+515,vidaahub.com,0,unreachable,0,0,0,0,0,,,,
+516,amazon.co.jp,1,found,1,1,1,1,1,1,1,0,0
+517,wired.com,1,found,0,1,1,1,1,1,0,0,0
+518,svc.ms,0,unreachable,0,0,0,0,0,,,,
+519,adobedtm.com,0,unreachable,0,0,0,0,0,,,,
+520,google.com.hk,1,found,0,0,0,0,0,0,0,0,0
+521,fandom.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+522,360.cn,1,found,0,0,0,0,0,0,0,0,0
+523,run.app,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+524,dynatrace.com,1,found,0,0,0,0,0,0,0,0,1
+525,openx.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+526,firefox.com,1,found,0,0,0,0,0,0,0,0,0
+527,netflix.net,1,found,0,0,0,0,1,1,0,0,0
+528,xhamster.com,1,found,0,0,0,0,0,0,0,0,0
+529,tandfonline.com,1,found,1,0,0,0,0,1,0,0,0
+530,icloud-content.com,1,found,0,0,0,0,0,0,0,0,0
+531,okta.com,1,found,0,0,0,0,0,0,0,0,1
+532,time.com,1,found,0,0,0,0,0,0,0,0,1
+533,usatoday.com,1,found,1,1,1,1,1,1,1,0,0
+534,jquery.com,1,found,0,0,0,0,0,0,0,0,0
+535,bdydns.com,0,unreachable,0,0,0,0,0,,,,
+536,visualstudio.com,1,found,0,0,0,0,0,0,0,0,0
+537,impervadns.net,0,unreachable,0,0,0,0,0,,,,
+538,e2ro.com,0,unreachable,0,0,0,0,0,,,,
+539,oup.com,1,absent (HTTP 202),0,0,0,0,0,0,0,1,0
+540,capcut.com,1,found,0,0,0,0,0,0,0,0,1
+541,trendmicro.com,1,found,0,0,0,0,0,0,0,1,1
+542,patreon.com,1,found,1,1,1,1,1,1,1,1,0
+543,cornell.edu,1,found,0,0,0,0,0,0,0,1,0
+544,360yield.com,1,found,0,0,0,0,0,0,0,0,0
+545,hicloud.com,0,unreachable,0,0,0,0,0,,,,
+546,uk.com,1,found,0,0,0,0,0,0,0,0,0
+547,uol.com.br,1,found,0,1,1,1,1,1,0,0,0
+548,live.net,0,unreachable,0,0,0,0,0,,,,
+549,atlassian.com,1,found,0,0,0,0,0,0,0,0,1
+550,deviantart.com,1,found,0,0,0,0,0,0,0,0,0
+551,cloudflareinsights.com,1,found,0,0,0,0,0,0,0,0,0
+552,fast.com,1,found,0,0,0,0,0,0,0,0,0
+553,palmplaystore.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+554,tplinkcloud.com,1,found,0,0,0,0,0,0,0,0,0
+555,timeweb.ru,1,found,0,0,0,0,0,0,0,0,0
+556,tripadvisor.com,1,found,1,1,0,1,1,1,0,0,0
+557,imgsmail.ru,1,found,1,1,1,1,1,1,1,0,0
+558,telegraph.co.uk,1,found,1,1,1,1,1,1,1,0,0
+559,rakuten.co.jp,1,found,0,0,0,0,0,0,0,0,0
+560,wix.com,1,found,0,0,0,0,0,0,0,0,1
+561,vedsalb.com,0,unreachable,0,0,0,0,0,,,,
+562,eset.com,1,found,0,0,0,0,0,0,0,0,0
+563,byteglb.com,0,unreachable,0,0,0,0,0,,,,
+564,teamviewer.com,1,found,0,0,0,0,0,0,0,1,0
+565,berkeley.edu,1,found,0,0,0,0,0,0,0,0,0
+566,3lift.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+567,azure-dns.com,0,unreachable,0,0,0,0,0,,,,
+568,spaceweb.pro,0,unreachable,0,0,0,0,0,,,,
+569,aboutads.info,1,found,0,0,0,0,0,0,0,0,0
+570,rlcdn.com,0,unreachable,0,0,0,0,0,,,,
+571,hotjar.com,1,found,0,0,0,0,0,0,0,0,0
+572,deepl.com,1,found,0,0,0,0,0,0,0,0,0
+573,ca.gov,1,found,0,0,0,0,0,0,0,0,0
+574,oraclecloud.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+575,surveymonkey.com,1,found,0,0,0,0,0,0,0,0,1
+576,grammarly.com,1,found,0,0,0,0,0,0,0,0,0
+577,msidentity.com,0,unreachable,0,0,0,0,0,,,,
+578,dailymail.co.uk,1,found,1,1,1,1,1,1,1,1,0
+579,target.com,1,found,0,0,0,0,0,0,0,0,1
+580,aol.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+581,ieee.org,1,absent (HTTP 202),0,0,0,0,0,0,0,0,0
+582,markmonitor.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+583,t-msedge.net,0,unreachable,0,0,0,0,0,,,,
+584,avito.ru,1,found,0,0,0,0,0,0,0,0,0
+585,mdpi.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+586,comcast.com,0,unreachable,0,0,0,0,0,,,,
+587,yahoodns.net,0,unreachable,0,0,0,0,0,,,,
+588,samsungapps.com,0,unreachable,0,0,0,0,0,,,,
+589,bidswitch.net,0,unreachable,0,0,0,0,0,,,,
+590,loc.gov,1,found,0,0,0,0,0,0,0,1,0
+591,klaviyo.com,1,found,0,0,0,0,0,0,0,0,1
+592,xiaomi.net,0,unreachable,0,0,0,0,0,,,,
+593,adobedc.net,0,unreachable,0,0,0,0,0,,,,
+594,my.com,0,unreachable,0,0,0,0,0,,,,
+595,pushy.io,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+596,alicdn.com,0,unreachable,0,0,0,0,0,,,,
+597,free.fr,1,found,0,0,0,0,0,0,0,0,0
+598,resolver.arpa,0,unreachable,0,0,0,0,0,,,,
+599,playstation.com,1,found,0,0,0,0,0,0,0,0,1
+600,on.aws,0,unreachable,0,0,0,0,0,,,,
+601,digitalocean.com,1,found,0,0,0,0,0,0,0,0,0
+602,qlivecdn.com,0,unreachable,0,0,0,0,0,,,,
+603,jotform.com,1,found,0,0,0,0,0,0,0,0,0
+604,britannica.com,1,found,0,0,0,0,0,0,0,0,0
+605,accuweather.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+606,onetrust.com,1,found,0,0,0,0,0,0,0,0,1
+607,threads.com,1,found,1,1,1,1,1,1,1,0,0
+608,ikea.com,1,found,0,0,0,0,0,0,0,0,0
+609,wswebcdn.com,0,unreachable,0,0,0,0,0,,,,
+610,licdn.com,0,unreachable,0,0,0,0,0,,,,
+611,amazon.fr,1,found,1,1,1,1,1,1,1,0,0
+612,googletagservices.com,0,unreachable,0,0,0,0,0,,,,
+613,cnet.com,1,found,1,1,1,0,1,1,0,0,0
+614,redhat.com,1,found,0,0,0,0,0,0,0,0,1
+615,unesco.org,1,found,0,0,0,0,0,0,0,0,1
+616,googlezip.net,0,unreachable,0,0,0,0,0,,,,
+617,merriam-webster.com,1,found,0,0,0,0,0,0,0,0,0
+618,techcrunch.com,1,found,1,1,0,1,1,1,0,0,0
+619,att.net,1,found,0,0,0,0,0,0,0,0,0
+620,squarespace.com,1,found,0,0,0,0,0,0,0,0,1
+621,sagepub.com,1,found,0,0,0,0,1,1,0,0,0
+622,sharethrough.com,1,found,1,1,1,1,1,1,1,0,0
+623,nintendo.com,1,found,1,1,0,1,1,1,0,0,0
+624,branch.io,1,found,0,0,0,0,0,0,0,0,1
+625,fontawesome.com,1,found,0,0,0,0,0,0,0,0,0
+626,bytedns1.com,0,unreachable,0,0,0,0,0,,,,
+627,ui-dns.com,0,unreachable,0,0,0,0,0,,,,
+628,braze.com,1,found,0,0,0,0,0,0,0,0,1
+629,easebar.com,0,unreachable,0,0,0,0,0,,,,
+630,cdnvideo.ru,1,found,0,0,0,0,0,0,0,0,0
+631,dreamhost.com,1,found,0,0,0,0,0,0,0,0,1
+632,tencent.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+633,share.google,1,found,0,0,0,0,0,0,0,0,0
+634,nike.com,1,found,0,0,0,0,0,0,0,1,0
+635,cbsnews.com,1,found,1,0,0,0,0,1,0,0,0
+636,elpais.com,1,found,0,1,1,0,1,1,0,0,0
+637,bluehost.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+638,cambridge.org,1,found,0,0,0,0,0,0,0,0,0
+639,withgoogle.com,1,found,0,0,0,0,0,0,0,0,0
+640,smaato.net,0,unreachable,0,0,0,0,0,,,,
+641,amazon.ca,1,found,1,1,1,1,1,1,1,0,0
+642,stackadapt.com,1,found,0,0,0,0,0,0,0,0,1
+643,vercel-dns-016.com,0,unreachable,0,0,0,0,0,,,,
+644,dyndns.org,1,found,0,0,0,0,0,0,0,0,0
+645,independent.co.uk,1,found,0,0,0,0,0,0,0,0,0
+646,viber.com,1,found,0,0,0,0,0,0,0,0,0
+647,ozone.ru,0,unreachable,0,0,0,0,0,,,,
+648,force.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+649,outbrain.com,1,found,0,0,0,0,0,0,0,0,0
+650,conviva.com,1,found,0,0,0,0,0,0,0,0,1
+651,squarespacedns.com,0,unreachable,0,0,0,0,0,,,,
+652,noaa.gov,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+653,dyingbirds.com,0,unreachable,0,0,0,0,0,,,,
+654,ups.com,0,unreachable,0,0,0,0,0,,,,
+655,service.gov.uk,1,found,0,0,0,0,0,0,0,0,0
+656,wb.ru,1,absent (HTTP 498),0,0,0,0,0,0,0,0,0
+657,yelp.com,1,found,1,1,1,1,1,1,1,0,0
+658,optimizely.com,1,found,0,0,0,0,0,0,0,0,0
+659,imgur.com,1,found,0,0,0,0,0,0,0,0,0
+660,lemonde.fr,1,found,0,1,0,1,1,1,0,0,0
+661,g.co,1,absent (HTTP 400),0,0,0,0,0,0,0,0,0
+662,anthropic.com,1,found,0,0,0,0,0,0,0,0,0
+663,intercom.io,1,found,0,0,0,0,0,0,0,0,1
+664,twimg.com,0,unreachable,0,0,0,0,0,,,,
+665,ovh.net,1,found,0,0,0,0,0,0,0,0,0
+666,fb.com,1,found,1,1,1,1,1,1,1,0,0
+667,rackspace.net,0,unreachable,0,0,0,0,0,,,,
+668,nic.network,1,found,0,0,0,0,0,0,0,0,0
+669,spiegel.de,1,found,1,1,0,0,1,1,0,1,0
+670,dotomi.com,1,found,0,0,0,0,0,0,0,0,0
+671,ted.com,1,found,1,1,0,1,1,1,0,0,0
+672,wikia.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+673,amagi.tv,0,unreachable,0,0,0,0,0,,,,
+674,anydesk.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+675,wps.com,1,found,0,0,0,0,0,0,0,0,1
+676,pinimg.com,1,found,1,1,1,1,1,1,1,1,0
+677,mailchimp.com,1,found,0,0,0,0,0,0,0,0,1
+678,zdnscloud.cn,0,unreachable,0,0,0,0,0,,,,
+679,quantserve.com,1,found,1,1,1,1,1,1,1,0,0
+680,consultant.ru,1,found,0,0,0,0,0,0,0,0,0
+681,openstreetmap.org,1,found,0,0,0,0,0,0,0,0,0
+682,wattpad.com,1,found,1,0,0,0,0,1,0,0,0
+683,1rx.io,0,unreachable,0,0,0,0,0,,,,
+684,zillow.com,1,found,0,0,0,0,0,0,0,0,0
+685,browser-intake-datadoghq.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+686,amazon.in,1,found,1,1,1,1,1,1,1,0,0
+687,id5-sync.com,1,found,0,0,0,0,0,0,0,0,0
+688,nel.goog,0,unreachable,0,0,0,0,0,,,,
+689,shop.app,1,found,0,0,0,0,0,0,0,0,0
+690,yieldmo.com,1,found,0,0,0,0,0,0,0,0,1
+691,mhverifier.ru,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+692,hihonorcloud.com,1,found,1,1,1,1,1,1,1,0,0
+693,samsungacr.com,0,unreachable,0,0,0,0,0,,,,
+694,ack.de,0,unreachable,0,0,0,0,0,,,,
+695,a-msedge.net,0,unreachable,0,0,0,0,0,,,,
+696,bx-msedge.net,0,unreachable,0,0,0,0,0,,,,
+697,agkn.com,0,unreachable,0,0,0,0,0,,,,
+698,seznam.cz,1,found,0,0,0,0,0,0,0,0,0
+699,spectrum.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+700,google.co.uk,1,found,0,0,0,0,0,0,0,0,0
+701,creativecdn.com,1,found,1,1,1,1,1,1,1,0,0
+702,verisign.com,1,found,0,0,0,0,0,0,0,0,0
+703,ya.ru,1,found,0,0,0,0,0,0,0,0,0
+704,amazon.es,1,found,1,1,1,1,1,1,1,0,0
+705,mediafire.com,1,found,0,0,0,0,0,0,0,0,0
+706,dbankcloud.com,0,unreachable,0,0,0,0,0,,,,
+707,nmrodam.com,0,unreachable,0,0,0,0,0,,,,
+708,crwdcntrl.net,0,unreachable,0,0,0,0,0,,,,
+709,lijit.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+710,typekit.net,0,unreachable,0,0,0,0,0,,,,
+711,telephony.goog,0,unreachable,0,0,0,0,0,,,,
+712,kick.com,1,found,0,0,0,0,0,0,0,1,0
+713,cursor.sh,1,found,0,0,0,0,0,0,0,0,1
+714,allaboutcookies.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+715,criteo.net,0,unreachable,0,0,0,0,0,,,,
+716,bidr.io,0,unreachable,0,0,0,0,0,,,,
+717,asus.com,1,found,0,0,0,0,0,0,0,0,1
+718,ovscdns.com,0,unreachable,0,0,0,0,0,,,,
+719,wbbasket.ru,0,unreachable,0,0,0,0,0,,,,
+720,rt.ru,0,unreachable,0,0,0,0,0,,,,
+721,itch.io,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+722,moe.video,1,found,0,0,0,0,0,0,0,0,1
+723,stripchat.com,1,found,0,0,0,0,0,0,0,0,0
+724,mckinsey.com,0,unreachable,0,0,0,0,0,,,,
+725,sophos.com,1,found,0,0,0,0,0,0,0,0,1
+726,bandcamp.com,1,found,1,1,0,1,1,1,0,0,0
+727,githubusercontent.com,0,unreachable,0,0,0,0,0,,,,
+728,iso.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+729,zoom.com,1,found,0,0,0,0,0,0,0,0,0
+730,newrelic.com,1,found,0,0,0,0,0,0,0,0,1
+731,google.com.br,1,found,0,0,0,0,0,0,0,0,0
+732,dailymail.com,1,found,1,1,1,1,1,1,1,1,0
+733,shopee.co.id,1,found,0,0,0,0,0,0,0,1,0
+734,homedepot.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+735,bitrix24.ru,1,found,0,0,0,0,0,0,0,0,1
+736,chinamobile.com,0,unreachable,0,0,0,0,0,,,,
+737,steamstatic.com,0,unreachable,0,0,0,0,0,,,,
+738,bamgrid.com,0,unreachable,0,0,0,0,0,,,,
+739,imrworldwide.com,0,unreachable,0,0,0,0,0,,,,
+740,python.org,1,found,0,0,0,0,0,0,0,0,0
+741,ring.com,1,found,0,0,0,0,0,0,0,0,0
+742,uber.com,1,found,0,0,0,0,0,0,0,0,0
+743,b-msedge.net,0,unreachable,0,0,0,0,0,,,,
+744,networkadvertising.org,1,found,0,0,0,0,0,0,0,0,0
+745,ks-cdn.com,0,unreachable,0,0,0,0,0,,,,
+746,contentsquare.net,0,unreachable,0,0,0,0,0,,,,
+747,mercadolivre.com.br,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+748,marriott.com,1,found,0,0,0,0,0,0,0,0,0
+749,herokuapp.com,0,unreachable,0,0,0,0,0,,,,
+750,safebrowsing.apple,0,unreachable,0,0,0,0,0,,,,
+751,amazon.it,1,found,1,1,1,1,1,1,1,0,0
+752,afilias-nst.info,0,unreachable,0,0,0,0,0,,,,
+753,adjust.com,1,absent (HTTP 429),0,0,0,0,0,0,0,0,0
+754,appcenter.ms,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+755,box.com,1,found,0,0,0,0,0,0,0,0,0
+756,adform.net,1,found,1,1,1,1,1,1,1,0,0
+757,vercel-dns-017.com,0,unreachable,0,0,0,0,0,,,,
+758,bugsnag.com,1,found,0,0,0,0,0,0,0,0,0
+759,fda.gov,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+760,wp.pl,1,found,1,0,0,0,1,1,0,0,0
+761,it.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+762,linode.com,1,found,0,0,0,0,0,0,0,0,0
+763,prnewswire.com,1,found,0,0,0,0,0,0,0,0,1
+764,kunluncan.com,0,unreachable,0,0,0,0,0,,,,
+765,mlb.com,1,found,0,0,0,0,0,0,0,0,0
+766,nikkei.com,1,found,0,0,0,0,0,0,0,0,0
+767,usps.com,1,found,0,0,0,0,0,0,0,0,0
+768,wpguardian.com,1,found,0,0,0,0,0,0,0,0,0
+769,hbr.org,1,found,1,0,0,1,1,1,0,0,0
+770,teads.tv,1,found,0,0,0,0,0,0,0,0,0
+771,wpguardian.io,1,found,0,0,0,0,0,0,0,0,0
+772,otto.de,1,found,0,0,0,0,0,0,0,0,0
+773,speedtest.net,1,found,0,0,0,0,0,0,0,0,0
+774,alipaydns.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+775,gumgum.com,1,found,0,0,0,0,0,0,0,0,1
+776,cmediahub.ru,0,unreachable,0,0,0,0,0,,,,
+777,360safe.com,0,unreachable,0,0,0,0,0,,,,
+778,washington.edu,1,found,0,0,0,0,0,0,0,0,0
+779,ipinfo.io,1,found,0,0,0,0,0,0,0,0,0
+780,fiverr.com,1,found,0,0,0,0,0,0,0,0,1
+781,mega.co.nz,1,found,0,0,0,0,0,0,0,0,0
+782,dtkn.ru,0,unreachable,0,0,0,0,0,,,,
+783,shopee.com.br,1,found,0,0,0,0,0,0,0,1,0
+784,tplinknbu.com,0,unreachable,0,0,0,0,0,,,,
+785,airbnb.com,1,found,0,0,0,0,0,0,0,1,0
+786,allegro.pl,1,found,0,0,0,0,0,0,0,0,1
+787,theverge.com,1,found,0,1,1,1,1,1,0,0,0
+788,sedo.com,1,found,0,0,0,0,0,0,0,1,0
+789,apnews.com,1,found,1,1,1,0,1,1,0,0,0
+790,liadm.com,0,unreachable,0,0,0,0,0,,,,
+791,appspot.com,1,found,0,0,0,0,0,0,0,0,0
+792,ddnss.de,1,found,0,0,0,0,0,0,0,0,0
+793,cdn-vk.ru,0,unreachable,0,0,0,0,0,,,,
+794,primevideo.com,1,found,0,0,1,0,1,1,0,0,0
+795,bestbuy.com,1,found,0,0,0,0,0,0,0,0,0
+796,lenovo.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+797,moloco.com,1,found,0,0,0,0,0,0,0,0,1
+798,a-mo.net,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+799,people.com,1,found,0,1,1,1,1,1,0,1,0
+800,globalsign.com,1,found,1,1,0,1,1,1,0,0,0
+801,bunnyinfra.net,0,unreachable,0,0,0,0,0,,,,
+802,ameblo.jp,1,found,0,0,0,0,0,0,0,0,0
+803,livejournal.com,1,found,0,0,0,0,0,0,0,0,0
+804,rakuten.com,1,found,0,0,0,0,0,0,0,0,0
+805,disneyplus.com,1,found,0,0,0,0,0,0,0,0,0
+806,myspace.com,1,found,0,0,0,0,0,0,0,0,0
+807,daum.net,1,found,1,1,1,1,1,1,1,0,0
+808,ln-msedge.net,0,unreachable,0,0,0,0,0,,,,
+809,bild.de,1,found,0,0,1,0,1,1,0,0,0
+810,grammarly.io,0,unreachable,0,0,0,0,0,,,,
+811,liftoff.io,1,found,0,0,0,0,0,0,0,0,0
+812,mixpanel.com,1,found,0,0,0,0,0,0,0,0,0
+813,lgtvcommon.com,0,unreachable,0,0,0,0,0,,,,
+814,lefigaro.fr,1,found,1,1,0,1,1,1,0,1,0
+815,blackberry.com,1,found,0,0,0,0,0,0,0,0,0
+816,welt.de,1,found,0,0,1,0,1,1,0,1,0
+817,turn.com,0,unreachable,0,0,0,0,0,,,,
+818,zoho.com,1,found,0,0,0,0,0,0,0,0,0
+819,erome.com,1,found,0,0,0,0,0,0,0,0,0
+820,33across.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+821,nbcnews.com,1,found,1,1,1,1,1,1,1,1,0
+822,mayoclinic.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+823,academia.edu,1,found,1,1,0,1,1,1,0,0,0
+824,xbox.com,1,found,0,0,0,0,0,0,0,0,0
+825,pexels.com,1,found,1,1,1,1,1,1,1,0,0
+826,sc-cdn.net,0,unreachable,0,0,0,0,0,,,,
+827,readthedocs.io,1,found,0,0,0,0,0,0,0,1,0
+828,whecloud.com,0,unreachable,0,0,0,0,0,,,,
+829,discordapp.com,1,found,0,0,0,0,0,0,0,0,0
+830,ebay.de,1,found,1,1,1,0,1,1,0,0,0
+831,disqus.com,1,found,0,0,0,0,0,0,0,0,0
+832,eeroup.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+833,shopeemobile.com,1,found,0,0,0,0,0,0,0,0,0
+834,no-ip.com,1,found,0,0,0,0,0,0,0,0,0
+835,afilias-nst.org,0,unreachable,0,0,0,0,0,,,,
+836,onetag-sys.com,1,found,0,0,0,0,0,0,0,0,0
+837,ssl-images-amazon.com,0,unreachable,0,0,0,0,0,,,,
+838,pornhub.com,1,found,0,0,0,0,1,1,0,0,0
+839,netcraze.io,1,found,1,1,1,1,1,1,1,0,0
+840,dbankcloud.ru,0,unreachable,0,0,0,0,0,,,,
+841,vercel.app,1,found,0,0,0,0,0,0,0,0,0
+842,unpkg.com,1,found,0,0,0,0,0,0,0,0,0
+843,usda.gov,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+844,vivo.com.cn,1,found,0,0,0,0,0,0,0,0,0
+845,discogs.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+846,yellowblue.io,0,unreachable,0,0,0,0,0,,,,
+847,yandexcloud.net,0,unreachable,0,0,0,0,0,,,,
+848,heylink.me,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+849,onlyfans.com,1,found,0,0,0,0,0,0,0,1,0
+850,hath.network,1,found,0,0,0,0,0,0,0,0,0
+851,me.com,1,found,0,0,0,0,0,0,0,0,0
+852,meta.com,1,found,0,0,0,0,0,0,0,0,0
+853,princeton.edu,1,found,0,0,0,0,0,0,0,0,0
+854,focus.de,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+855,latimes.com,1,found,1,1,0,0,0,1,0,0,0
+856,ebay.co.uk,1,found,1,1,1,0,1,1,0,0,0
+857,worldbank.org,1,found,0,0,0,0,0,0,0,0,0
+858,cdnhwc1.com,0,unreachable,0,0,0,0,0,,,,
+859,agoda.com,1,found,0,0,0,0,0,0,0,0,0
+860,amazon.com.br,1,found,1,1,1,1,1,1,1,0,0
+861,spotifycdn.com,0,unreachable,0,0,0,0,0,,,,
+862,eporner.com,1,found,0,0,0,0,0,0,0,0,0
+863,figma.com,1,found,1,0,0,1,1,1,0,0,0
+864,goskope.com,0,unreachable,0,0,0,0,0,,,,
+865,investopedia.com,1,found,0,1,1,1,1,1,0,1,0
+866,fwmrm.net,1,found,0,0,0,0,0,0,0,0,0
+867,qualtrics.com,1,found,0,0,0,0,0,0,0,0,0
+868,chess.com,1,found,0,0,0,0,0,0,0,0,0
+869,change.org,1,found,0,0,0,0,0,0,0,0,0
+870,synology.com,1,found,0,0,0,0,0,0,0,0,0
+871,herokudns.com,0,unreachable,0,0,0,0,0,,,,
+872,ndtv.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+873,recaptcha.net,1,found,0,0,0,0,0,0,0,0,0
+874,perplexity.ai,1,found,0,0,0,0,0,0,0,0,0
+875,thenai.org,1,found,0,0,0,0,0,0,0,0,0
+876,xvideos.com,1,found,0,0,0,0,0,0,0,1,0
+877,usgovcloudapi.net,0,unreachable,0,0,0,0,0,,,,
+878,fbsbx.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+879,adgrx.com,0,unreachable,0,0,0,0,0,,,,
+880,orderbox-dns.com,0,unreachable,0,0,0,0,0,,,,
+881,wyzecam.com,1,found,0,0,0,0,0,0,0,0,1
+882,bankofamerica.com,1,found,0,0,0,0,0,0,0,0,0
+883,scdn.co,0,unreachable,0,0,0,0,0,,,,
+884,deloitte.com,1,found,0,0,0,0,0,0,0,0,0
+885,msftauth.net,0,unreachable,0,0,0,0,0,,,,
+886,www.gov.br,1,found,0,0,0,0,0,0,0,0,0
+887,tiktokw.us,0,unreachable,0,0,0,0,0,,,,
+888,keenetic.io,0,unreachable,0,0,0,0,0,,,,
+889,lg.com,1,found,0,0,0,0,0,0,0,0,1
+890,arcgis.com,1,found,0,0,0,0,0,0,0,0,0
+891,state.gov,1,found,0,0,0,0,0,0,0,0,0
+892,eu-1-id5-sync.com,0,unreachable,0,0,0,0,0,,,,
+893,amazon.com.au,1,found,1,1,1,1,1,1,1,0,0
+894,webmd.com,1,found,1,1,0,0,1,1,0,0,0
+895,azure-devices.net,0,unreachable,0,0,0,0,0,,,,
+896,hstgr.net,0,unreachable,0,0,0,0,0,,,,
+897,hostgator.com.br,1,found,0,0,0,0,0,0,0,0,1
+898,miwifi.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+899,biblegateway.com,1,found,0,0,0,0,0,0,0,0,0
+900,dv.tech,0,unreachable,0,0,0,0,0,,,,
+901,youku.com,1,found,0,0,0,0,0,0,0,0,0
+902,lowes.com,1,absent (HTTP 403),0,0,0,0,0,0,0,1,0
+903,smartthings.com,1,found,0,0,0,0,0,0,0,0,0
+904,go-mpulse.net,0,unreachable,0,0,0,0,0,,,,
+905,nintendo.net,0,unreachable,0,0,0,0,0,,,,
+906,samsungosp.com,0,unreachable,0,0,0,0,0,,,,
+907,coupang.com,1,found,1,1,1,1,1,1,1,0,0
+908,eu.com,1,found,0,0,0,0,0,0,0,0,0
+909,healthline.com,1,found,1,1,0,0,1,1,0,0,0
+910,singular.net,1,found,0,0,0,0,0,0,0,0,1
+911,jetbrains.com,1,found,0,0,0,0,0,0,0,0,0
+912,ys7.com,1,found,0,0,0,0,0,0,0,0,0
+913,epa.gov,1,found,0,0,0,0,0,0,0,0,0
+914,flashtalking.com,1,found,0,0,0,0,0,0,0,0,0
+915,jimdo.com,1,found,0,0,0,0,0,0,0,0,1
+916,hm.com,0,unreachable,0,0,0,0,0,,,,
+917,mercadolibre.com.ar,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+918,genius.com,1,found,1,1,0,1,1,1,0,0,0
+919,fidelity.com,1,found,0,0,0,0,0,0,0,0,0
+920,akahost.net,0,unreachable,0,0,0,0,0,,,,
+921,abovedomains.com,1,found,0,0,0,0,0,0,0,0,0
+922,life360.com,1,found,0,0,0,0,0,0,0,1,1
+923,mailchi.mp,1,found,1,1,1,1,1,1,1,0,0
+924,mozilla.net,0,unreachable,0,0,0,0,0,,,,
+925,seedtag.com,1,found,0,0,0,0,0,0,0,0,0
+926,weforum.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+927,poki.com,1,found,0,0,0,0,0,0,0,0,0
+928,nationalgeographic.com,1,found,0,0,0,0,0,0,0,0,0
+929,kickstarter.com,1,absent (HTTP 403),0,0,0,0,0,0,0,1,0
+930,starlink.com,1,found,0,0,0,0,0,0,0,0,0
+931,odoo.com,1,found,0,0,0,0,0,0,0,0,0
+932,translate.goog,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+933,umich.edu,1,found,0,0,0,0,0,0,0,0,0
+934,letsencrypt.org,1,found,0,0,0,0,0,0,0,0,0
+935,blackhub.team,1,found,1,1,1,1,1,1,1,0,0
+936,jd.com,1,found,0,0,0,0,0,0,0,0,0
+937,ryanair.com,1,found,0,0,0,0,0,0,0,0,0
+938,freepik.com,1,found,0,0,0,0,0,0,0,0,0
+939,usercontent.goog,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+940,character.ai,1,found,0,0,0,0,0,0,0,1,0
+941,chaturbate.com,1,found,0,0,0,0,0,0,0,0,0
+942,ci-servers.net,0,unreachable,0,0,0,0,0,,,,
+943,kontur.ru,1,found,0,0,0,0,0,0,0,0,1
+944,docker.io,1,found,0,0,0,0,0,0,0,0,0
+945,agora.io,1,found,0,0,0,0,0,0,0,0,1
+946,themeforest.net,1,found,0,0,0,0,1,1,0,0,0
+947,repubblica.it,1,found,1,0,1,1,1,1,0,0,1
+948,px-cloud.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+949,tsyndicate.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+950,rutube.ru,1,found,0,0,0,0,0,0,0,0,0
+951,ci-servers.org,0,unreachable,0,0,0,0,0,,,,
+952,ubnt.com,1,found,0,0,0,0,0,0,0,0,0
+953,theatlantic.com,1,found,0,1,1,1,1,1,0,0,0
+954,columbia.edu,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+955,corriere.it,1,found,1,1,0,1,1,1,0,1,0
+956,cpanel.com,1,found,0,0,0,0,0,0,0,0,0
+957,share-dns.com,0,unreachable,0,0,0,0,0,,,,
+958,kleinanzeigen.de,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+959,leiniao.com,0,unreachable,0,0,0,0,0,,,,
+960,presage.io,0,unreachable,0,0,0,0,0,,,,
+961,bytefcdn-ttpus.com,0,unreachable,0,0,0,0,0,,,,
+962,tailscale.com,1,found,0,0,0,0,0,0,0,0,0
+963,digitaloceanspaces.com,1,found,0,0,0,0,0,0,0,0,0
+964,singtelchina.cn,0,unreachable,0,0,0,0,0,,,,
+965,xnxx.com,1,found,0,0,0,0,0,0,0,1,0
+966,note.com,1,found,0,0,0,0,0,0,0,1,0
+967,smilewanted.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+968,whitehouse.gov,1,found,0,0,0,0,0,0,0,0,0
+969,nic.io,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+970,opera-api.com,0,unreachable,0,0,0,0,0,,,,
+971,zenecn.net,0,unreachable,0,0,0,0,0,,,,
+972,rackspace.com,1,found,0,0,0,0,0,0,0,0,0
+973,segment.io,1,found,0,0,0,0,0,0,0,0,0
+974,ipify.org,1,found,0,0,0,0,0,0,0,0,0
+975,cloudinary.com,1,found,0,0,0,0,0,0,0,0,1
+976,bytefcdn.com,0,unreachable,0,0,0,0,0,,,,
+977,sentinelone.net,0,unreachable,0,0,0,0,0,,,,
+978,btloader.com,1,found,1,1,1,1,1,1,1,0,0
+979,caixa.gov.br,1,absent (HTTP 302),0,0,0,0,0,0,0,0,0
+980,nextlgsdp.com,0,unreachable,0,0,0,0,0,,,,
+981,xhcdn.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+982,onet.pl,1,found,0,0,0,0,0,0,0,0,0
+983,nexusmods.com,1,found,1,1,0,1,1,1,0,0,0
+984,pbs.org,1,found,1,0,1,0,1,1,0,0,0
+985,4dex.io,0,unreachable,0,0,0,0,0,,,,
+986,giphy.com,1,found,0,0,0,0,0,0,0,0,0
+987,playrix.com,1,found,0,0,0,0,0,0,0,0,0
+988,elmundo.es,1,found,1,0,1,1,1,1,0,0,0
+989,theconversation.com,1,found,1,1,1,1,1,1,1,0,0
+990,onesignal.com,1,found,0,0,0,0,0,0,0,0,1
+991,fbpigeon.com,0,unreachable,0,0,0,0,0,,,,
+992,adguard-vpn.online,0,unreachable,0,0,0,0,0,,,,
+993,xhamster.desi,1,found,0,0,0,0,0,0,0,0,0
+994,binance.com,1,found,0,0,0,0,0,0,0,0,0
+995,kwai.com,1,found,0,0,0,0,0,0,0,0,1
+996,mybluehost.me,0,unreachable,0,0,0,0,0,,,,
+997,pixiv.net,1,found,1,1,0,1,1,1,0,0,0
+998,sofascore.com,1,found,0,0,0,0,0,0,0,0,0
+999,netlify.app,1,found,0,0,0,0,0,0,0,0,1
+1000,costco.com,0,unreachable,0,0,0,0,0,,,,
+1001,cloudsink.net,0,unreachable,0,0,0,0,0,,,,
+1002,amazon.com.mx,1,found,1,1,1,1,1,1,1,0,0
+1003,tiktokpangle.us,0,unreachable,0,0,0,0,0,,,,
+1004,amemv.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1005,youronlinechoices.com,1,found,0,0,0,0,0,0,0,0,0
+1006,faphouse.com,1,found,0,0,0,0,0,0,0,1,0
+1007,privacy-mgmt.com,0,unreachable,0,0,0,0,0,,,,
+1008,rtbcdn.ru,0,unreachable,0,0,0,0,0,,,,
+1009,ubi.com,1,found,0,0,0,0,0,0,0,0,0
+1010,zhihu.com,1,found,0,0,0,0,0,0,0,1,0
+1011,samsungcloudsolution.net,0,unreachable,0,0,0,0,0,,,,
+1012,tiktokrow-cdn.com,0,unreachable,0,0,0,0,0,,,,
+1013,ox.ac.uk,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1014,dnse0.com,0,unreachable,0,0,0,0,0,,,,
+1015,johndeerecloud.com,0,unreachable,0,0,0,0,0,,,,
+1016,xerox.com,1,found,0,0,0,0,0,0,0,0,0
+1017,ecosia.org,1,found,0,0,0,0,0,0,0,1,0
+1018,garmin.com,1,found,0,0,1,0,0,1,0,0,0
+1019,flipkart.com,1,found,0,0,0,0,0,0,0,0,0
+1020,huffpost.com,1,found,1,1,1,1,1,1,1,0,0
+1021,vk-analytics.ru,0,unreachable,0,0,0,0,0,,,,
+1022,hilton.com,1,found,0,0,0,0,0,0,0,0,0
+1023,richaudience.com,1,found,0,0,0,0,0,0,0,0,0
+1024,volcgslb.com,0,unreachable,0,0,0,0,0,,,,
+1025,bidmachine.io,1,found,0,0,0,0,0,0,0,1,0
+1026,ancestry.com,1,found,0,0,0,1,0,1,0,1,0
+1027,rambler.ru,1,found,0,0,0,0,0,0,0,0,0
+1028,kueezrtb.com,1,found,0,0,0,0,0,0,0,0,0
+1029,docomo.ne.jp,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1030,heytapmobi.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1031,commercialrealestate.com.au,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1032,readthedocs.org,1,found,0,0,0,0,0,0,0,1,0
+1033,immedia-semi.com,0,unreachable,0,0,0,0,0,,,,
+1034,quizlet.com,1,found,1,1,1,1,1,1,1,0,0
+1035,kwcdn.com,0,unreachable,0,0,0,0,0,,,,
+1036,nextcloud.com,1,found,0,0,0,0,0,0,0,0,0
+1037,nypost.com,1,found,0,1,1,1,1,1,0,0,0
+1038,yandex.com.tr,1,found,0,0,0,0,0,0,0,0,0
+1039,archive-it.group,1,found,0,0,0,0,0,0,0,0,0
+1040,bol.com,1,found,0,0,0,0,0,0,0,0,0
+1041,infobae.com,1,found,0,0,0,0,0,0,0,0,0
+1042,xing.com,1,found,0,0,0,0,0,0,0,0,1
+1043,webempresa.eu,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1044,goal.com,1,found,0,0,0,0,0,0,0,0,0
+1045,statcounter.com,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+1046,kslawin.com,0,unreachable,0,0,0,0,0,,,,
+1047,epicgames.dev,1,found,0,0,0,0,0,0,0,1,1
+1048,cdnhwc2.com,0,unreachable,0,0,0,0,0,,,,
+1049,playfabapi.com,0,unreachable,0,0,0,0,0,,,,
+1050,netgear.com,1,found,0,0,0,0,0,0,0,0,1
+1051,app-analytics-services-att.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1052,interia.pl,1,found,0,0,0,0,0,0,0,0,0
+1053,yximgs.com,0,unreachable,0,0,0,0,0,,,,
+1054,i18n-pglstatp.com,0,unreachable,0,0,0,0,0,,,,
+1055,google.ca,1,found,0,0,0,0,0,0,0,0,0
+1056,oecd.org,1,found,0,0,0,0,0,0,0,0,0
+1057,redfin.com,1,found,0,0,0,0,0,0,0,0,0
+1058,vercel-dns-3.com,0,unreachable,0,0,0,0,0,,,,
+1059,pvp.net,0,unreachable,0,0,0,0,0,,,,
+1060,n-tv.de,1,found,1,0,0,1,1,1,0,0,0
+1061,typeform.com,1,found,0,0,0,0,0,0,0,0,1
+1062,marca.com,1,found,1,0,1,1,1,1,0,0,0
+1063,nelreports.net,0,unreachable,0,0,0,0,0,,,,
+1064,ddns.net,0,unreachable,0,0,0,0,0,,,,
+1065,letterboxd.com,1,found,1,1,0,1,1,1,0,0,0
+1066,as.com,1,found,0,1,1,0,1,1,0,0,0
+1067,att.com,1,found,0,0,0,0,0,0,0,1,1
+1068,lwsdns.com,1,found,0,0,0,0,0,0,0,0,0
+1069,moneycontrol.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1070,ouest-france.fr,0,unreachable,0,0,0,0,0,,,,
+1071,ovscdns.net,0,unreachable,0,0,0,0,0,,,,
+1072,adblockplus.org,1,found,0,0,0,0,0,0,0,0,0
+1073,magnific.com,1,found,0,0,0,0,0,0,0,0,0
+1074,bfmtv.com,1,found,1,1,1,1,1,1,1,0,0
+1075,coursera.org,1,found,0,0,0,0,0,0,0,0,1
+1076,trendyol.com,1,found,0,0,0,0,0,0,0,1,1
+1077,footprintdns.com,0,unreachable,0,0,0,0,0,,,,
+1078,alphonso.tv,1,found,0,0,0,0,0,0,0,0,0
+1079,apa.org,1,found,0,0,0,0,0,0,0,0,0
+1080,economictimes.com,1,found,0,0,0,0,0,0,0,0,0
+1081,warnerbros.com,1,found,0,0,0,0,0,0,0,0,0
+1082,ilovepdf.com,1,found,0,0,0,0,0,0,0,0,0
+1083,olx.com.br,1,found,0,0,0,0,0,0,0,1,0
+1084,crazygames.com,1,found,0,0,0,0,0,0,0,0,0
+1085,yale.edu,1,found,0,0,0,0,0,0,0,0,0
+1086,triplinkintl.com,1,found,0,0,0,0,0,0,0,0,0
+1087,cbc.ca,0,unreachable,0,0,0,0,0,,,,
+1088,fortune.com,1,found,0,0,0,1,1,1,0,0,0
+1089,kahoot.it,1,found,1,1,1,1,1,1,1,0,0
+1090,bing.net,1,absent (HTTP 400),0,0,0,0,0,0,0,0,0
+1091,gofundme.com,1,found,0,0,0,0,0,0,0,0,0
+1092,nexthink.cloud,0,unreachable,0,0,0,0,0,,,,
+1093,us.com,1,found,0,0,0,0,0,0,0,0,0
+1094,ameba.jp,1,found,0,0,0,0,0,0,0,0,0
+1095,lge.com,1,found,0,0,0,0,0,0,0,0,1
+1096,uniqlo.com,0,unreachable,0,0,0,0,0,,,,
+1097,mythad.com,0,unreachable,0,0,0,0,0,,,,
+1098,yandex.kz,1,found,0,0,0,0,0,0,0,0,0
+1099,cookpad.com,1,found,1,1,1,1,1,1,1,0,0
+1100,inkuai.com,0,unreachable,0,0,0,0,0,,,,
+1101,tabelog.com,1,found,1,0,0,1,0,1,0,0,0
+1102,split.io,1,found,0,0,0,0,0,0,0,0,0
+1103,plos.org,1,found,0,0,0,0,0,0,0,0,0
+1104,nic.uk,0,unreachable,0,0,0,0,0,,,,
+1105,wise.com,1,found,0,0,0,0,0,0,0,0,0
+1106,aparat.com,1,found,0,0,0,0,0,0,0,0,0
+1107,usercentrics.eu,1,found,0,0,0,0,0,0,0,0,1
+1108,yastatic.net,1,found,0,0,0,0,0,0,0,0,0
+1109,dribbble.com,1,found,0,0,0,0,0,0,0,0,0
+1110,incapdns.net,0,unreachable,0,0,0,0,0,,,,
+1111,idnes.cz,1,found,1,1,1,1,0,1,0,0,0
+1112,mercadolibre.com.mx,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1113,tnaflix.com,1,found,0,0,0,0,0,0,0,0,0
+1114,skroutz.gr,1,found,1,1,1,1,1,1,1,0,0
+1115,gsmarena.com,1,found,0,1,1,0,1,1,0,0,0
+1116,samsungcloud.tv,0,unreachable,0,0,0,0,0,,,,
+1117,skysports.com,1,found,1,0,0,0,1,1,0,0,0
+1118,amd.com,0,unreachable,0,0,0,0,0,,,,
+1119,hugedomains.com,1,found,0,0,0,0,0,0,0,1,0
+1120,fazenda.gov.br,0,unreachable,0,0,0,0,0,,,,
+1121,olx.pl,1,found,0,0,0,0,0,0,0,0,0
+1122,pandora.com,1,found,0,0,0,0,0,0,0,0,0
+1123,byteoversea.com,0,unreachable,0,0,0,0,0,,,,
+1124,finn.no,1,found,0,0,0,0,0,0,0,0,0
+1125,clever.com,1,found,0,0,0,0,0,0,0,0,1
+1126,economist.com,1,found,1,1,1,1,1,1,1,0,0
+1127,sectigo.com,1,found,0,0,0,0,0,0,0,0,0
+1128,hltv.org,1,found,0,0,0,0,0,0,0,1,0
+1129,dnse2.com,0,unreachable,0,0,0,0,0,,,,
+1130,jstor.org,1,found,1,1,0,1,1,1,0,0,0
+1131,fifa.com,1,found,0,0,0,0,0,0,0,0,0
+1132,sahibinden.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1133,vivo.com,1,found,0,0,0,0,0,0,0,0,0
+1134,meethue.com,1,found,0,0,0,0,0,0,0,0,0
+1135,lanacion.com.ar,1,found,0,0,0,0,0,0,0,0,0
+1136,hotstar.com,1,found,0,0,0,0,0,0,0,0,0
+1137,rbc.ru,1,found,0,0,0,0,0,0,0,0,0
+1138,tesla.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1139,clarin.com,1,found,0,0,0,0,0,0,0,1,0
+1140,onedrive.com,1,found,0,0,0,0,0,0,0,0,0
+1141,psychologytoday.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1142,espncricinfo.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1143,bund.de,0,unreachable,0,0,0,0,0,,,,
+1144,fb.me,1,found,0,0,0,0,0,0,0,0,0
+1145,medallia.com,1,found,0,0,0,0,0,0,0,0,0
+1146,cspserver.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1147,gtm-a2b2.com,0,unreachable,0,0,0,0,0,,,,
+1148,phncdn.com,0,unreachable,0,0,0,0,0,,,,
+1149,biomedcentral.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1150,dafont.com,1,found,0,0,0,0,0,0,0,0,0
+1151,wetter.com,1,found,0,0,0,0,0,0,0,0,0
+1152,pendo.io,1,found,0,0,0,0,0,0,0,0,1
+1153,susercontent.com,0,unreachable,0,0,0,0,0,,,,
+1154,ultimate-guitar.com,1,found,0,0,0,0,0,0,0,0,0
+1155,aftonbladet.se,1,found,0,1,1,1,1,1,0,0,0
+1156,dns.cn,0,unreachable,0,0,0,0,0,,,,
+1157,upenn.edu,1,found,0,0,0,0,0,0,0,0,0
+1158,shopee.com.my,1,found,0,0,0,0,0,0,0,1,0
+1159,gismeteo.ru,0,unreachable,0,0,0,0,0,,,,
+1160,archiveofourown.org,1,found,1,0,0,0,1,1,0,1,0
+1161,kicker.de,1,found,1,1,1,1,1,1,1,0,0
+1162,flashscore.com,1,found,0,0,0,0,1,1,0,0,0
+1163,he.net,1,found,0,0,0,0,0,0,0,0,0
+1164,namu.wiki,1,found,1,1,1,1,1,1,1,0,0
+1165,stbid.ru,1,found,1,1,1,1,1,1,1,0,0
+1166,psu.edu,1,found,0,0,0,0,0,0,0,0,0
+1167,alipay.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1168,service-now.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1169,xhamster19.com,1,found,0,0,0,0,0,0,0,0,0
+1170,snapkit.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1171,company-target.com,0,unreachable,0,0,0,0,0,,,,
+1172,riotgames.com,1,found,0,0,0,0,0,0,0,0,0
+1173,xhamster2.com,1,found,0,0,0,0,0,0,0,0,0
+1174,vg.no,1,found,0,1,1,1,1,1,0,0,0
+1175,lequipe.fr,1,found,1,1,1,1,1,1,1,0,0
+1176,dmm.co.jp,1,found,0,0,0,1,0,1,0,0,0
+1177,jw.org,1,found,0,0,0,0,0,0,0,0,0
+1178,huffingtonpost.com,1,found,1,1,1,1,1,1,1,0,0
+1179,bmj.com,1,found,0,0,0,0,0,0,0,0,0
+1180,xhamster1.desi,1,found,0,0,0,0,0,0,0,0,0
+1181,elconfidencial.com,1,found,1,1,1,1,1,1,1,0,0
+1182,vinted.fr,1,found,1,1,0,1,1,1,0,0,0
+1183,t-s1-msedge.net,0,unreachable,0,0,0,0,0,,,,
+1184,livescore.com,1,found,0,0,0,0,0,0,0,0,0
+1185,tbs.co.jp,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1186,stackexchange.com,1,absent (HTTP 418),0,0,0,0,0,0,0,0,0
+1187,tubi.io,0,unreachable,0,0,0,0,0,,,,
+1188,indiamart.com,1,found,0,1,0,0,0,1,0,1,0
+1189,webhostbox.net,0,unreachable,0,0,0,0,0,,,,
+1190,akamaitechnologies.com,0,unreachable,0,0,0,0,0,,,,
+1191,ttlivecdn.com,0,unreachable,0,0,0,0,0,,,,
+1192,hostinger.com,1,found,0,0,0,0,0,0,0,0,1
+1193,rule34.xxx,1,found,0,0,0,0,0,0,0,0,0
+1194,makemytrip.com,0,unreachable,0,0,0,0,0,,,,
+1195,internetwarriors.net,1,found,0,0,0,0,0,0,0,0,0
+1196,vnexpress.net,1,found,1,1,0,1,1,1,0,0,0
+1197,itmedia.co.jp,1,found,0,0,0,0,0,0,0,0,0
+1198,nu.nl,1,found,1,1,1,1,1,1,1,1,0
+1199,superhosting.bg,1,found,0,0,0,0,0,0,0,0,0
+1200,zdnscloud.com,0,unreachable,0,0,0,0,0,,,,
+1201,ad.nl,1,found,1,1,1,1,1,1,1,1,0
+1202,pornpics.com,1,found,0,0,0,0,0,0,0,0,0
+1203,spankbang.com,1,found,1,1,0,1,1,1,0,0,0
+1204,cnnbrasil.com.br,1,found,0,0,0,0,0,0,0,0,0
+1205,b7510.com,1,found,0,0,0,0,0,0,0,0,1
+1206,xhaccess.com,1,found,0,0,0,0,0,0,0,0,0
+1207,janitorai.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1208,leboncoin.fr,1,found,0,0,0,0,0,0,0,0,0
+1209,xiaohongshu.com,1,found,1,1,1,1,1,1,1,0,0
+1210,bitdefender.net,1,found,0,0,0,0,0,0,0,0,0
+1211,hotpepper.jp,1,found,0,0,0,0,0,0,0,0,0
+1212,safety.google,1,found,0,0,0,0,0,0,0,0,0
+1213,admin.ch,1,found,0,0,0,0,0,0,0,1,0
+1214,rightmove.co.uk,1,found,1,0,0,0,1,1,0,0,0
+1215,donga.com,1,found,0,0,0,0,0,0,0,0,0
+1216,google.co.jp,1,found,0,0,0,0,0,0,0,0,0
+1217,postgresql.org,1,found,0,0,0,0,0,0,0,0,0
+1218,dcinside.com,0,unreachable,0,0,0,0,0,,,,
+1219,tradplusad.com,1,found,0,0,0,0,0,0,0,0,0
+1220,sapo.pt,1,found,1,1,1,1,1,1,1,0,0
+1221,abc.net.au,1,found,1,1,1,1,1,1,1,0,0
+1222,furaffinity.net,1,found,1,1,1,1,1,1,1,1,0
+1223,amazon.eg,1,found,1,1,1,1,1,1,1,0,0
+1224,amazon.co.za,1,found,1,1,1,1,1,1,1,0,0
+1225,acesso.gov.br,1,found,0,0,0,0,0,0,0,0,0
+1226,lichess.org,1,found,0,0,0,0,0,0,0,0,0
+1227,kakao.com,1,found,1,1,1,1,1,1,1,0,0
+1228,meesho.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1229,google.fr,1,found,0,0,0,0,0,0,0,0,0
+1230,bilibili.tv,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1231,futbin.com,1,found,0,0,0,0,0,0,0,0,0
+1232,ynet.co.il,1,found,0,0,0,0,0,0,0,0,0
+1233,remove.bg,1,found,0,0,0,0,0,0,0,0,0
+1234,megafon.ru,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+1235,gazzetta.it,1,found,1,1,1,1,1,1,1,1,0
+1236,adaether.com,0,unreachable,0,0,0,0,0,,,,
+1237,xhopen.com,1,found,0,0,0,0,0,0,0,0,0
+1238,icanhazip.com,1,found,0,0,0,0,0,0,0,0,1
+1239,fb-t-msedge.net,0,unreachable,0,0,0,0,0,,,,
+1240,vscode-cdn.net,0,unreachable,0,0,0,0,0,,,,
+1241,marktplaats.nl,1,found,0,0,0,0,0,0,0,0,1
+1242,t-bank-app.ru,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1243,boyfriendtv.com,1,found,0,0,0,0,0,0,0,0,0
+1244,emag.ro,1,found,0,0,0,0,0,0,0,0,0
+1245,msauth.net,0,unreachable,0,0,0,0,0,,,,
+1246,inven.co.kr,1,found,0,0,0,0,0,0,0,0,0
+1247,trello.com,1,found,0,0,0,0,0,0,0,0,0
+1248,xhname.com,1,found,0,0,0,0,0,0,0,0,0
+1249,wordwall.net,1,found,0,0,0,0,0,0,0,0,0
+1250,naukri.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1251,elsevier.com,1,found,0,0,0,0,0,0,0,0,0
+1252,businesswire.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1253,divar.ir,1,found,0,0,0,0,0,0,0,0,0
+1254,idealista.com,1,found,0,0,0,0,0,0,0,0,0
+1255,fetlife.com,1,found,0,0,0,0,0,0,0,1,0
+1256,nsone.net,1,found,0,0,0,0,0,0,0,0,0
+1257,txnhh.com,1,found,0,0,0,0,0,0,0,1,0
+1258,tabor.ru,1,found,0,0,0,0,0,0,0,0,0
+1259,fmkorea.com,1,found,1,1,1,1,1,1,1,0,0
+1260,poste.it,1,found,0,0,0,0,0,0,0,0,0
+1261,apigee.net,0,unreachable,0,0,0,0,0,,,,
+1262,argos.co.uk,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1263,wiktionary.org,1,found,0,0,0,0,0,0,0,0,0
+1264,blackberry.net,1,found,0,0,0,0,0,0,0,0,0
+1265,dhl.com,0,unreachable,0,0,0,0,0,,,,
+1266,cricbuzz.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1267,googleapis.cn,0,unreachable,0,0,0,0,0,,,,
+1268,mundodeportivo.com,1,found,0,1,0,0,0,1,0,0,0
+1269,fanfiction.net,0,unreachable,0,0,0,0,0,,,,
+1270,vietnam.vn,1,found,1,1,0,1,1,1,0,1,0
+1271,dw.com,1,found,1,1,1,1,1,1,1,0,0
+1272,porkbun.com,1,found,0,0,0,0,0,0,0,0,1
+1273,litnet.com,1,found,0,1,0,0,0,1,0,1,0
+1274,zalando.de,1,found,0,0,0,0,0,0,0,0,1
+1275,ucla.edu,1,found,0,0,0,0,0,0,0,0,0
+1276,canada.ca,1,found,0,0,0,0,0,0,0,1,0
+1277,dlsite.com,1,found,0,0,0,0,0,0,0,0,0
+1278,ap4r.com,0,unreachable,0,0,0,0,0,,,,
+1279,ad-tech.ru,0,unreachable,0,0,0,0,0,,,,
+1280,livedoor.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1281,merkur.de,1,found,1,1,0,1,1,1,0,0,0
+1282,excite.co.jp,1,found,0,0,0,0,0,0,0,0,0
+1283,pimpbunny.com,1,found,1,1,1,1,1,1,1,1,0
+1284,hln.be,1,found,1,1,1,1,1,1,1,1,0
+1285,kernel.org,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1286,youporn.com,1,found,0,0,0,0,0,0,0,0,0
+1287,labs.google,1,found,0,0,0,0,0,0,0,0,1
+1288,jusbrasil.com.br,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1289,com.be,0,unreachable,0,0,0,0,0,,,,
+1290,ebay.it,1,found,1,1,1,0,1,1,0,0,0
+1291,myntra.com,0,unreachable,0,0,0,0,0,,,,
+1292,namecheaphosting.com,0,unreachable,0,0,0,0,0,,,,
+1293,usnews.com,1,found,1,1,1,1,1,1,1,0,0
+1294,rayjump.com,0,unreachable,0,0,0,0,0,,,,
+1295,spbycdn.com,0,unreachable,0,0,0,0,0,,,,
+1296,ladepeche.fr,1,found,1,1,1,1,1,1,1,0,0
+1297,tapad.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1298,buzzfeed.com,1,found,1,1,1,1,1,1,1,0,0
+1299,tori.fi,1,found,0,0,0,0,0,0,0,0,0
+1300,lc.chat,1,found,0,0,0,0,0,0,0,0,0
+1301,admanmedia.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1302,noodlemagazine.com,1,found,0,0,0,0,0,0,0,1,0
+1303,polybuzz.ai,1,found,0,0,0,0,0,0,0,0,1
+1304,xham.live,1,found,0,0,0,0,0,0,0,0,0
+1305,suumo.jp,1,found,0,0,0,0,0,0,0,0,0
+1306,cdiscount.com,1,found,0,0,0,0,0,0,0,0,0
+1307,utorrent.com,1,found,0,0,0,0,0,0,0,0,1
+1308,justdial.com,1,found,1,1,0,0,0,1,0,0,0
+1309,championat.com,1,found,0,0,0,0,0,0,0,0,0
+1310,tendawifi.com,0,unreachable,0,0,0,0,0,,,,
+1311,mmechocaptiveportal.com,0,unreachable,0,0,0,0,0,,,,
+1312,hik-connect.com,0,unreachable,0,0,0,0,0,,,,
+1313,xvideos-cdn.com,0,unreachable,0,0,0,0,0,,,,
+1314,irs.gov,0,unreachable,0,0,0,0,0,,,,
+1315,edna.ru,1,found,0,0,0,0,0,0,0,0,0
+1316,oneme.ru,0,unreachable,0,0,0,0,0,,,,
+1317,mydramalist.com,1,found,0,0,0,0,0,0,0,1,0
+1318,actu.fr,1,found,1,1,1,1,1,1,1,0,0
+1319,redtube.com,1,found,0,0,0,0,0,0,0,0,0
+1320,f95zone.to,1,found,1,1,1,1,1,1,1,1,0
+1321,faphouse2.com,1,found,0,0,0,0,0,0,0,1,0
+1322,uci.edu,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1323,ilfattoquotidiano.it,1,found,0,0,0,0,0,0,0,0,0
+1324,huggingface.co,1,found,0,0,0,0,0,0,0,0,0
+1325,adfuse-ssp.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1326,fc2.com,1,found,0,0,0,0,0,0,0,0,0
+1327,donmai.us,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1328,playhop.com,1,found,0,0,0,0,0,0,0,0,0
+1329,classlink.com,1,found,0,0,0,0,0,0,0,0,1
+1330,dantri.com.vn,1,found,0,0,0,0,0,0,0,0,1
+1331,aternos.org,1,found,0,0,0,0,0,0,0,1,0
+1332,id.me,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1333,cam.ac.uk,1,found,0,0,0,0,0,0,0,0,0
+1334,xxxbp.tv,1,found,0,0,0,0,0,0,0,0,0
+1335,beboo.ru,1,found,0,0,0,0,0,0,0,0,0
+1336,parklogic.com,1,found,0,0,0,0,0,0,0,0,0
+1337,leroymerlin.fr,1,found,0,0,0,0,0,0,0,0,0
+1338,autotrader.co.uk,1,found,0,0,0,0,0,0,0,0,0
+1339,pornone.com,1,found,0,0,0,0,0,0,0,0,0
+1340,walmart.com.mx,1,found,0,0,0,0,0,0,0,0,0
+1341,lookmovie2.to,1,found,0,0,0,0,0,0,0,0,0
+1342,calculator.net,1,found,0,0,0,0,0,0,0,0,0
+1343,xhspot.com,1,found,0,0,0,0,0,0,0,0,0
+1344,haberler.com,1,found,0,0,0,0,0,0,0,0,1
+1345,aljazeera.com,1,found,1,1,1,0,0,1,0,0,0
+1346,funpay.com,1,found,0,0,0,0,0,0,0,0,0
+1347,bihar.gov.in,0,unreachable,0,0,0,0,0,,,,
+1348,youjizz.com,1,found,0,0,0,0,0,0,0,0,0
+1349,hollywoodbets.net,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1350,wisc.edu,1,found,0,0,0,0,0,0,0,0,0
+1351,crn77.com,1,found,1,1,0,1,1,1,0,1,1
+1352,e621.net,1,found,1,0,1,1,1,1,0,0,0
+1353,gst.gov.in,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1354,thisvid.com,1,found,0,0,0,0,0,0,0,1,0
+1355,russianpost.ru,0,unreachable,0,0,0,0,0,,,,
+1356,sotwe.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1357,oneindia.com,1,found,1,1,1,1,1,1,1,0,0
+1358,xhsocial.com,1,found,0,0,0,0,0,0,0,0,0
+1359,meteofrance.com,1,found,0,0,0,0,0,0,0,0,0
+1360,turkiye.gov.tr,0,unreachable,0,0,0,0,0,,,,
+1361,netkeiba.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1362,ajio.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1363,mediaexpert.pl,1,found,0,0,0,0,0,0,0,0,0
+1364,asurascans.com,1,found,0,0,0,0,0,0,0,1,0
+1365,digikala.com,1,found,0,0,0,0,0,0,0,0,0
+1366,zozo.jp,0,unreachable,0,0,0,0,0,,,,
+1367,aznude.com,1,found,0,0,0,0,0,0,0,0,0
+1368,navitime.co.jp,1,found,0,0,0,0,0,0,0,0,0
+1369,gcash.com,1,found,0,0,0,0,0,0,0,0,0
+1370,xnxx.tv,1,found,0,0,0,0,0,0,0,1,0
+1371,xvv1deos.com,1,found,0,0,0,0,0,0,0,1,0
+1372,fapello.com,1,found,0,0,0,0,0,0,0,0,0
+1373,hitomi.la,1,found,0,0,0,0,0,0,0,0,0
+1374,varzesh3.com,1,found,0,0,0,0,0,0,0,0,0
+1375,amap.com,1,found,0,1,0,0,0,1,0,0,0
+1376,publicnode.com,1,found,0,0,0,0,0,0,0,0,0
+1377,cloudflareclient.com,1,absent (HTTP 522),0,0,0,0,0,0,0,0,0
+1378,ruliweb.com,1,found,0,0,0,0,0,0,0,0,0
+1379,inleed.net,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+1380,sun.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1381,jalan.net,0,unreachable,0,0,0,0,0,,,,
+1382,9ffyu1g9c.com,0,unreachable,0,0,0,0,0,,,,
+1383,ixxx.com,1,found,0,0,0,0,0,0,0,1,0
+1384,pornhub.org,1,found,0,0,0,0,0,0,0,0,0
+1385,fdown.net,1,found,0,0,0,0,0,0,0,1,0
+1386,tenki.jp,1,found,0,0,0,0,0,0,0,0,0
+1387,weathernews.jp,1,found,0,0,0,0,0,0,0,0,0
+1388,subito.it,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1389,e-hentai.org,1,found,0,0,0,0,0,0,0,0,0
+1390,boursorama.com,1,found,0,0,0,0,0,0,0,0,0
+1391,missav.ws,1,found,0,0,0,0,0,0,0,0,0
+1392,mbga.jp,1,found,0,0,0,0,0,0,0,0,0
+1393,imhentai.xxx,1,found,1,1,0,1,1,1,0,1,0
+1394,datadome.co,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1395,sportybet.com,1,found,0,0,0,0,0,0,0,0,0
+1396,everesttech.net,0,unreachable,0,0,0,0,0,,,,
+1397,platorelay.com,0,unreachable,0,0,0,0,0,,,,
+1398,mangabuff.ru,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1399,rule34video.com,1,found,0,0,0,0,0,0,0,0,0
+1400,attn.tv,0,unreachable,0,0,0,0,0,,,,
+1401,maricopa.gov,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1402,omnitagjs.com,0,unreachable,0,0,0,0,0,,,,
+1403,sex-studentki.team,1,found,0,0,0,0,0,0,0,0,0
+1404,wshifen.com,0,unreachable,0,0,0,0,0,,,,
+1405,pornhat.com,1,found,0,0,0,0,0,0,0,0,0
+1406,okdiario.com,1,found,0,0,0,0,0,0,0,0,0
+1407,nikkansports.com,1,found,1,0,0,1,1,1,0,0,0
+1408,bookmyshow.com,1,found,0,0,0,0,0,0,0,0,1
+1409,dagbladet.no,1,found,1,1,1,1,1,1,1,0,0
+1410,xhamster45.desi,1,found,0,0,0,0,0,0,0,0,0
+1411,tbank.ru,1,found,0,0,0,0,0,0,0,0,0
+1412,cardgames.io,1,found,0,0,0,0,0,0,0,0,0
+1413,1c.ru,1,found,0,0,0,0,0,0,0,0,0
+1414,novinky.cz,1,found,0,0,0,0,0,0,0,0,0
+1415,karnataka.gov.in,0,unreachable,0,0,0,0,0,,,,
+1416,ilmeteo.it,1,found,1,1,0,0,1,1,0,0,1
+1417,websitewelcome.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1418,jable.tv,1,found,0,0,0,0,0,0,0,0,0
+1419,missav.live,1,found,0,0,0,0,0,0,0,1,0
+1420,idealista.it,1,found,0,0,0,0,0,0,0,0,0
+1421,boardgamearena.com,1,found,0,0,0,0,0,0,0,0,0
+1422,index.hr,1,found,0,0,0,0,0,0,0,0,0
+1423,action.com,1,found,0,0,0,0,0,0,0,1,0
+1424,queniuaa.com,0,unreachable,0,0,0,0,0,,,,
+1425,uidai.gov.in,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1426,auth0.com,1,found,0,0,0,0,0,0,0,0,1
+1427,18comic.vip,1,found,0,0,0,0,0,0,0,0,0
+1428,mangago.me,1,found,0,0,0,0,0,0,0,1,0
+1429,syosetu.com,1,found,0,0,0,0,0,0,0,0,0
+1430,ppomppu.co.kr,1,found,0,0,0,0,0,0,0,1,0
+1431,wayground.com,1,found,0,0,0,0,0,0,0,0,0
+1432,porno365.golf,1,found,0,0,0,0,0,0,0,0,0
+1433,zedge.net,1,found,1,0,0,0,0,1,0,0,0
+1434,simpcity.cr,1,found,0,0,0,0,0,0,0,0,0
+1435,nesine.com,1,found,0,0,0,0,0,0,0,0,0
+1436,umn.edu,1,found,0,0,0,0,0,0,0,0,0
+1437,cronista.com,1,found,0,0,0,0,0,0,0,0,0
+1438,vlr.gg,1,found,0,0,0,0,0,0,0,0,0
+1439,carsensor.net,1,found,0,0,0,0,0,0,0,0,0
+1440,coolmathgames.com,1,found,0,0,0,0,0,0,0,0,0
+1441,comix.to,1,found,1,1,0,1,1,1,0,1,0
+1442,ukdevilz.com,1,found,0,0,0,0,0,0,0,1,0
+1443,ixl.com,1,found,1,0,0,0,1,1,0,0,0
+1444,inps.it,1,found,0,0,0,0,0,0,0,0,0
+1445,iltalehti.fi,1,found,1,1,1,1,1,1,1,0,0
+1446,bef77.com,1,found,1,1,0,1,1,1,0,1,1
+1447,eenadu.net,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1448,betway.co.za,1,found,0,0,0,0,0,0,0,0,0
+1449,sozcu.com.tr,1,found,0,0,0,0,0,0,0,0,1
+1450,otomoto.pl,1,found,0,0,0,0,0,0,0,0,0
+1451,bookmark.xxx,1,found,0,0,0,0,0,0,0,1,0
+1452,deepseek.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1453,24h.com.vn,1,found,0,0,0,0,0,0,0,0,0
+1454,blic.rs,1,found,0,0,0,0,0,0,0,0,0
+1455,protothema.gr,1,found,0,0,0,0,0,0,0,0,1
+1456,jutarnji.hr,1,found,0,0,0,0,0,0,0,1,0
+1457,mps.gov.cn,0,unreachable,0,0,0,0,0,,,,
+1458,jcphi.com,1,found,0,0,0,0,0,0,0,0,1
+1459,gamewith.jp,1,found,0,0,0,0,0,0,0,0,0
+1460,imagefap.com,1,found,0,0,0,0,0,0,0,0,0
+1461,3bmeteo.com,1,found,0,0,0,0,0,0,0,1,0
+1462,cityheaven.net,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1463,cardmarket.com,0,unreachable,0,0,0,0,0,,,,
+1464,ovhcloud.com,1,found,0,0,0,0,0,0,0,0,0
+1465,jagran.com,1,found,0,0,0,0,0,0,0,0,0
+1466,myinstants.com,1,found,1,1,0,1,1,1,0,1,0
+1467,fpo.xxx,1,found,0,0,0,0,0,0,0,0,0
+1468,property24.com,1,found,0,0,0,0,0,0,0,0,0
+1469,sexvid.xxx,1,found,0,0,0,0,0,0,0,0,0
+1470,neal.fun,1,found,0,0,0,0,0,0,0,0,0
+1471,game8.jp,1,found,1,0,0,0,0,1,0,0,0
+1472,ultradns.com,1,absent (HTTP 503),0,0,0,0,0,0,0,0,0
+1473,ssstik.io,1,found,0,0,0,0,0,0,0,0,0
+1474,blooket.com,1,found,0,0,0,0,0,0,0,1,0
+1475,gartner.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1476,ekstrabladet.dk,1,found,1,1,1,1,1,1,1,0,0
+1477,thexh.live,1,found,0,0,0,0,0,0,0,0,0
+1478,sciencedaily.com,1,found,0,0,0,0,0,0,0,0,0
+1479,255md.com,1,found,1,1,0,1,1,1,0,1,1
+1480,omg10.com,1,found,1,1,0,1,1,1,0,1,1
+1481,immobiliare.it,1,found,0,0,0,0,0,0,0,0,0
+1482,luxuretv.com,1,found,0,0,0,0,0,0,0,1,0
+1483,newsweek.com,1,found,1,1,1,0,1,1,0,1,0
+1484,superporn.com,1,found,0,0,0,0,0,0,0,0,0
+1485,theqoo.net,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1486,ficbook.net,1,found,0,0,0,0,0,0,0,1,0
+1487,leroymerlin.es,1,found,0,0,0,0,0,0,0,0,0
+1488,aka.ms,1,found,1,1,1,1,1,1,1,0,0
+1489,fuq.com,1,found,0,0,0,0,0,0,0,1,0
+1490,spankbang.party,1,found,1,1,0,1,1,1,0,0,0
+1491,pussyspace.com,0,unreachable,0,0,0,0,0,,,,
+1492,akismet.com,1,found,0,0,0,0,0,0,0,0,0
+1493,klikbca.com,1,found,0,0,0,0,0,0,0,0,0
+1494,kooora.com,1,found,0,0,0,0,0,0,0,0,0
+1495,cmoa.jp,0,unreachable,0,0,0,0,0,,,,
+1496,eff.org,1,found,0,0,0,0,0,0,0,0,0
+1497,nosv.org,0,unreachable,0,0,0,0,0,,,,
+1498,hdtube.porn,1,found,1,0,1,1,1,1,0,0,0
+1499,fedex.com,1,found,0,0,0,0,0,0,0,0,0
+1500,forebet.com,1,found,0,0,0,0,0,0,0,1,0
+1501,theblowers.com,1,found,0,0,0,0,0,0,0,1,0
+1502,blackrussia.online,1,found,0,0,0,0,0,0,0,0,0
+1503,eci.gov.in,0,unreachable,0,0,0,0,0,,,,
+1504,arca.live,1,found,0,0,0,0,0,0,0,1,0
+1505,letsporn.com,1,found,0,0,0,0,0,0,0,1,0
+1506,rat.xxx,1,found,0,0,0,0,0,0,0,0,0
+1507,caliente.mx,1,found,0,0,0,0,0,0,0,1,0
+1508,eltiempo.es,1,found,1,1,0,0,0,1,0,1,1
+1509,sxyprn.com,1,found,0,0,0,0,0,0,0,0,0
+1510,smadex.com,1,found,0,0,0,0,0,0,0,0,0
+1511,xvideos.es,1,found,0,0,0,0,0,0,0,1,0
+1512,ioh.co.id,1,found,0,0,0,0,0,0,0,0,0
+1513,xnxx.health,1,found,1,1,0,1,1,1,0,1,0
+1514,pornoborshch.com,1,found,1,0,0,0,0,1,0,1,0
+1515,rustdesk.com,1,found,0,0,0,0,1,1,0,1,1
+1516,starfall.com,1,found,0,0,0,0,0,0,0,0,0
+1517,epfindia.gov.in,0,unreachable,0,0,0,0,0,,,,
+1518,sondakika.com,1,found,0,0,0,0,0,0,0,0,1
+1519,mangafire.to,1,found,0,0,0,0,0,0,0,1,0
+1520,torob.com,1,found,0,0,0,0,0,0,0,0,0
+1521,kaspi.kz,1,found,0,0,0,0,0,0,0,0,0
+1522,xnxx.es,1,found,0,0,0,0,0,0,0,1,0
+1523,testbook.com,1,found,0,0,0,0,0,0,0,0,0
+1524,fullxh.com,1,found,0,0,0,0,0,0,0,0,0
+1525,goodreturns.in,1,found,0,0,0,0,0,0,0,0,0
+1526,blueapron.com,1,found,0,0,0,0,0,0,0,0,1
+1527,xnxx2.com,1,found,0,0,0,0,0,0,0,1,0
+1528,xnxx-arabic.com,1,found,0,0,0,0,0,0,0,1,0
+1529,toyhou.se,1,found,0,0,0,0,0,0,0,1,0
+1530,123av.com,1,found,0,0,0,0,0,0,0,0,0
+1531,tinkoff.ru,1,found,0,0,0,0,0,0,0,0,0
+1532,ptt.cc,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1533,exhentai.org,1,found,1,1,1,1,1,1,1,0,0
+1534,supjav.com,1,found,0,0,0,0,0,0,0,0,0
+1535,programme-tv.net,1,found,0,0,0,0,1,1,0,0,1
+1536,fatalmodel.com,1,found,0,0,0,0,0,0,0,1,0
+1537,typing.com,1,found,0,0,0,0,0,0,0,0,1
+1538,carwale.com,1,found,0,0,0,0,0,0,0,0,1
+1539,bt.dk,1,found,1,0,0,0,1,1,0,0,0
+1540,missav123.com,1,found,0,0,0,0,0,0,0,1,0
+1541,hanime1.me,1,found,0,0,0,0,0,0,0,1,0
+1542,missav.ai,1,found,0,0,0,0,0,0,0,0,0
+1543,ninisite.com,1,found,0,0,0,0,0,0,0,0,0
+1544,joyclub.de,1,found,1,0,0,0,0,1,0,1,0
+1545,ijavhd.com,1,found,0,0,0,0,0,0,0,0,0
+1546,tabletki.ua,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1547,sexlog.com,1,found,0,0,0,0,0,0,0,0,0
+1548,sex-studentki.cafe,1,found,0,0,0,0,0,0,0,0,0
+1549,casinoplus.com.ph,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1550,jennymovies.com,1,found,0,0,0,0,0,0,0,0,0
+1551,aajtak.in,1,found,0,0,0,0,0,0,0,0,0
+1552,mat6tube.com,1,found,0,0,0,0,0,0,0,0,0
+1553,wpastra.com,1,found,0,0,0,0,0,0,0,0,0
+1554,fedoraproject.org,1,found,0,0,0,0,0,0,0,1,0
+1555,markt.de,1,found,0,0,0,0,0,0,0,0,1
+1556,6opo.com,1,found,0,0,0,0,0,0,0,0,1
+1557,dian.gov.co,0,unreachable,0,0,0,0,0,,,,
+1558,tokyomotion.net,1,found,0,0,0,0,0,0,0,0,0
+1559,porn300.com,1,found,0,0,0,0,0,0,0,0,0
+1560,indianrail.gov.in,1,found,0,0,0,0,0,0,0,0,0
+1561,suruga-ya.jp,1,found,1,1,0,1,1,1,0,0,0
+1562,xvideos2.com,1,found,0,0,0,0,0,0,0,1,0
+1563,contextweb.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1564,lioden.com,1,found,1,0,0,0,0,1,0,0,0
+1565,lausd.net,0,unreachable,0,0,0,0,0,,,,
+1566,wnacg.com,1,found,1,1,0,1,1,1,0,0,0
+1567,listcrawler.eu,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1568,parivahan.gov.in,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1569,s8ey.com,1,found,0,0,0,0,0,0,0,0,1
+1570,snaptik.app,1,found,0,0,0,0,0,0,0,0,0
+1571,iporntv.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1572,rakuten-sec.co.jp,1,found,0,0,0,0,0,0,0,0,0
+1573,absher.sa,1,found,0,0,0,0,0,0,0,0,0
+1574,bikewale.com,1,found,0,0,0,0,0,0,0,0,0
+1575,stratoserver.net,0,unreachable,0,0,0,0,0,,,,
+1576,overwolf.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1577,tdnsstic1.cn,0,unreachable,0,0,0,0,0,,,,
+1578,npci.org.in,1,found,0,0,0,0,0,0,0,1,0
+1579,men.gov.ma,0,unreachable,0,0,0,0,0,,,,
+1580,mechacomic.jp,1,found,0,0,0,0,0,0,0,0,0
+1581,croxyproxy.com,1,found,0,0,0,0,0,0,0,0,0
+1582,therapservices.net,1,found,0,0,0,0,0,0,0,0,1
+1583,namasha.com,1,found,0,0,0,0,0,0,0,0,0
+1584,myreadingmanga.info,1,found,1,1,0,1,1,1,0,0,0
+1585,redbus.in,0,unreachable,0,0,0,0,0,,,,
+1586,alura.com.br,1,found,0,0,0,0,0,0,0,0,1
+1587,kakuyomu.jp,1,found,0,0,0,0,0,0,0,0,0
+1588,qorno.com,1,found,0,0,0,0,0,0,0,1,0
+1589,bingoplus.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1590,iplt20.com,1,found,0,0,0,0,0,0,0,0,0
+1591,serviporno.com,1,found,0,0,0,0,0,0,0,0,0
+1592,sinoptik.ua,1,found,0,0,0,0,0,0,0,0,0
+1593,adrta.com,1,found,1,1,1,1,1,1,1,0,0
+1594,meteociel.fr,1,found,0,1,0,0,0,1,0,0,0
+1595,fastdl.app,1,found,0,0,0,0,0,0,0,0,0
+1596,porno666.fo,0,unreachable,0,0,0,0,0,,,,
+1597,twpornstars.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1598,trilltrill.jp,1,found,0,0,0,0,0,0,0,0,0
+1599,buydomains.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1600,rkv1.com,1,found,0,0,0,0,0,0,0,0,1
+1601,nfse.gov.br,0,unreachable,0,0,0,0,0,,,,
+1602,eepurl.com,1,absent (HTTP 400),0,0,0,0,0,0,0,0,0
+1603,immersivelabs.online,1,found,0,0,0,0,0,0,0,0,0
+1604,screener.in,1,found,0,0,0,0,0,0,0,0,0
+1605,nya2.com,1,found,1,1,0,1,1,1,0,1,1
+1606,dogdrip.net,1,found,1,1,0,1,1,1,0,1,0
+1607,skokka.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1608,ey43.com,1,found,1,1,0,1,1,1,0,1,1
+1609,kompoz2.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1610,ak2yy.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1611,shutterstock.com,1,found,1,1,0,0,1,1,0,0,0
+1612,afip.gob.ar,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1613,goojara.to,1,found,0,0,0,0,0,0,0,1,0
+1614,girlschannel.net,1,found,0,0,0,0,0,0,0,0,0
+1615,hochi.news,1,found,1,1,1,1,1,1,1,0,0
+1616,piccoma.com,1,found,0,0,0,0,0,0,0,0,0
+1617,motherless.com,0,unreachable,0,0,0,0,0,,,,
+1618,betika.com,1,found,0,0,0,0,0,0,0,1,0
+1619,ladies.de,1,found,0,0,0,0,0,0,0,0,0
+1620,bakusai.com,1,found,0,0,0,0,0,0,0,1,0
+1621,librus.pl,1,found,0,0,0,0,0,0,0,0,0
+1622,kingbokep.tv,1,found,0,0,0,0,0,0,0,0,0
+1623,freepornvideo.sex,1,found,0,0,0,0,0,0,0,0,0
+1624,ayhal.com,1,found,1,1,1,1,1,1,1,0,0
+1625,ss.com,1,found,0,0,0,0,0,0,0,0,0
+1626,search-start.org,0,unreachable,0,0,0,0,0,,,,
+1627,pussyboy.net,1,found,0,0,0,0,0,0,0,0,0
+1628,chordtela.com,1,found,0,0,0,0,0,0,0,1,1
+1629,xorgasmo.com,1,found,0,0,0,0,0,0,0,0,1
+1630,indoav.com,1,found,0,0,0,0,0,0,0,0,0
+1631,desitales2.com,1,found,0,0,0,0,0,0,0,0,0
+1632,www.gob.mx,1,found,0,0,0,0,0,0,0,0,0
+1633,syosetu.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1634,okxxx1.com,1,found,0,0,0,0,0,0,0,0,0
+1635,tawk.to,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1636,hentai.name,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1637,xxxvideo.link,1,found,0,0,0,0,0,0,0,1,0
+1638,publi24.ro,1,found,0,0,0,0,0,0,0,0,1
+1639,nickfinder.com,1,found,0,0,0,0,0,0,0,0,0
+1640,redwap.sex,1,found,0,0,0,0,0,0,0,1,0
+1641,lk21official.cc,0,unreachable,0,0,0,0,0,,,,
+1642,sexalarab.com,1,found,0,0,0,0,0,0,0,1,0
+1643,fao.org,1,found,0,0,0,0,0,0,0,0,0
+1644,diretta.it,1,found,0,0,0,0,1,1,0,0,0
+1645,moviebox.ph,1,found,0,0,0,0,0,0,0,0,0
+1646,arabx.cam,1,found,1,1,0,0,1,1,0,1,0
+1647,colliderporn.com,1,found,1,1,0,0,0,1,0,1,0
+1648,njavtv.com,1,found,0,0,0,0,0,0,0,1,0
+1649,ewaybillgst.gov.in,0,unreachable,0,0,0,0,0,,,,
+1650,promiedos.com.ar,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1651,arabxn.sex,1,found,0,0,0,0,0,0,0,0,0
+1652,fabswingers.com,1,found,0,0,0,0,0,0,0,0,0
+1653,agenciatributaria.gob.es,0,unreachable,0,0,0,0,0,,,,
+1654,pornocarioca.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1655,spaggiari.eu,1,found,0,0,0,0,0,0,0,0,1
+1656,czbooks.net,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+1657,tjk.org,1,absent (HTTP 400),0,0,0,0,0,0,0,0,0
+1658,imgsrc.ru,1,found,0,0,0,0,0,0,0,0,0
+1659,samsungiotcloud.com,0,unreachable,0,0,0,0,0,,,,
+1660,yallakora.com,1,found,0,0,0,0,0,0,0,1,1
+1661,sexemodel.com,1,found,0,0,0,0,0,0,0,0,0
+1662,xvideos-ar.com,1,found,0,0,0,0,0,0,0,1,0
+1663,banvenez.com,0,unreachable,0,0,0,0,0,,,,
+1664,ftc.gov,1,found,0,0,0,0,0,0,0,1,0
+1665,sexnyk.com,1,found,0,0,0,0,0,0,0,0,0
+1666,letras.mus.br,1,found,0,0,0,0,0,0,0,0,0
+1667,choiceadvantage.com,0,unreachable,0,0,0,0,0,,,,
+1668,momon-ga.com,1,found,1,1,0,1,1,1,0,1,0
+1669,skelbiu.lt,1,found,0,0,1,1,1,1,0,0,0
+1670,medu.ir,0,unreachable,0,0,0,0,0,,,,
+1671,patria.org.ve,0,unreachable,0,0,0,0,0,,,,
+1672,happymh.com,1,found,1,1,0,1,1,1,0,0,0
+1673,bancodevenezuela.com,0,unreachable,0,0,0,0,0,,,,
+1674,impots.gouv.fr,1,found,0,0,0,0,0,0,0,0,0
+1675,jra.go.jp,0,unreachable,0,0,0,0,0,,,,
+1676,site.com,1,found,0,0,0,0,0,0,0,0,0
+1677,nustargame.com,1,found,0,0,0,0,0,0,0,0,1
+1678,administracionelectronica.gob.es,1,found,0,0,0,0,0,0,0,0,0
+1679,arabtnt.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1680,afribaba.com,1,found,0,0,0,0,0,0,0,1,0
+1681,an1.com,1,found,0,0,0,0,0,0,0,0,0
+1682,ptgaming.ph,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1683,xxx18hot.com,0,unreachable,0,0,0,0,0,,,,
+1684,salonboard.com,0,unreachable,0,0,0,0,0,,,,
+1685,apple-cloudkit.com,0,unreachable,0,0,0,0,0,,,,
+1686,alphapolis.co.jp,1,found,0,0,0,0,0,0,0,0,1
+1687,anses.gob.ar,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1688,meteofor.com.ua,1,absent (HTTP 420),0,0,0,0,0,0,0,0,0
+1689,darkero.com,1,found,0,0,0,0,0,0,0,1,0
+1690,doujindesu.tv,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1691,vymanga.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1692,mangabuddy.com,1,found,1,1,0,1,1,1,0,0,0
+1693,flashscore.fr,1,found,0,0,0,0,1,1,0,0,0
+1694,33apk.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1695,azure.net,1,found,0,0,0,0,0,0,0,0,0
+1696,skipthegames.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1697,aucey.com,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+1698,escort.club,1,found,0,0,0,0,0,0,0,0,0
+1699,dto.jp,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1700,statuspage.io,1,found,0,0,0,0,0,0,0,0,0
+1701,autoplius.lt,1,found,0,0,1,1,1,1,0,0,0
+1702,vu.edu.pk,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1703,keirin.jp,1,found,1,1,1,1,1,1,1,0,1
+1704,pornhat.one,1,found,0,0,0,0,0,0,0,0,0
+1705,filmyfly.cafe,1,absent (HTTP 403),0,0,0,0,0,0,0,1,0
+1706,xosodaiphat.com,1,found,0,0,0,0,0,0,0,0,0
+1707,flashscore.mobi,1,found,0,0,0,0,1,1,0,0,0
+1708,livescore.cz,1,found,0,0,0,0,1,1,0,0,0
+1709,zebawy.com,1,found,0,0,0,0,0,0,0,0,0
+1710,acm.org,1,found,0,0,0,0,0,0,0,0,0
+1711,twkan.com,1,found,1,1,0,1,1,1,0,0,0
+1712,avito.st,1,found,1,1,1,1,1,1,1,0,0
+1713,mileroticos.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1714,xpaja.net,1,found,0,0,0,0,0,0,0,0,1
+1715,arbada.com,1,found,0,0,0,0,0,0,0,0,0
+1716,tktube.com,0,unreachable,0,0,0,0,0,,,,
+1717,goal7.co,1,found,0,0,0,0,0,0,0,1,0
+1718,manhwaread.com,1,found,0,0,0,0,0,0,0,1,0
+1719,hotxv.com,1,found,0,0,0,0,0,0,0,0,0
+1720,eroterest.net,0,unreachable,0,0,0,0,0,,,,
+1721,indown.io,1,found,0,0,0,0,0,0,0,0,0
+1722,betking.com,1,found,0,0,0,0,0,0,0,0,0
+1723,digitallocker.gov.in,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1724,fawanews.sc,1,found,0,0,0,0,0,0,0,0,0
+1725,jra.jp,1,found,0,0,0,0,0,0,0,0,0
+1726,ecnavi.jp,1,found,0,0,0,0,0,0,0,0,0
+1727,sarkariresult.com.cm,1,found,0,0,0,0,0,0,0,0,0
+1728,conectate.com.do,1,found,0,0,0,0,0,0,0,0,1
+1729,indiansexstories3.com,1,found,0,0,0,0,0,0,0,0,0
+1730,oddspark.com,0,unreachable,0,0,0,0,0,,,,
+1731,google.ru,1,found,0,0,0,0,0,0,0,0,0
+1732,manhwaweb.com,1,found,1,1,0,1,1,1,0,1,0
+1733,notion.so,1,found,0,0,0,0,0,0,0,0,1
+1734,kamababax.com,1,found,0,0,0,0,0,0,0,0,0
+1735,turbo.az,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1736,espn.com.ve,1,found,1,0,0,1,1,1,0,0,0
+1737,humoruniv.com,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+1738,ojogodobicho.com,1,found,0,0,0,0,0,0,0,0,0
+1739,simontokx.asia,0,unreachable,0,0,0,0,0,,,,
+1740,w3schools.com,1,found,0,0,0,0,0,0,0,0,0
+1741,braiiz.com,1,found,0,0,0,0,0,0,0,1,0
+1742,animanch.com,1,found,1,1,0,1,1,1,0,1,0
+1743,betpawa.ug,1,found,0,0,0,0,0,0,0,0,0
+1744,xvideosputaria.com,1,found,1,1,0,1,1,1,0,1,0
+1745,jaya9bangladesh.com,1,found,0,0,0,0,0,0,0,0,0
+1746,animesalt.ac,1,found,1,1,0,1,1,1,0,1,0
+1747,xsmn.mobi,1,found,0,0,0,0,0,0,0,0,0
+1748,xoso.com.vn,1,found,0,0,0,0,0,0,0,0,0
+1749,komikindo.ch,1,found,1,1,0,1,1,1,0,1,0
+1750,fabguys.com,1,found,0,0,0,0,0,0,0,0,0
+1751,annunci69.it,1,found,0,0,0,0,0,0,0,1,0
+1752,triunfobet.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1753,thscore99.com,1,found,0,0,0,0,0,0,0,0,0
+1754,kemkes.go.id,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1755,unlockffbeta.com,1,absent (HTTP 404),0,0,0,0,0,0,0,1,0
+1756,az24.vn,1,found,0,0,0,0,0,0,0,0,0
+1757,minhngoc.net.vn,1,found,1,1,0,1,1,1,0,0,1
+1758,packzy.com,1,found,0,0,0,0,0,0,0,0,0
+1759,zearn.org,1,found,0,0,0,0,0,0,0,0,0
+1760,crex.com,1,found,1,0,0,0,0,1,0,0,0
+1761,mobiledokan.com,1,found,0,0,0,0,0,0,0,0,0
+1762,your-server.de,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1763,desiviral.net,1,found,0,0,0,0,0,0,0,0,1
+1764,gama.ir,1,found,0,0,0,0,0,0,0,0,0
+1765,sslip.io,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1766,yasyadong01.tv,1,found,0,0,0,0,0,0,0,1,0
+1767,betpawa.co.tz,1,found,0,0,0,0,0,0,0,0,0
+1768,tamildhool.tech,1,found,0,0,0,0,0,0,0,1,1
+1769,kumanga.com,1,absent (HTTP 307),0,0,0,0,0,0,0,0,0
+1770,koselarab.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1771,dpbossss.boston,1,found,0,0,0,0,0,0,0,1,1
+1772,kinnser.net,0,unreachable,0,0,0,0,0,,,,
+1773,acesso.gov.pt,1,found,0,0,0,0,0,0,0,0,0
+1774,tjsp.jus.br,1,found,0,0,0,0,0,0,0,0,0
+1775,xbanxia.cc,1,found,0,0,0,0,0,0,0,1,0
+1776,vidzp.com,1,found,1,1,0,1,1,1,0,0,0
+1777,sexvid1.com,1,found,0,0,0,0,0,0,0,0,0
+1778,supabase.co,1,found,0,0,0,0,0,0,0,0,1
+1779,sattamatkadpboss.mobi,1,found,0,0,0,0,0,0,0,0,1
+1780,scan-manga.com,1,found,1,1,0,1,1,1,0,0,0
+1781,xahani.com,1,found,0,0,0,0,0,0,0,1,0
+1782,futbol-libre.su,0,unreachable,0,0,0,0,0,,,,
+1783,gree-apps.net,0,unreachable,0,0,0,0,0,,,,
+1784,oolveri.com,0,unreachable,0,0,0,0,0,,,,
+1785,xxxhindi.to,1,found,1,1,0,1,1,1,0,1,0
+1786,pitc.com.pk,0,unreachable,0,0,0,0,0,,,,
+1787,satta-king-fast.com,1,found,0,0,0,0,0,0,0,1,0
+1788,limo.media,1,found,0,0,0,0,0,0,0,0,0
+1789,bhojpurisex.site,1,found,0,0,0,0,0,0,0,0,0
+1790,bpcl.in,0,unreachable,0,0,0,0,0,,,,
+1791,site777.jp,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1792,vnsextop1.com,0,unreachable,0,0,0,0,0,,,,
+1793,antarvasna3.com,1,found,0,0,0,0,0,0,0,0,0
+1794,case-battle.red,1,found,1,1,0,1,1,1,0,0,0
+1795,fojik.site,1,found,1,1,1,1,1,1,1,1,0
+1796,ganamosnet.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1797,xxxvideosind.com,1,found,1,1,1,1,1,1,1,0,0
+1798,xn--72c0anj1fqy6jqa7ei.net,1,found,0,0,0,0,0,0,0,1,0
+1799,javwow.com,1,found,0,0,0,0,0,0,0,1,0
+1800,freesexkahani.com,1,found,0,0,0,0,0,0,0,0,0
+1801,loteriadehoy.com,1,found,1,1,0,1,1,1,0,1,0
+1802,xxxbp.pro,1,found,0,0,0,0,0,0,0,0,0
+1803,staseraintv.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1804,bpexch.live,1,found,1,1,0,1,1,1,0,1,0
+1805,maynoe.com,1,found,0,0,0,0,0,0,0,0,0
+1806,nz.ua,1,found,0,0,0,0,0,0,0,1,0
+1807,moviespage.xyz,0,unreachable,0,0,0,0,0,,,,
+1808,kkstories.com,1,found,0,0,0,0,0,0,0,0,0
+1809,newyorker.com,1,found,0,1,1,1,1,1,0,0,0
+1810,xn--12c1ezaww.com,1,found,1,1,0,1,1,1,0,1,0
+1811,gamisco.com,1,found,1,1,0,1,1,1,0,1,0
+1812,rsch.jp,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1813,emaktab.uz,1,found,0,0,0,0,0,0,0,0,0
+1814,xvideo.vlog.br,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1815,hdhub4u.limo,0,unreachable,0,0,0,0,0,,,,
+1816,mobcup.fm,1,found,1,0,0,0,0,1,0,1,0
+1817,education.dz,0,unreachable,0,0,0,0,0,,,,
+1818,6qdgn5ym.com,0,unreachable,0,0,0,0,0,,,,
+1819,mangaraw.ac,0,unreachable,0,0,0,0,0,,,,
+1820,v9r2yhjg.com,0,unreachable,0,0,0,0,0,,,,
+1821,desitelugusex.com,1,found,0,0,0,0,0,0,0,0,0
+1822,topgirl.co,0,unreachable,0,0,0,0,0,,,,
+1823,lotterysambadresult.in,1,found,0,0,0,0,0,0,0,0,0
+1824,examinationservices.nic.in,1,found,0,0,0,0,0,0,0,0,1
+1825,apdcdn.com,0,unreachable,0,0,0,0,0,,,,
+1826,xn--2-wxfc3gwbi.com,1,found,1,1,0,1,1,1,0,0,0
+1827,dzexams.com,1,found,0,0,0,0,1,1,0,0,0
+1828,isaidub.guru,1,found,1,1,0,1,1,1,0,1,0
+1829,dpboss.boston,1,found,0,0,0,0,0,0,0,1,1
+1830,ad-contents.jp,1,found,0,0,0,0,0,0,0,0,0
+1831,gree-pf.net,0,unreachable,0,0,0,0,0,,,,
+1832,sattamatkano1.me,1,found,0,0,0,0,0,0,0,0,1
+1833,playinrace.com,0,unreachable,0,0,0,0,0,,,,
+1834,pewresearch.org,1,found,0,0,0,0,0,0,0,0,1
+1835,bunnyband.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1836,blacktoon410.com,1,found,1,1,0,1,1,1,0,1,0
+1837,playinboss.com,1,absent (HTTP 202),0,0,0,0,0,0,0,0,0
+1838,bytefcdn-ttpeu.com,0,unreachable,0,0,0,0,0,,,,
+1839,joinindianarmy.nic.in,0,unreachable,0,0,0,0,0,,,,
+1840,moviezwap.love,0,unreachable,0,0,0,0,0,,,,
+1841,xnhau.shop,0,unreachable,0,0,0,0,0,,,,
+1842,madrasati.sa,0,unreachable,0,0,0,0,0,,,,
+1843,5movierulz.church,1,found,0,0,0,0,0,0,0,0,0
+1844,vidvf.com,0,unreachable,0,0,0,0,0,,,,
+1845,test-uz.ru,1,found,1,1,0,0,1,1,0,0,0
+1846,nregastrep.nic.in,0,unreachable,0,0,0,0,0,,,,
+1847,delegaciondelgobierno.gob.es,1,found,0,0,0,0,0,0,0,0,0
+1848,5movierulz.forsale,1,found,0,0,0,0,0,0,0,0,0
+1849,99rdd.com,1,found,0,0,0,0,0,0,0,0,1
+1850,mp4moviez.bot,1,found,1,1,0,1,1,1,0,1,0
+1851,mp4moviez.care,0,unreachable,0,0,0,0,0,,,,
+1852,mp4moviez.fan,1,found,1,1,0,1,1,1,0,1,0
+1853,mamtpo.com,1,found,0,0,0,0,0,0,0,0,0
+1854,5movierulz.soccer,1,found,0,0,0,0,0,0,0,0,0
+1855,funinstar.com,1,absent (HTTP 202),0,0,0,0,0,0,0,1,0
+1856,sbxh1.com,1,found,0,0,0,0,0,0,0,0,0
+1857,mingky13.net,0,unreachable,0,0,0,0,0,,,,
+1858,onlar.az,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1859,mnregaweb4.nic.in,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1860,filmyzilla39.com,1,found,1,1,0,1,1,1,0,0,0
+1861,moviesda30.com,0,unreachable,0,0,0,0,0,,,,
+1862,xnhau.ing,0,unreachable,0,0,0,0,0,,,,
+1863,filmyfly.camp,1,found,0,0,0,0,0,0,0,1,0
+1864,videyly.co,1,found,1,1,0,1,1,1,0,0,0
+1865,cmu.edu,1,found,0,0,0,0,0,0,0,0,0
+1866,5movierulz.camera,1,found,0,0,0,0,0,0,0,0,0
+1867,atcpulsa.store,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1868,filmyzilla37.com,1,found,1,1,0,1,1,1,0,0,0
+1869,olxide.com,0,unreachable,0,0,0,0,0,,,,
+1870,sdpay.co.in,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1871,tnresults.nic.in,0,unreachable,0,0,0,0,0,,,,
+1872,videlly.space,0,unreachable,0,0,0,0,0,,,,
+1873,xnhau.bet,0,unreachable,0,0,0,0,0,,,,
+1874,xnhau.cx,1,found,1,1,0,1,1,1,0,0,0
+1875,ydparty06.net,1,found,1,1,0,1,1,1,0,1,0
+1876,app-ads-services.com,1,found,0,0,0,0,0,0,0,0,0
+1877,pccc.com,1,found,0,0,0,0,0,0,0,0,0
+1878,battle.net,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1879,avira.com,1,found,0,0,0,0,0,0,0,1,0
+1880,hpeprint.com,1,absent (HTTP 400),0,0,0,0,0,0,0,0,0
+1881,plex.tv,1,found,0,0,0,0,0,0,0,0,0
+1882,siemens.com,1,found,0,0,0,0,0,0,0,0,1
+1883,rfihub.com,0,unreachable,0,0,0,0,0,,,,
+1884,acs.org,1,found,0,0,0,0,0,0,0,0,0
+1885,google.es,1,found,0,0,0,0,0,0,0,0,0
+1886,mobolize.com,1,found,0,0,0,0,0,0,0,0,0
+1887,xfinity.com,1,found,0,0,0,0,0,0,0,0,1
+1888,1drv.com,1,found,0,0,0,0,0,0,0,0,0
+1889,rapid7.com,1,found,0,0,0,0,0,0,0,0,1
+1890,frontiersin.org,1,found,0,0,0,0,0,0,0,0,1
+1891,oreilly.com,1,found,1,0,0,1,1,1,0,0,1
+1892,wikihow.com,1,found,1,1,1,0,1,1,0,0,0
+1893,meitu.com,1,found,0,0,0,0,0,0,0,0,0
+1894,jamfcloud.com,0,unreachable,0,0,0,0,0,,,,
+1895,mgslb.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1896,zdnet.com,1,found,1,1,1,0,1,1,0,1,0
+1897,google.it,1,found,0,0,0,0,0,0,0,0,0
+1898,dns-shop.ru,1,found,0,0,0,0,0,0,0,0,1
+1899,api.aws,0,unreachable,0,0,0,0,0,,,,
+1900,supersonicads.com,0,unreachable,0,0,0,0,0,,,,
+1901,jino.ru,1,found,0,0,0,0,0,0,0,0,0
+1902,marketwatch.com,1,found,1,1,1,1,1,1,1,0,0
+1903,ctdns.cn,0,unreachable,0,0,0,0,0,,,,
+1904,iana.org,1,found,0,0,0,0,0,0,0,0,0
+1905,vivox.com,1,found,0,0,0,0,0,0,0,1,0
+1906,twilio.com,1,found,0,0,0,0,0,0,0,0,1
+1907,ico.org.uk,1,found,0,0,0,0,0,0,0,1,0
+1908,azure-api.net,0,unreachable,0,0,0,0,0,,,,
+1909,kargo.com,1,found,0,0,0,0,0,0,0,0,0
+1910,sinaedge.com,0,unreachable,0,0,0,0,0,,,,
+1911,rncdn7.com,0,unreachable,0,0,0,0,0,,,,
+1912,microsoftpersonalcontent.com,0,unreachable,0,0,0,0,0,,,,
+1913,edgecastdns.net,0,unreachable,0,0,0,0,0,,,,
+1914,usercontent.microsoft,0,unreachable,0,0,0,0,0,,,,
+1915,threads.net,1,found,1,1,1,1,1,1,1,0,0
+1916,va.gov,1,found,0,0,0,0,0,0,0,0,0
+1917,instructure.com,1,found,0,0,0,0,0,0,0,0,1
+1918,vice.com,1,found,0,0,0,0,0,0,0,0,0
+1919,moodle.org,1,found,0,0,0,0,0,0,0,0,0
+1920,adroll.com,1,found,0,0,0,0,0,0,0,0,1
+1921,firstvds.ru,1,found,0,0,0,0,0,0,0,0,0
+1922,vmware.com,1,found,0,0,0,0,0,0,0,0,0
+1923,waze.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1924,dbankcloud.cn,0,unreachable,0,0,0,0,0,,,,
+1925,xinhuanet.com,1,found,0,0,0,0,0,0,0,0,0
+1926,telefonica.de,1,found,0,0,0,0,0,0,0,0,0
+1927,trustarc.com,1,found,0,0,0,0,0,0,0,0,0
+1928,mercadolibre.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1929,geocities.com,1,found,0,0,0,0,0,0,0,0,0
+1930,scientificamerican.com,1,found,1,0,1,1,1,1,0,0,0
+1931,fb.watch,1,found,0,0,0,0,0,0,0,0,0
+1932,zpath.net,0,unreachable,0,0,0,0,0,,,,
+1933,steamcontent.com,0,unreachable,0,0,0,0,0,,,,
+1934,nps.gov,1,found,0,0,0,0,0,0,0,0,0
+1935,ns1p.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1936,wcdnga.com,0,unreachable,0,0,0,0,0,,,,
+1937,douyin.com,1,found,0,0,0,0,0,0,0,0,0
+1938,qcloud.com,1,found,1,1,1,1,1,1,1,0,0
+1939,ipredictive.com,0,unreachable,0,0,0,0,0,,,,
+1940,hh.ru,1,found,0,0,0,0,0,0,0,0,0
+1941,pubmnet.com,0,unreachable,0,0,0,0,0,,,,
+1942,uchicago.edu,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1943,gpcloudservice.com,0,unreachable,0,0,0,0,0,,,,
+1944,samsungknox.com,1,found,0,0,0,0,0,0,0,0,0
+1945,pluto.tv,1,found,0,0,0,0,0,0,0,0,0
+1946,livechatinc.com,1,found,0,0,0,0,0,0,0,0,1
+1947,arstechnica.com,1,found,0,1,1,1,1,1,0,1,0
+1948,58.com,1,found,0,0,0,0,0,0,0,0,0
+1949,enable-javascript.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1950,udemy.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1951,sciencemag.org,1,found,1,0,0,1,1,1,0,1,0
+1952,bbb.org,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1953,yimg.com,1,found,0,0,0,0,0,0,0,0,0
+1954,unrulymedia.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1955,plex.direct,0,unreachable,0,0,0,0,0,,,,
+1956,gygtest.com,0,unreachable,0,0,0,0,0,,,,
+1957,tripod.com,0,unreachable,0,0,0,0,0,,,,
+1958,utexas.edu,1,found,0,0,0,0,0,0,0,0,0
+1959,xhscdn.com,0,unreachable,0,0,0,0,0,,,,
+1960,litix.io,0,unreachable,0,0,0,0,0,,,,
+1961,deezer.com,1,found,0,0,0,0,0,0,0,0,0
+1962,sitescout.com,1,found,0,0,0,0,0,0,0,0,0
+1963,meetup.com,1,found,1,0,0,0,0,1,0,0,1
+1964,restream-media.net,0,unreachable,0,0,0,0,0,,,,
+1965,secureserver.net,1,found,1,1,1,1,1,1,1,0,0
+1966,thelancet.com,1,found,1,1,1,1,1,1,1,0,0
+1967,fastcompany.com,1,found,1,1,1,0,0,1,0,0,0
+1968,gdemoideti.ru,1,found,0,0,0,0,0,0,0,0,1
+1969,sky.com,1,found,0,0,0,0,0,0,0,0,0
+1970,indexww.com,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1971,rustore.ru,1,found,0,0,0,0,0,0,0,0,0
+1972,elegantthemes.com,1,found,0,0,0,0,0,0,0,0,0
+1973,intercom.com,1,found,0,0,0,0,0,0,0,0,1
+1974,jamanetwork.com,1,found,1,1,0,1,1,1,0,0,0
+1975,clevelandclinic.org,1,found,0,0,0,0,0,0,0,0,1
+1976,mathtag.com,0,unreachable,0,0,0,0,0,,,,
+1977,gizmodo.com,1,found,0,0,0,0,1,1,0,0,0
+1978,tremorhub.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1979,ucsd.edu,1,found,0,0,0,0,0,0,0,0,0
+1980,spamhaus.org,1,found,0,0,0,0,0,0,0,0,0
+1981,sendgrid.net,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1982,archive.is,1,found,0,0,0,0,0,0,0,0,0
+1983,deepintent.com,1,found,0,0,0,0,0,0,0,0,0
+1984,investing.com,1,found,0,0,0,0,0,0,0,1,0
+1985,google.co.in,1,found,0,0,0,0,0,0,0,0,0
+1986,ovh.com,1,found,1,0,0,0,1,1,0,0,0
+1987,mapbox.com,1,found,0,0,0,0,0,0,0,0,0
+1988,pusher.com,1,found,0,0,0,0,0,0,0,0,0
+1989,mega.nz,1,found,1,1,1,1,1,1,1,0,0
+1990,beeline.ru,1,found,0,0,0,0,0,0,0,0,0
+1991,typepad.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1992,ntp.br,1,absent (HTTP 404),0,0,0,0,0,0,0,0,0
+1993,bitdefender.com,1,found,0,0,0,0,0,0,0,0,1
+1994,blizzard.com,1,absent (HTTP 403),0,0,0,0,0,0,0,0,0
+1995,igamecj.com,0,unreachable,0,0,0,0,0,,,,
+1996,office365.us,0,unreachable,0,0,0,0,0,,,,
+1997,ohthree.com,0,unreachable,0,0,0,0,0,,,,
+1998,techtarget.com,1,found,0,0,0,0,0,0,0,0,0
+1999,about.com,1,found,0,0,0,0,0,0,0,1,0
+2000,cloudfunctions.net,0,unreachable,0,0,0,0,0,,,,
