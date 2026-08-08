@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Most AI-Crawler Blocking Doesn't Happen in robots.txt — A Census of the Top 2,000 Sites</title>
-<meta name="description" content="A census of the Tranco top 2,000 domains: 15.6% block an AI crawler in robots.txt, but 10.2% block at the HTTP edge while robots.txt permits access. The two groups are not the same sites.">
+<meta name="description" content="A census of the Tranco top 2,000 domains: 20.3% block an AI crawler in robots.txt, but 13.4% block at the HTTP edge while robots.txt permits access. The two groups are not the same sites.">
 <link rel="canonical" href="https://stars-bit-ux.github.io/ai-crawler-check/study.html">
 <meta property="og:title" content="Most AI-crawler blocking doesn't happen in robots.txt">
 <meta property="og:description" content="Census of the Tranco top 2,000: two thirds as many sites block AI crawlers at the network edge as declare it in robots.txt.">
@@ -73,6 +73,13 @@
   .hosts li{font:13px/1.4 ui-monospace,Consolas,monospace;border:1px solid var(--observed);
             color:var(--observed);background:var(--observed-soft);border-radius:3px;padding:4px 10px}
   .note{border-left:3px solid var(--rule);padding:2px 0 2px 17px;color:var(--muted);font-size:15.5px;margin:22px 0}
+details.full{border:1px solid var(--rule);border-radius:3px;padding:12px 16px;margin:16px 0 8px}
+  details.full summary{font:13px/1.5 Arial,sans-serif;color:var(--accent);cursor:pointer}
+  ul.allhosts{list-style:none;padding:0;margin:14px 0 2px;
+    columns:2;column-gap:26px;font:12.5px/1.85 ui-monospace,Consolas,monospace}
+  ul.allhosts li{break-inside:avoid;color:var(--muted)}
+  ul.allhosts .r{color:var(--faint);display:inline-block;min-width:44px}
+  @media(max-width:560px){ul.allhosts{columns:1}}
   footer{margin-top:50px;padding-top:17px;border-top:1px solid var(--rule);
          font:13.5px/1.6 Arial,sans-serif;color:var(--faint)}
 </style>
@@ -89,7 +96,8 @@
 <p class="eyebrow">Measurement · August 2026</p>
 <h1>Most AI-crawler blocking doesn't happen in robots.txt</h1>
 <p class="standfirst">
-  I checked the Tranco top 2,000 domains. Two thirds as many sites block AI
+  I checked the Tranco top 2,000 domains, of which 1,530 serve a reachable
+  robots.txt. Two thirds as many of them block AI
   crawlers at the network edge as declare a block in <code>robots.txt</code> —
   and they are largely not the same sites.
 </p>
@@ -97,49 +105,49 @@
 <div class="diverge">
   <div class="dv dv--a">
     <p class="dv-label">Declared · robots.txt</p>
-    <div><span class="dv-n">311</span><span class="dv-pct">15.6%</span></div>
+    <div><span class="dv-n">311</span><span class="dv-pct">20.3%</span></div>
     <p class="dv-note">Disallow at least one of the five major AI crawlers in a file anyone can read.</p>
   </div>
   <div class="dv dv--b">
     <p class="dv-label">Observed · HTTP edge</p>
-    <div><span class="dv-n">205</span><span class="dv-pct">10.2%</span></div>
+    <div><span class="dv-n">205</span><span class="dv-pct">13.4%</span></div>
     <p class="dv-note">Return 401/403 to a declared AI user-agent <em>while their robots.txt permits it</em>.</p>
   </div>
 </div>
-<p class="cap">n = 2,000 · Tranco ranks 1–2,000 · all 2,000 responded · fetched August 2026</p>
+<p class="cap">n = 1,530 responding hosts, drawn from Tranco ranks 1–2,000 · 470 did not serve HTTP · fetched August 2026</p>
 
 <p>
   Every tool I know of that answers "is my site open to AI crawlers?" answers it
   by parsing <code>robots.txt</code>. That is one layer. The request itself is
   another, and the two disagree often enough that reading only the first gives
-  you the wrong answer for roughly one site in ten.
+  you the wrong answer for roughly one site in seven.
 </p>
 
 <h2>The four headline numbers</h2>
 <div class="stats">
-  <div class="st"><div class="st-n" style="color:var(--declared)">15.6%</div>
+  <div class="st"><div class="st-n" style="color:var(--declared)">20.3%</div>
     <div class="st-l">restrict ≥1 AI crawler in robots.txt (311)</div></div>
-  <div class="st"><div class="st-n" style="color:var(--declared)">5.8%</div>
+  <div class="st"><div class="st-n" style="color:var(--declared)">7.5%</div>
     <div class="st-l">restrict all five (115)</div></div>
-  <div class="st"><div class="st-n" style="color:var(--observed)">10.2%</div>
+  <div class="st"><div class="st-n" style="color:var(--observed)">13.4%</div>
     <div class="st-l">edge block despite permissive robots.txt (205)</div></div>
-  <div class="st"><div class="st-n">9.4%</div>
+  <div class="st"><div class="st-n">12.3%</div>
     <div class="st-l">serve a valid <code>/llms.txt</code> (188)</div></div>
 </div>
-<p class="cap">All percentages share one denominator: the 2,000 domains that responded.</p>
+<p class="cap">All percentages share one denominator: the 1,530 hosts that served a reachable robots.txt.</p>
 
 <h2>Which crawlers get blocked in robots.txt</h2>
 <div class="bars">
-  <div class="row" title="CCBot — 277 domains, 13.9%">
-    <span class="nm">CCBot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="val">277 · 13.9%</span></div>
-  <div class="row" title="GPTBot — 254 domains, 12.7%">
-    <span class="nm">GPTBot</span><span class="track"><span class="fill" style="width:91.7%"></span></span><span class="val">254 · 12.7%</span></div>
-  <div class="row" title="ClaudeBot — 241 domains, 12.0%">
-    <span class="nm">ClaudeBot</span><span class="track"><span class="fill" style="width:87.0%"></span></span><span class="val">241 · 12.0%</span></div>
-  <div class="row" title="Google-Extended — 227 domains, 11.3%">
-    <span class="nm">Google-Extended</span><span class="track"><span class="fill" style="width:81.9%"></span></span><span class="val">227 · 11.3%</span></div>
-  <div class="row" title="PerplexityBot — 165 domains, 8.2%">
-    <span class="nm">PerplexityBot</span><span class="track"><span class="fill" style="width:59.6%"></span></span><span class="val">165 · 8.2%</span></div>
+  <div class="row" title="CCBot — 277 of 1,530 hosts, 18.1%">
+    <span class="nm">CCBot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="val">277 · 18.1%</span></div>
+  <div class="row" title="GPTBot — 254 of 1,530 hosts, 16.6%">
+    <span class="nm">GPTBot</span><span class="track"><span class="fill" style="width:91.7%"></span></span><span class="val">254 · 16.6%</span></div>
+  <div class="row" title="ClaudeBot — 241 of 1,530 hosts, 15.8%">
+    <span class="nm">ClaudeBot</span><span class="track"><span class="fill" style="width:87.0%"></span></span><span class="val">241 · 15.8%</span></div>
+  <div class="row" title="Google-Extended — 227 of 1,530 hosts, 14.8%">
+    <span class="nm">Google-Extended</span><span class="track"><span class="fill" style="width:81.9%"></span></span><span class="val">227 · 14.8%</span></div>
+  <div class="row" title="PerplexityBot — 165 of 1,530 hosts, 10.8%">
+    <span class="nm">PerplexityBot</span><span class="track"><span class="fill" style="width:59.6%"></span></span><span class="val">165 · 10.8%</span></div>
 </div>
 <p class="cap">Domains disallowing each user-agent. Bars share one scale; CCBot is the maximum.</p>
 
@@ -147,8 +155,8 @@
   The ordering is stable and unsurprising: the crawler associated with open
   training corpora is blocked most, the one associated with an answer engine that
   sends referral traffic is blocked least. What is surprising is how small all
-  five numbers are. Eighty-four percent of the largest sites on the web still
-  declare no restriction at all.
+  five numbers are. Almost eighty percent of the largest sites on the web that
+  serve a robots.txt still declare no restriction at all.
 </p>
 
 <h2>The divergence, in names you can check</h2>
@@ -167,6 +175,32 @@
   all look identical from outside.
 </p>
 
+<h2>All 205 hosts that block at the edge</h2>
+<p>
+  Every host below permits AI crawlers in <code>robots.txt</code> and then returns
+  401/403 to one. Ranked by Tranco position. If your CDN vendor or your own domain
+  is here, the two layers of your site disagree with each other.
+</p>
+<details class="full">
+  <summary>Show the full list (205 hosts)</summary>
+  <ul class="allhosts"><li><span class="r">#51</span> pinterest.com</li><li><span class="r">#64</span> cloudflare.net</li><li><span class="r">#68</span> chatgpt.com</li><li><span class="r">#96</span> reddit.com</li><li><span class="r">#120</span> unity3d.com</li><li><span class="r">#152</span> nytimes.com</li><li><span class="r">#184</span> medium.com</li><li><span class="r">#227</span> sourceforge.net</li><li><span class="r">#232</span> canva.com</li><li><span class="r">#243</span> cisco.com</li><li><span class="r">#270</span> launchpad.net</li><li><span class="r">#275</span> ibm.com</li><li><span class="r">#288</span> salesforce.com</li><li><span class="r">#316</span> wiley.com</li><li><span class="r">#344</span> un.org</li><li><span class="r">#345</span> cdc.gov</li><li><span class="r">#389</span> cookiedatabase.org</li><li><span class="r">#404</span> 163.com</li><li><span class="r">#435</span> intel.com</li><li><span class="r">#439</span> expireddomains.com</li><li><span class="r">#441</span> statista.com</li><li><span class="r">#448</span> cnbc.com</li><li><span class="r">#460</span> ietf.org</li><li><span class="r">#478</span> cookielaw.org</li><li><span class="r">#539</span> oup.com</li><li><span class="r">#541</span> trendmicro.com</li><li><span class="r">#542</span> patreon.com</li><li><span class="r">#543</span> cornell.edu</li><li><span class="r">#564</span> teamviewer.com</li><li><span class="r">#578</span> dailymail.co.uk</li><li><span class="r">#590</span> loc.gov</li><li><span class="r">#634</span> nike.com</li><li><span class="r">#669</span> spiegel.de</li><li><span class="r">#676</span> pinimg.com</li><li><span class="r">#712</span> kick.com</li><li><span class="r">#732</span> dailymail.com</li><li><span class="r">#733</span> shopee.co.id</li><li><span class="r">#783</span> shopee.com.br</li><li><span class="r">#785</span> airbnb.com</li><li><span class="r">#788</span> sedo.com</li><li><span class="r">#799</span> people.com</li><li><span class="r">#814</span> lefigaro.fr</li><li><span class="r">#816</span> welt.de</li><li><span class="r">#821</span> nbcnews.com</li><li><span class="r">#827</span> readthedocs.io</li><li><span class="r">#849</span> onlyfans.com</li><li><span class="r">#865</span> investopedia.com</li><li><span class="r">#876</span> xvideos.com</li><li><span class="r">#902</span> lowes.com</li><li><span class="r">#922</span> life360.com</li><li><span class="r">#929</span> kickstarter.com</li><li><span class="r">#940</span> character.ai</li><li><span class="r">#955</span> corriere.it</li><li><span class="r">#965</span> xnxx.com</li><li><span class="r">#966</span> note.com</li><li><span class="r">#1006</span> faphouse.com</li><li><span class="r">#1010</span> zhihu.com</li><li><span class="r">#1017</span> ecosia.org</li><li><span class="r">#1025</span> bidmachine.io</li><li><span class="r">#1026</span> ancestry.com</li><li><span class="r">#1032</span> readthedocs.org</li><li><span class="r">#1045</span> statcounter.com</li><li><span class="r">#1047</span> epicgames.dev</li><li><span class="r">#1067</span> att.com</li><li><span class="r">#1076</span> trendyol.com</li><li><span class="r">#1083</span> olx.com.br</li><li><span class="r">#1119</span> hugedomains.com</li><li><span class="r">#1128</span> hltv.org</li><li><span class="r">#1139</span> clarin.com</li><li><span class="r">#1158</span> shopee.com.my</li><li><span class="r">#1160</span> archiveofourown.org</li><li><span class="r">#1188</span> indiamart.com</li><li><span class="r">#1198</span> nu.nl</li><li><span class="r">#1201</span> ad.nl</li><li><span class="r">#1213</span> admin.ch</li><li><span class="r">#1222</span> furaffinity.net</li><li><span class="r">#1234</span> megafon.ru</li><li><span class="r">#1235</span> gazzetta.it</li><li><span class="r">#1255</span> fetlife.com</li><li><span class="r">#1257</span> txnhh.com</li><li><span class="r">#1270</span> vietnam.vn</li><li><span class="r">#1273</span> litnet.com</li><li><span class="r">#1276</span> canada.ca</li><li><span class="r">#1283</span> pimpbunny.com</li><li><span class="r">#1284</span> hln.be</li><li><span class="r">#1302</span> noodlemagazine.com</li><li><span class="r">#1317</span> mydramalist.com</li><li><span class="r">#1320</span> f95zone.to</li><li><span class="r">#1321</span> faphouse2.com</li><li><span class="r">#1331</span> aternos.org</li><li><span class="r">#1351</span> crn77.com</li><li><span class="r">#1354</span> thisvid.com</li><li><span class="r">#1364</span> asurascans.com</li><li><span class="r">#1370</span> xnxx.tv</li><li><span class="r">#1371</span> xvv1deos.com</li><li><span class="r">#1379</span> inleed.net</li><li><span class="r">#1383</span> ixxx.com</li><li><span class="r">#1385</span> fdown.net</li><li><span class="r">#1393</span> imhentai.xxx</li><li><span class="r">#1419</span> missav.live</li><li><span class="r">#1423</span> action.com</li><li><span class="r">#1428</span> mangago.me</li><li><span class="r">#1430</span> ppomppu.co.kr</li><li><span class="r">#1441</span> comix.to</li><li><span class="r">#1442</span> ukdevilz.com</li><li><span class="r">#1446</span> bef77.com</li><li><span class="r">#1451</span> bookmark.xxx</li><li><span class="r">#1456</span> jutarnji.hr</li><li><span class="r">#1461</span> 3bmeteo.com</li><li><span class="r">#1466</span> myinstants.com</li><li><span class="r">#1474</span> blooket.com</li><li><span class="r">#1479</span> 255md.com</li><li><span class="r">#1480</span> omg10.com</li><li><span class="r">#1482</span> luxuretv.com</li><li><span class="r">#1483</span> newsweek.com</li><li><span class="r">#1486</span> ficbook.net</li><li><span class="r">#1489</span> fuq.com</li><li><span class="r">#1500</span> forebet.com</li><li><span class="r">#1501</span> theblowers.com</li><li><span class="r">#1504</span> arca.live</li><li><span class="r">#1505</span> letsporn.com</li><li><span class="r">#1507</span> caliente.mx</li><li><span class="r">#1508</span> eltiempo.es</li><li><span class="r">#1511</span> xvideos.es</li><li><span class="r">#1513</span> xnxx.health</li><li><span class="r">#1514</span> pornoborshch.com</li><li><span class="r">#1515</span> rustdesk.com</li><li><span class="r">#1519</span> mangafire.to</li><li><span class="r">#1522</span> xnxx.es</li><li><span class="r">#1527</span> xnxx2.com</li><li><span class="r">#1528</span> xnxx-arabic.com</li><li><span class="r">#1529</span> toyhou.se</li><li><span class="r">#1536</span> fatalmodel.com</li><li><span class="r">#1540</span> missav123.com</li><li><span class="r">#1541</span> hanime1.me</li><li><span class="r">#1544</span> joyclub.de</li><li><span class="r">#1554</span> fedoraproject.org</li><li><span class="r">#1562</span> xvideos2.com</li><li><span class="r">#1578</span> npci.org.in</li><li><span class="r">#1588</span> qorno.com</li><li><span class="r">#1605</span> nya2.com</li><li><span class="r">#1606</span> dogdrip.net</li><li><span class="r">#1608</span> ey43.com</li><li><span class="r">#1613</span> goojara.to</li><li><span class="r">#1618</span> betika.com</li><li><span class="r">#1620</span> bakusai.com</li><li><span class="r">#1628</span> chordtela.com</li><li><span class="r">#1637</span> xxxvideo.link</li><li><span class="r">#1640</span> redwap.sex</li><li><span class="r">#1642</span> sexalarab.com</li><li><span class="r">#1646</span> arabx.cam</li><li><span class="r">#1647</span> colliderporn.com</li><li><span class="r">#1648</span> njavtv.com</li><li><span class="r">#1656</span> czbooks.net</li><li><span class="r">#1660</span> yallakora.com</li><li><span class="r">#1662</span> xvideos-ar.com</li><li><span class="r">#1664</span> ftc.gov</li><li><span class="r">#1668</span> momon-ga.com</li><li><span class="r">#1680</span> afribaba.com</li><li><span class="r">#1689</span> darkero.com</li><li><span class="r">#1697</span> aucey.com</li><li><span class="r">#1705</span> filmyfly.cafe</li><li><span class="r">#1717</span> goal7.co</li><li><span class="r">#1718</span> manhwaread.com</li><li><span class="r">#1732</span> manhwaweb.com</li><li><span class="r">#1737</span> humoruniv.com</li><li><span class="r">#1741</span> braiiz.com</li><li><span class="r">#1742</span> animanch.com</li><li><span class="r">#1744</span> xvideosputaria.com</li><li><span class="r">#1746</span> animesalt.ac</li><li><span class="r">#1749</span> komikindo.ch</li><li><span class="r">#1751</span> annunci69.it</li><li><span class="r">#1755</span> unlockffbeta.com</li><li><span class="r">#1766</span> yasyadong01.tv</li><li><span class="r">#1768</span> tamildhool.tech</li><li><span class="r">#1771</span> dpbossss.boston</li><li><span class="r">#1775</span> xbanxia.cc</li><li><span class="r">#1781</span> xahani.com</li><li><span class="r">#1785</span> xxxhindi.to</li><li><span class="r">#1787</span> satta-king-fast.com</li><li><span class="r">#1795</span> fojik.site</li><li><span class="r">#1798</span> xn--72c0anj1fqy6jqa7ei.net</li><li><span class="r">#1799</span> javwow.com</li><li><span class="r">#1801</span> loteriadehoy.com</li><li><span class="r">#1804</span> bpexch.live</li><li><span class="r">#1806</span> nz.ua</li><li><span class="r">#1810</span> xn--12c1ezaww.com</li><li><span class="r">#1811</span> gamisco.com</li><li><span class="r">#1816</span> mobcup.fm</li><li><span class="r">#1828</span> isaidub.guru</li><li><span class="r">#1829</span> dpboss.boston</li><li><span class="r">#1836</span> blacktoon410.com</li><li><span class="r">#1850</span> mp4moviez.bot</li><li><span class="r">#1852</span> mp4moviez.fan</li><li><span class="r">#1855</span> funinstar.com</li><li><span class="r">#1863</span> filmyfly.camp</li><li><span class="r">#1875</span> ydparty06.net</li><li><span class="r">#1879</span> avira.com</li><li><span class="r">#1896</span> zdnet.com</li><li><span class="r">#1905</span> vivox.com</li><li><span class="r">#1907</span> ico.org.uk</li><li><span class="r">#1947</span> arstechnica.com</li><li><span class="r">#1951</span> sciencemag.org</li><li><span class="r">#1984</span> investing.com</li><li><span class="r">#1999</span> about.com</li></ul>
+</details>
+<p class="cap">
+  Also in the dataset below, as the <code>edge_block_suspected</code> column.
+</p>
+
+<h2>The data</h2>
+<p>
+  All 2,000 ranked hosts, one row each, including the 470 excluded from the
+  percentages — so you can redo the arithmetic on a different base if you
+  disagree with mine.
+</p>
+<p>
+  <a href="census-2026-08.csv"><strong>census-2026-08.csv</strong></a> (90&nbsp;KB) ·
+  columns: <code>rank, host, in_denominator, robots_status,</code> a blocked flag per
+  crawler, <code>blocks_any, blocks_all, edge_block_suspected, has_llms_txt</code>.
+</p>
+
 <h2>Method</h2>
 <div class="scroller">
 <table>
@@ -176,7 +210,7 @@
     <tr><td>Declared</td><td>Fetch <code>/robots.txt</code>, parse rules for each of the five user-agents</td></tr>
     <tr><td>Observed</td><td>Request the homepage with each crawler's documented UA; record HTTP status</td></tr>
     <tr><td>llms.txt</td><td>Fetch <code>/llms.txt</code>, require a parseable body, not merely a 200</td></tr>
-    <tr><td>Denominator</td><td>All 2,000 responded; nothing dropped, so every percentage shares one base</td></tr>
+    <tr><td>Denominator</td><td>1,530 of the 2,000 ranked hosts served a reachable <code>robots.txt</code>; the other 470 (DNS failure, or infrastructure domains that run no web server) are excluded from every percentage</td></tr>
   </tbody>
 </table>
 </div>
@@ -195,7 +229,7 @@
   my inference, not the court's, so I don't make it.
 </p>
 <p>
-  <strong>Nothing about llms.txt being useful.</strong> 9.4% adoption is a fact
+  <strong>Nothing about llms.txt being useful.</strong> 12.3% adoption is a fact
   about publishers, not about consumers. Whether any crawler reads the file is a
   separate question, and the available evidence is not encouraging.
 </p>
