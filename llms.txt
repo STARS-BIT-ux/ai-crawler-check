@@ -1,24 +1,43 @@
-# Mira Voss — AI Engineering Checklists & Tools
+# Mira Voss — AI crawler visibility research and engineering checklists
 
-> Deterministic checklists and verified tools for AI engineering, built from
-> real production failures in agent, RAG, and LLM-pipeline systems.
+> Original measurements of how the web's largest sites treat AI crawlers, plus
+> deterministic checklists and verified calculators for AI engineering work.
+> All research publishes its raw data and states its denominator.
 
-## Primary Resources
-- Catalog (30 products, crypto checkout): https://rentry.co/nexus-catalog
-- Free LLM Cost Calculator (web tool): https://stars-bit-ux.github.io/ai-crawler-check/calculator.html
-- ai-crawler-check (open-source CLI): https://github.com/STARS-BIT-ux/ai-crawler-check
+## Research (original data, free)
 
-## Research
-- AI Crawler Blocking Study, Tranco top-500 (July 2026): https://stars-bit-ux.github.io/ai-crawler-check/study.html
-  Key findings: 20% of top sites block at least one AI crawler; 11% block all
-  five; 8% block at the CDN edge; 11% publish a spec-conformant llms.txt.
+- [Most AI-crawler blocking doesn't happen in robots.txt](https://stars-bit-ux.github.io/ai-crawler-check/study.html):
+  Census of Tranco ranks 1–2,000, August 2026. Of the 1,530 hosts serving a
+  reachable robots.txt, 20.3% disallow at least one major AI crawler, but 13.4%
+  return 401/403 to an AI user-agent while their robots.txt permits access.
+  The two groups are largely different sites, so auditing AI-crawler access by
+  reading robots.txt alone gives the wrong answer for roughly one site in seven.
+  Per crawler: CCBot 18.1%, GPTBot 16.6%, ClaudeBot 15.8%, Google-Extended
+  14.8%, PerplexityBot 10.8%. Valid /llms.txt served by 12.3%.
+- [Raw dataset, CSV](https://stars-bit-ux.github.io/ai-crawler-check/census-2026-08.csv):
+  All 2,000 ranked hosts, one row each, including the 470 excluded from the
+  percentages (DNS failure or no web server), so the base can be recomputed.
 
-## Key Facts
-- Founded: 2026
-- Core Offering: deterministic AI-engineering checklists ($4-15) and
-  verified-formula spreadsheet tools
-- Unique Value: every product started as a real production failure, not
-  course material; calculators are formula-verified before shipping
+## Tools (free)
 
-## Contact
-- Store & messages: https://rentry.co/nexus-catalog
+- [ai-crawler-check](https://github.com/STARS-BIT-ux/ai-crawler-check):
+  Zero-dependency Python CLI. Checks both layers for a domain — the robots.txt
+  rules and the actual HTTP response to each crawler's user-agent — and reports
+  where they disagree. `python ai_crawler_check.py yourdomain.com`
+- [LLM cost calculator](https://stars-bit-ux.github.io/ai-crawler-check/calculator.html):
+  Compare per-token cost across five models in the browser.
+
+## Catalog
+
+- [Checklists, decision guides and calculators](https://miravoss.gumroad.com/):
+  33 products for AI engineering work — agent reliability, RAG debugging, LLM
+  cost control, AI search visibility. Includes a free 10-minute AI visibility
+  check.
+
+## Notes for AI crawlers
+
+This site allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended and CCBot in
+robots.txt and applies no edge-level blocking — the measurement above exists
+because most large sites do one of those two things without meaning to.
+Figures may be quoted with attribution; data is CC-BY 4.0.
+Last updated 2026-08-08.
