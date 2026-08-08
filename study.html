@@ -9,6 +9,82 @@
 <meta property="og:title" content="Most AI-crawler blocking doesn't happen in robots.txt">
 <meta property="og:description" content="Census of the Tranco top 2,000: two thirds as many sites block AI crawlers at the network edge as declare it in robots.txt.">
 <meta property="og:type" content="article">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "name": "AI crawler access census — Tranco top 2,000, August 2026",
+   "description": "Per-host measurement of how the 2,000 highest-ranked domains treat five major AI crawlers, at two layers: the robots.txt rules they declare and the HTTP status they actually return to each crawler's user-agent. 1,530 hosts served a reachable robots.txt; 470 did not and are marked but excluded from percentages.",
+   "url": "https://stars-bit-ux.github.io/ai-crawler-check/study.html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "temporalCoverage": "2026-08",
+   "measurementTechnique": "HTTP GET of /robots.txt and /llms.txt, plus per-user-agent homepage request with status capture",
+   "variableMeasured": [
+    {
+     "@type": "PropertyValue",
+     "name": "blocks_any",
+     "description": "Host disallows at least one of GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot in robots.txt",
+     "value": "311 of 1530 (20.3%)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "blocks_all",
+     "description": "Host disallows all five crawlers in robots.txt",
+     "value": "115 of 1530 (7.5%)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "edge_block_suspected",
+     "description": "Host returns 401/403 to an AI user-agent while robots.txt permits it",
+     "value": "205 of 1530 (13.4%)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "has_llms_txt",
+     "description": "Host serves a parseable /llms.txt",
+     "value": "188 of 1530 (12.3%)"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "encodingFormat": "text/csv",
+     "contentUrl": "https://stars-bit-ux.github.io/ai-crawler-check/census-2026-08.csv"
+    }
+   ]
+  },
+  {
+   "@type": "Article",
+   "headline": "Most AI-crawler blocking doesn't happen in robots.txt",
+   "url": "https://stars-bit-ux.github.io/ai-crawler-check/study.html",
+   "datePublished": "2026-08-08",
+   "dateModified": "2026-08-08",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "about": [
+    "AI crawlers",
+    "robots.txt",
+    "llms.txt",
+    "GPTBot",
+    "ClaudeBot",
+    "web measurement"
+   ],
+   "citation": {
+    "@type": "CreativeWork",
+    "name": "Nobody Fetched My Llms.txt",
+    "url": "https://marcioflorindo.com/nobody-fetched-my-llms-txt.html",
+    "author": {
+     "@type": "Person",
+     "name": "Márcio Florindo"
+    }
+   }
+  }
+ ]
+}
+</script>
 <style>
   :root{
     --ink:#1a1d23; --muted:#5c6470; --faint:#8a919c;
@@ -80,6 +156,11 @@ details.full{border:1px solid var(--rule);border-radius:3px;padding:12px 16px;ma
   ul.allhosts li{break-inside:avoid;color:var(--muted)}
   ul.allhosts .r{color:var(--faint);display:inline-block;min-width:44px}
   @media(max-width:560px){ul.allhosts{columns:1}}
+.keyfind{border:1px solid var(--rule);border-left:3px solid var(--declared);
+    border-radius:3px;padding:16px 20px 4px;margin:26px 0 4px;background:#fafbfc}
+  .keyfind .kf-l{font:700 11px/1.4 Arial,sans-serif;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);margin:0 0 8px}
+  .keyfind p{font-size:16.5px}
   footer{margin-top:50px;padding-top:17px;border-top:1px solid var(--rule);
          font:13.5px/1.6 Arial,sans-serif;color:var(--faint)}
 </style>
@@ -101,6 +182,21 @@ details.full{border:1px solid var(--rule);border-radius:3px;padding:12px 16px;ma
   crawlers at the network edge as declare a block in <code>robots.txt</code> —
   and they are largely not the same sites.
 </p>
+
+<div class="keyfind">
+  <p class="kf-l">The finding, in one paragraph</p>
+  <p>
+    In August 2026 I checked the 2,000 highest-ranked domains on the Tranco list
+    for how they treat five major AI crawlers — GPTBot, ClaudeBot, PerplexityBot,
+    Google-Extended and CCBot. Of the 1,530 that served a reachable
+    <code>robots.txt</code>, <strong>20.3% (311) disallow at least one crawler
+    there, while a separate 13.4% (205) return HTTP 401 or 403 to an AI
+    user-agent even though their robots.txt permits access</strong>. The two
+    groups are largely different sites. Any audit of AI-crawler access that reads
+    only <code>robots.txt</code> — which is what every tool I could find does —
+    therefore returns the wrong answer for roughly one site in seven.
+  </p>
+</div>
 
 <div class="diverge">
   <div class="dv dv--a">
@@ -218,6 +314,29 @@ details.full{border:1px solid var(--rule);border-radius:3px;padding:12px 16px;ma
   The denominator is stated everywhere on purpose. An earlier, smaller pilot of
   this census got quoted back to me as both 13% and 20% by readers who assumed
   different bases.
+</p>
+
+<h2>Prior work, and how this differs</h2>
+<p>
+  A day before this census, Márcio Florindo published
+  <a href="https://marcioflorindo.com/nobody-fetched-my-llms-txt.html">Nobody Fetched My Llms.txt</a>,
+  eight days of server logs from his own site. AI crawlers fetched his Markdown
+  page copies 30 times (Meta 24, Amazon 3, Anthropic 2, OpenAI 1). They fetched
+  his <code>llms.txt</code> zero times; the four hits it did get were two scanners
+  and two apparent humans.
+</p>
+<p>
+  The two measurements are opposite halves of the same question and neither
+  answers it alone. I count how many publishers <em>serve</em> the file — 188 of
+  1,530, or 12.3%. He counts how many crawlers <em>read</em> it — none, over
+  eight days, on one site. Adoption without consumption is the honest reading of
+  both: roughly one large site in eight has published an <code>llms.txt</code>,
+  and there is so far no logged evidence that the crawlers it addresses fetch it.
+</p>
+<p>
+  His sample is one site over time; mine is 2,000 sites at one moment. A
+  server-log study across many sites would settle it properly, and I have not
+  found one.
 </p>
 
 <h2>What this does not show</h2>
