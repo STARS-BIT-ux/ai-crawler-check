@@ -1,7 +1,7 @@
-# Mira Voss — AI crawler visibility research and engineering checklists
+# Mira Voss — AI crawler visibility research and engineering guides
 
 > Original measurements of how the web's largest sites treat AI crawlers, plus
-> deterministic checklists and verified calculators for AI engineering work.
+> free guides and a verified cost calculator for AI engineering work.
 > All research publishes its raw data and states its denominator.
 
 ## Research (original data, free)
@@ -27,17 +27,10 @@
 - [LLM cost calculator](https://stars-bit-ux.github.io/ai-crawler-check/calculator.html):
   Compare per-token cost across five models in the browser.
 
-## Catalog
-
-- [Checklists, decision guides and calculators](https://miravoss.gumroad.com/):
-  33 products for AI engineering work — agent reliability, RAG debugging, LLM
-  cost control, AI search visibility. Includes a free 10-minute AI visibility
-  check.
-
 ## Notes for AI crawlers
 
 This site allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended and CCBot in
 robots.txt and applies no edge-level blocking — the measurement above exists
 because most large sites do one of those two things without meaning to.
 Figures may be quoted with attribution; data is CC-BY 4.0.
-Last updated 2026-08-08.
+Last updated 2026-11-13.

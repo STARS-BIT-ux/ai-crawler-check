@@ -69,13 +69,9 @@ AI search).
 
 ## Fixing what it finds
 
-Ready-to-paste robots.txt snippets for WordPress, Shopify, Webflow,
-custom/Nginx sites, and the Cloudflare fix are in the
-[llms.txt + AI Crawler Setup Kit](https://miravoss.gumroad.com/l/llms-txt-ai-crawler-setup-kit?utm_source=github&utm_medium=readme&utm_campaign=ai_crawler_check) ($5) — along with
-a fill-in llms.txt template. The wider AI Search Visibility Bundle is
-[here](https://miravoss.gumroad.com/l/gsscsv?utm_source=github&utm_medium=readme&utm_campaign=ai_crawler_check) ($19), and the [full catalog](https://miravoss.gumroad.com?utm_source=github&utm_medium=readme&utm_campaign=ai_crawler_check) has everything else.
-
-Not sure where you stand? The [10-Minute AI Visibility Check](https://miravoss.gumroad.com/l/free-ai-visibility-check?utm_source=github&utm_medium=readme&utm_campaign=ai_crawler_check) is free.
+Crawler access, CDN edge rules, structured data and llms.txt are covered
+step by step in the free
+[guide to getting cited by AI search](https://stars-bit-ux.github.io/ai-crawler-check/guide-ai-search-citability.html).
 
 ## License
 
